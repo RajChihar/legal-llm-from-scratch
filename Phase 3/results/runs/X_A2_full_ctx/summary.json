@@ -1,0 +1,45 @@
+{
+  "run": "X_A2_full_ctx",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "full"
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 11,
+  "params_total": 95400717,
+  "params_trainable": 95400717,
+  "trainable_pct": 100.0,
+  "train_minutes": 5.9,
+  "peak_train_mem_gb": 2.9832987785339355,
+  "best_epoch": 3,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.5291553314459566,
+    "macro_p": 0.544233706896308,
+    "macro_r": 0.5506450700848574,
+    "macro_f1_vocab": 0.4477468189158095,
+    "accuracy": 0.5672268907563025
+  },
+  "dev_CL_macro_f1": 0.43831774188094264,
+  "dev_IT_macro_f1": 0.5397739562551936,
+  "infer_sentences_per_sec": 686.0,
+  "top_confusions": [
+    "RatioOfTheDecision -> PrecedentReliedUpon: 79",
+    "ArgumentRespondent -> ArgumentPetitioner: 79",
+    "ArgumentRespondent -> RatioOfTheDecision: 61",
+    "ArgumentPetitioner -> RatioOfTheDecision: 55",
+    "Fact -> RatioOfTheDecision: 52",
+    "ArgumentPetitioner -> ArgumentRespondent: 48",
+    "ArgumentPetitioner -> PrecedentReliedUpon: 40",
+    "ArgumentPetitioner -> Fact: 40",
+    "PrecedentReliedUpon -> Fact: 36",
+    "ArgumentRespondent -> PrecedentReliedUpon: 36",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 35",
+    "Fact -> ArgumentPetitioner: 29"
+  ],
+  "submission": "/kaggle/working/runs/X_A2_full_ctx/submission/submission.zip"
+}

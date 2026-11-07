@@ -1,0 +1,58 @@
+[
+ {
+  "view": "trained view",
+  "micro_f1@7": 0.3257,
+  "recall@20": 0.4676,
+  "recall@100": 0.6629,
+  "mrr": 0.6209
+ },
+ {
+  "view": "head 4x512",
+  "micro_f1@7": 0.2568,
+  "recall@20": 0.4347,
+  "recall@100": 0.6752,
+  "mrr": 0.5772
+ },
+ {
+  "view": "tail 4x512",
+  "micro_f1@7": 0.2913,
+  "recall@20": 0.4275,
+  "recall@100": 0.6578,
+  "mrr": 0.6692
+ },
+ {
+  "view": "headtail 4x512",
+  "micro_f1@7": 0.2968,
+  "recall@20": 0.4409,
+  "recall@100": 0.6701,
+  "mrr": 0.6301
+ },
+ {
+  "view": "uniform 4x512",
+  "micro_f1@7": 0.3257,
+  "recall@20": 0.4676,
+  "recall@100": 0.6629,
+  "mrr": 0.6209
+ },
+ {
+  "view": "uniform 1x512",
+  "micro_f1@7": 0.2046,
+  "recall@20": 0.3628,
+  "recall@100": 0.5982,
+  "mrr": 0.496
+ },
+ {
+  "view": "uniform 2x512",
+  "micro_f1@7": 0.2613,
+  "recall@20": 0.4121,
+  "recall@100": 0.6454,
+  "mrr": 0.5802
+ },
+ {
+  "view": "uniform 8x512",
+  "micro_f1@7": 0.3157,
+  "recall@20": 0.4841,
+  "recall@100": 0.704,
+  "mrr": 0.6813
+ }
+]

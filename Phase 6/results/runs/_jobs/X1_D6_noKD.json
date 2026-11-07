@@ -1,0 +1,22 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/D_efficient_swa_mqa/model_final.pt",
+  "keep_layers": 6
+ },
+ "method": {
+  "name": "full"
+ },
+ "context": {
+  "src_len": 1536
+ },
+ "train": {
+  "lr_backbone": 0.0001,
+  "max_minutes": 55
+ },
+ "run_name": "X1_D6_noKD",
+ "data_dir": "/kaggle/working/p6data/Phase_6_Summ",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p6cache",
+ "max_docs": null
+}

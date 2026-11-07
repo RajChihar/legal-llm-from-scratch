@@ -1,0 +1,88 @@
+{
+  "seed": 1337,
+  "data_name": "",
+  "decode_only": false,
+  "decode_from": "",
+  "model": {
+    "block_size": 1024,
+    "n_layer": 11,
+    "n_head": 12,
+    "n_kv_head": 4,
+    "d_model": 768,
+    "ffn_mult": 2.6666666666666665,
+    "dropout": 0.0,
+    "rope_theta": 10000.0,
+    "tie_weights": true,
+    "bias": false
+  },
+  "micro_batch": 8,
+  "grad_accum": 8,
+  "token_budget": 400000000,
+  "lr": 0.0006,
+  "min_lr": 6e-05,
+  "warmup_steps": 500,
+  "weight_decay": 0.1,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "grad_clip": 1.0,
+  "max_steps": null,
+  "fit_to_time": true,
+  "max_train_minutes": 640,
+  "eval_interval": 500,
+  "eval_iters": 40,
+  "log_interval": 50,
+  "ckpt_interval": 500,
+  "multi_gpu": true,
+  "compile": true,
+  "resume_from": "",
+  "target_words": 128,
+  "max_new_tokens": 256,
+  "gen_batch_size": 32,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "repetition_penalty": 1.1,
+  "rep_penalty_window": 256,
+  "no_repeat_ngram": 0,
+  "n_local_eval": 300,
+  "decode_sweep": [
+    {
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "repetition_penalty": 1.1,
+      "no_repeat_ngram": 0
+    },
+    {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "repetition_penalty": 1.1,
+      "no_repeat_ngram": 0
+    },
+    {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "repetition_penalty": 1.1,
+      "no_repeat_ngram": 6
+    },
+    {
+      "temperature": 0.4,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram": 6
+    },
+    {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram": 6
+    },
+    {
+      "temperature": 0.0,
+      "repetition_penalty": 1.2,
+      "no_repeat_ngram": 6
+    }
+  ],
+  "n_submissions": 2
+}

@@ -1,0 +1,41 @@
+[data] gold `end` is exclusive: 4120/4120 entity texts match text[s:e]
+[data] gold `end` is exclusive: 4273/4273 entity texts match text[s:e]
+[data] train docs 60 | dev docs 10 | test docs 35
+[data] BIO round-trip ceiling on train: macro-F1 0.9937 (overlaps dropped: 0)
+[data] tokenised in 0s | train tokens 416,781
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method lora | head linear
+[model] params total 94.88M | trainable 1.078M (1.136%)
+[train] 1094 windows/epoch | 137 steps/epoch | 2055 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 0.8420 | minutes 0.5600 | dev_macro_f1 0.3268 | dev_macro_p 0.3180 | dev_macro_r 0.3757 | dev_micro_f1 0.4791 | saved True
+[epoch] epoch 2 | train_loss 0.1059 | minutes 1.1700 | dev_macro_f1 0.4973 | dev_macro_p 0.4870 | dev_macro_r 0.5233 | dev_micro_f1 0.6005 | saved True
+[epoch] epoch 3 | train_loss 0.0668 | minutes 1.7700 | dev_macro_f1 0.4918 | dev_macro_p 0.5262 | dev_macro_r 0.4782 | dev_micro_f1 0.5781
+[epoch] epoch 4 | train_loss 0.0413 | minutes 2.3600 | dev_macro_f1 0.5212 | dev_macro_p 0.5380 | dev_macro_r 0.5337 | dev_micro_f1 0.6184 | saved True
+[epoch] epoch 5 | train_loss 0.0258 | minutes 2.9600 | dev_macro_f1 0.5306 | dev_macro_p 0.5245 | dev_macro_r 0.5547 | dev_micro_f1 0.6281 | saved True
+[epoch] epoch 6 | train_loss 0.0178 | minutes 3.5500 | dev_macro_f1 0.5275 | dev_macro_p 0.5530 | dev_macro_r 0.5353 | dev_micro_f1 0.6070
+[epoch] epoch 7 | train_loss 0.0120 | minutes 4.1500 | dev_macro_f1 0.5538 | dev_macro_p 0.5701 | dev_macro_r 0.5582 | dev_micro_f1 0.6144 | saved True
+[epoch] epoch 8 | train_loss 0.0053 | minutes 4.7400 | dev_macro_f1 0.5497 | dev_macro_p 0.5580 | dev_macro_r 0.5683 | dev_micro_f1 0.6213
+[epoch] epoch 9 | train_loss 0.0035 | minutes 5.3300 | dev_macro_f1 0.5554 | dev_macro_p 0.5732 | dev_macro_r 0.5623 | dev_micro_f1 0.6286 | saved True
+[epoch] epoch 10 | train_loss 0.0025 | minutes 5.9300 | dev_macro_f1 0.5512 | dev_macro_p 0.5771 | dev_macro_r 0.5562 | dev_micro_f1 0.6268
+[epoch] epoch 11 | train_loss 0.0020 | minutes 6.5200 | dev_macro_f1 0.5787 | dev_macro_p 0.5825 | dev_macro_r 0.6002 | dev_micro_f1 0.6371 | saved True
+[epoch] epoch 12 | train_loss 0.0014 | minutes 7.1100 | dev_macro_f1 0.5665 | dev_macro_p 0.5695 | dev_macro_r 0.5862 | dev_micro_f1 0.6266
+[epoch] epoch 13 | train_loss 0.0013 | minutes 7.7100 | dev_macro_f1 0.5596 | dev_macro_p 0.5651 | dev_macro_r 0.5744 | dev_micro_f1 0.6306
+[epoch] epoch 14 | train_loss 0.0013 | minutes 8.3000 | dev_macro_f1 0.5602 | dev_macro_p 0.5588 | dev_macro_r 0.5858 | dev_micro_f1 0.6273
+[train] early stop: no dev improvement for 3 epochs
+
+label           P      R     F1  support
+APP         0.393  0.185  0.251      119
+RESP        0.235  0.095  0.136       42
+A.COUNSEL   0.690  0.625  0.656       32
+R.COUNSEL   0.722  0.743  0.732       35
+JUDGE       0.578  0.788  0.667       33
+WIT         0.386  0.611  0.473       36
+AUTH        0.495  0.319  0.388      144
+COURT       0.736  0.709  0.722      110
+STAT        0.771  0.920  0.839      176
+PREC        0.389  0.551  0.456      127
+DATE        0.941  0.927  0.934      191
+CASENO      0.654  0.729  0.689       70
+MACRO       0.582  0.600  0.579
+micro       0.643  0.631  0.637
+[errors] {'missed': 222, 'type': 56, 'boundary': 102, 'spurious': 203, 'both': 31}
+[submit] /kaggle/working/runs/E3_A2_lora_bidir/submission/submission.zip | 4123 entities over 35 docs

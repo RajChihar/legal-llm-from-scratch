@@ -1,0 +1,49 @@
+{
+  "run": "R1_A2_full_hier",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 11,
+  "params_total": 93908228,
+  "params_trainable": 93908228,
+  "trainable_pct": 100.0,
+  "train_minutes": 42.8,
+  "peak_train_mem_gb": 8.120509147644043,
+  "best_epoch": 2,
+  "epochs_run": 3,
+  "kd_teacher": null,
+  "threshold": 0.51,
+  "dev": {
+    "macro_f1": 0.7088624540245317,
+    "macro_p": 0.7088986857934731,
+    "macro_r": 0.7088642286717741,
+    "accuracy": 0.7088809239346874
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.7104722616745056,
+    "macro_p": 0.7104719737812081,
+    "macro_r": 0.7104727749342117,
+    "accuracy": 0.71047391477499
+  },
+  "infer_docs_per_sec": 28.17,
+  "submission": "/kaggle/working/runs/R1_A2_full_hier/submission/submission.zip",
+  "test_share_pred_1": 0.514
+}

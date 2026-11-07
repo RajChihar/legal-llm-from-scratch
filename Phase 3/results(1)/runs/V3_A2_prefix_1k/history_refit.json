@@ -1,0 +1,47 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 2.104527000144676,
+    "minutes": 0.9
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.6404799293069279,
+    "minutes": 1.8
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.3371456370634192,
+    "minutes": 2.7
+  },
+  {
+    "epoch": 4,
+    "train_loss": 1.0761621138628792,
+    "minutes": 3.6
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.8335205078125,
+    "minutes": 4.5
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.6530096548574942,
+    "minutes": 5.39
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.49284957436954274,
+    "minutes": 6.29
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.3983083893271053,
+    "minutes": 7.19
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.3141178243300494,
+    "minutes": 8.09
+  }
+]

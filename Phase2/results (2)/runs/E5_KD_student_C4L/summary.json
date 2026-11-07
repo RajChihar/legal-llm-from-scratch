@@ -1,0 +1,33 @@
+{
+  "run": "E5_KD_student_C4L",
+  "arch": "C",
+  "method": {
+    "name": "full"
+  },
+  "head": "linear",
+  "attention": "bidirectional",
+  "params_total": 40328345,
+  "params_trainable": 40328345,
+  "trainable_pct": 100.0,
+  "train_minutes": 2.2,
+  "peak_train_mem_gb": 1.1122808456420898,
+  "best_dev_macro_f1": 0.45929830678219724,
+  "best_epoch": 9,
+  "bio_ceiling_macro_f1": 0.9936730244199379,
+  "dev": {
+    "macro_f1": 0.45929830678219724,
+    "macro_p": 0.5048058850997691,
+    "macro_r": 0.4481814941994417,
+    "micro_f1": 0.5535372848948376
+  },
+  "infer_tokens_per_sec": 56634,
+  "error_categories": {
+    "missed": 308,
+    "type": 40,
+    "boundary": 140,
+    "both": 48,
+    "spurious": 147
+  },
+  "submission": "/kaggle/working/runs/E5_KD_student_C4L/submission/submission.zip",
+  "test_entities": 3721
+}

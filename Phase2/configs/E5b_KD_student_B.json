@@ -1,0 +1,28 @@
+{
+  "run_name": "E5b_KD_student_B",
+  "backbone": {
+    "ckpt": "@B",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "full"
+  },
+  "head": {
+    "type": "linear"
+  },
+  "kd": {
+    "teacher_run": "runs/E1_C_full_linear",
+    "kd_alpha": 0.5,
+    "kd_T": 2.0
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 12,
+    "batch_size": 8,
+    "lr_backbone": 0.0001,
+    "lr_new": 0.001
+  }
+}

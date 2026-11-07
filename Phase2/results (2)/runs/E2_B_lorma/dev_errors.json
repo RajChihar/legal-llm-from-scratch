@@ -1,0 +1,139 @@
+{
+  "categories": {
+    "missed": 467,
+    "boundary": 163,
+    "both": 53,
+    "type": 18,
+    "spurious": 135
+  },
+  "type_confusion": {
+    "PREC->COURT": 4,
+    "WIT->PREC": 3,
+    "APP->AUTH": 3,
+    "CASENO->DATE": 2,
+    "A.COUNSEL->PREC": 1,
+    "AUTH->STAT": 1,
+    "R.COUNSEL->JUDGE": 1,
+    "COURT->STAT": 1,
+    "COURT->AUTH": 1,
+    "STAT->PREC": 1
+  },
+  "boundary_kind": {
+    "start ok / end early": 61,
+    "start ok / end late": 41,
+    "start early / end late": 20,
+    "start late / end ok": 19,
+    "start late / end early": 4,
+    "start early / end early": 5,
+    "start late / end late": 4,
+    "start early / end ok": 9
+  },
+  "by_label": {
+    "RESP": {
+      "missed": 28,
+      "both": 14
+    },
+    "COURT": {
+      "boundary": 16,
+      "missed": 17,
+      "spurious": 8,
+      "type": 2,
+      "both": 2
+    },
+    "WIT": {
+      "missed": 33,
+      "type": 3
+    },
+    "APP": {
+      "missed": 111,
+      "both": 5,
+      "type": 3
+    },
+    "STAT": {
+      "boundary": 26,
+      "both": 2,
+      "missed": 16,
+      "spurious": 19,
+      "type": 1
+    },
+    "A.COUNSEL": {
+      "missed": 31,
+      "type": 1
+    },
+    "PREC": {
+      "boundary": 66,
+      "spurious": 40,
+      "both": 7,
+      "missed": 23,
+      "type": 4
+    },
+    "JUDGE": {
+      "missed": 23,
+      "both": 8,
+      "boundary": 2,
+      "spurious": 2
+    },
+    "DATE": {
+      "boundary": 19,
+      "spurious": 26,
+      "missed": 11,
+      "both": 2
+    },
+    "R.COUNSEL": {
+      "missed": 31,
+      "both": 3,
+      "type": 1
+    },
+    "CASENO": {
+      "missed": 7,
+      "spurious": 19,
+      "boundary": 33,
+      "both": 5,
+      "type": 2
+    },
+    "AUTH": {
+      "missed": 136,
+      "spurious": 21,
+      "type": 1,
+      "both": 5,
+      "boundary": 1
+    }
+  },
+  "examples": {
+    "missed": [
+      "RESP: [STATE OF HARYANA] | pred: -",
+      "WIT: [Jagdish] | pred: -",
+      "WIT: [Mange Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -"
+    ],
+    "boundary": [
+      "COURT: [High Court of Punjab and Haryana] | pred: [High Court of]COURT",
+      "STAT: [Cr.P.C.] | pred: [Cr]STAT",
+      "COURT: [High Court of Punjab and Haryana] | pred: [High Court]COURT",
+      "PREC: [State of M.P. vs. Kashiram & Ors.] | pred: [State of M.P. vs. Kashiram & Ors.[1]]PREC",
+      "PREC: [State of Maharashtra v. Balram Bama Patil, (1983) 2 SCC 28] | pred: [State of Maharashtra v. Balram Bama Patil, (1983) 2 SCC 28, Girija Shanker v. State of U.P.(2004) 3 SCC 793 and R. Prakash v. State of Karnataka (2004) 9 SCC 27.]PREC"
+    ],
+    "both": [
+      "STAT: [IPC] | pred: [307 IPC]PREC",
+      "JUDGE: [Mahajan] | pred: [Mahajan J.]PREC",
+      "JUDGE: [Fazal Ali] | pred: [Ali J in Sharad Birdhichand Sarda vs. State of Maharashtra2]PREC",
+      "JUDGE: [Din Mohammad] | pred: [Din Mohammad J.]PREC",
+      "JUDGE: [Chinnappa Reddy] | pred: [Chinnappa Reddy J]PREC"
+    ],
+    "type": [
+      "WIT: [Jagidsh] | pred: [Jagidsh]PREC",
+      "WIT: [Dhan Singh] | pred: [Dhan Singh]PREC",
+      "WIT: [Karamveer] | pred: [Karamveer]PREC",
+      "A.COUNSEL: [Samim Ahammed] | pred: [Samim Ahammed]PREC",
+      "AUTH: [West Bengal Legislative Assembly] | pred: [West Bengal Legislative Assembly]STAT"
+    ],
+    "spurious": [
+      "CASENO: [CRIMINAL APPEAL NO. 92/2015]",
+      "CASENO: [Criminal Appeal No.181 SB of 2000]",
+      "STAT: [P]",
+      "CASENO: [Criminal Appeal No(s). 92/2015]",
+      "CASENO: [SLP(Crl.) No. 488/2012]"
+    ]
+  }
+}

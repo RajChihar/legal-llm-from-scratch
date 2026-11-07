@@ -1,0 +1,46 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch C (HybridLM) | layers 10/10 | method pfeiffer | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 71.70M | trainable 1.646M (2.296%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 3.2024 | dev_ppl 24.59
+[progress] epoch 1  10% | loss 2.9009 | ce 2.9009 | 3507 summary tok/s | 1.8 min | ETA all epochs 51.0 min
+[progress] epoch 1  20% | loss 2.6780 | ce 2.6780 | 3588 summary tok/s | 3.5 min | ETA all epochs 49.3 min
+[progress] epoch 1  30% | loss 2.5654 | ce 2.5654 | 3610 summary tok/s | 5.3 min | ETA all epochs 47.6 min
+[progress] epoch 1  40% | loss 2.4978 | ce 2.4978 | 3600 summary tok/s | 7.0 min | ETA all epochs 45.7 min
+[progress] epoch 1  50% | loss 2.4580 | ce 2.4580 | 3606 summary tok/s | 8.7 min | ETA all epochs 43.8 min
+[progress] epoch 1  60% | loss 2.4257 | ce 2.4257 | 3608 summary tok/s | 10.5 min | ETA all epochs 41.9 min
+[progress] epoch 1  70% | loss 2.3989 | ce 2.3989 | 3608 summary tok/s | 12.2 min | ETA all epochs 40.1 min
+[progress] epoch 1  80% | loss 2.3825 | ce 2.3825 | 3608 summary tok/s | 13.9 min | ETA all epochs 38.3 min
+[progress] epoch 1  90% | loss 2.3649 | ce 2.3649 | 3608 summary tok/s | 15.6 min | ETA all epochs 36.6 min
+[progress] epoch 1 100% | loss 2.3509 | ce 2.3509 | 3610 summary tok/s | 17.4 min | ETA all epochs 34.8 min
+[epoch] epoch 1 | train_loss 2.351 | minutes 17.39 | train_ce 2.351 | dev_loss 2.2786 | dev_ppl 9.76 | quick_rouge1 0.3152 | quick_rougeL 0.1812 | saved True
+[epoch] sample: The assessee, a dealer, was assessed to sales tax under section 8A of the Act, for the assessment year 1967 68 of Messrs Bishamber Singh Layaq Ram which carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. The assessee, however, was registered 
+[progress] epoch 2  10% | loss 2.2231 | ce 2.2231 | 328 summary tok/s | 19.5 min | ETA all epochs 33.7 min
+[progress] epoch 2  20% | loss 2.2032 | ce 2.2032 | 601 summary tok/s | 21.3 min | ETA all epochs 31.9 min
+[progress] epoch 2  30% | loss 2.2003 | ce 2.2003 | 827 summary tok/s | 23.0 min | ETA all epochs 30.1 min
+[progress] epoch 2  40% | loss 2.1977 | ce 2.1977 | 1022 summary tok/s | 24.7 min | ETA all epochs 28.3 min
+[progress] epoch 2  50% | loss 2.1927 | ce 2.1927 | 1190 summary tok/s | 26.4 min | ETA all epochs 26.5 min
+[progress] epoch 2  60% | loss 2.1884 | ce 2.1884 | 1337 summary tok/s | 28.2 min | ETA all epochs 24.7 min
+[progress] epoch 2  70% | loss 2.1864 | ce 2.1864 | 1467 summary tok/s | 29.9 min | ETA all epochs 22.9 min
+[progress] epoch 2  80% | loss 2.1845 | ce 2.1845 | 1583 summary tok/s | 31.7 min | ETA all epochs 21.1 min
+[progress] epoch 2  90% | loss 2.1844 | ce 2.1844 | 1686 summary tok/s | 33.4 min | ETA all epochs 19.4 min
+[progress] epoch 2 100% | loss 2.1797 | ce 2.1797 | 1784 summary tok/s | 35.1 min | ETA all epochs 17.6 min
+[epoch] epoch 2 | train_loss 2.1797 | minutes 35.16 | train_ce 2.1797 | dev_loss 2.2407 | dev_ppl 9.4 | quick_rouge1 0.3023 | quick_rougeL 0.1802 | saved True
+[epoch] sample: The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. in the district of Muzaffarnagar, and is registered as a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee, a manufacturer of wheat, was registered as a dealers under section 8A of the U P. Sales Tax 
+[progress] epoch 3  10% | loss 2.1198 | ce 2.1198 | 165 summary tok/s | 37.2 min | ETA all epochs 16.0 min
+[progress] epoch 3  20% | loss 2.1357 | ce 2.1357 | 318 summary tok/s | 39.0 min | ETA all epochs 14.2 min
+[progress] epoch 3  30% | loss 2.1296 | ce 2.1296 | 456 summary tok/s | 40.7 min | ETA all epochs 12.4 min
+[progress] epoch 3  40% | loss 2.1307 | ce 2.1307 | 587 summary tok/s | 42.5 min | ETA all epochs 10.6 min
+[progress] epoch 3  50% | loss 2.1370 | ce 2.1370 | 705 summary tok/s | 44.2 min | ETA all epochs 8.9 min
+[progress] epoch 3  60% | loss 2.1331 | ce 2.1331 | 819 summary tok/s | 45.9 min | ETA all epochs 7.1 min
+[progress] epoch 3  70% | loss 2.1306 | ce 2.1306 | 918 summary tok/s | 47.6 min | ETA all epochs 5.3 min
+[progress] epoch 3  80% | loss 2.1281 | ce 2.1281 | 1015 summary tok/s | 49.4 min | ETA all epochs 3.6 min
+[progress] epoch 3  90% | loss 2.1271 | ce 2.1271 | 1102 summary tok/s | 51.1 min | ETA all epochs 1.8 min
+[progress] epoch 3 100% | loss 2.1288 | ce 2.1288 | 1186 summary tok/s | 52.9 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 2.129 | minutes 52.88 | train_ce 2.129 | dev_loss 2.2297 | dev_ppl 9.3 | quick_rouge1 0.3061 | quick_rougeL 0.18 | saved True
+[epoch] sample: The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. in the district of Muzaffarnagar, and is registered as a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee, a manufacturer of wheat, was registered as a dealers under section 8A of the U P. Sales Tax 
+[gen] 16/200 documents | 15s
+[gen] 176/200 documents | 162s
+[dev] 200 documents | ROUGE-1 0.4353 | ROUGE-2 0.1975 | ROUGE-L 0.2311 | words 434 (ref 898) | rep-3gram 0.174 | fact precision 0.638 | 1.069 docs/s
+[gen] 16/100 documents | 15s
+[submit] /kaggle/working/runs/R3_C_pfeiffer/submission/submission.zip | 100 documents | mean 424.8 words | empty generations replaced: 0

@@ -1,0 +1,146 @@
+{
+  "categories": {
+    "boundary": 120,
+    "missed": 240,
+    "both": 29,
+    "type": 55,
+    "spurious": 164
+  },
+  "type_confusion": {
+    "A.COUNSEL->R.COUNSEL": 13,
+    "PREC->COURT": 9,
+    "APP->AUTH": 9,
+    "R.COUNSEL->A.COUNSEL": 5,
+    "APP->WIT": 4,
+    "JUDGE->PREC": 2,
+    "R.COUNSEL->APP": 2,
+    "CASENO->DATE": 2,
+    "R.COUNSEL->PREC": 2,
+    "AUTH->COURT": 2,
+    "APP->RESP": 1,
+    "PREC->JUDGE": 1,
+    "A.COUNSEL->APP": 1,
+    "A.COUNSEL->PREC": 1,
+    "R.COUNSEL->RESP": 1
+  },
+  "boundary_kind": {
+    "start ok / end early": 61,
+    "start ok / end late": 29,
+    "start late / end early": 4,
+    "start late / end ok": 15,
+    "start early / end ok": 7,
+    "start early / end early": 2,
+    "start early / end late": 2
+  },
+  "by_label": {
+    "COURT": {
+      "boundary": 13,
+      "spurious": 6,
+      "missed": 18
+    },
+    "APP": {
+      "missed": 53,
+      "type": 14,
+      "both": 14,
+      "spurious": 13,
+      "boundary": 19
+    },
+    "WIT": {
+      "missed": 11,
+      "spurious": 15
+    },
+    "A.COUNSEL": {
+      "both": 1,
+      "type": 15,
+      "boundary": 2,
+      "spurious": 1
+    },
+    "PREC": {
+      "boundary": 37,
+      "spurious": 48,
+      "both": 3,
+      "type": 10,
+      "missed": 8
+    },
+    "DATE": {
+      "boundary": 3,
+      "missed": 10,
+      "spurious": 4,
+      "both": 1
+    },
+    "CASENO": {
+      "missed": 6,
+      "spurious": 21,
+      "boundary": 11,
+      "both": 1,
+      "type": 2
+    },
+    "JUDGE": {
+      "spurious": 9,
+      "both": 3,
+      "type": 2,
+      "missed": 3,
+      "boundary": 3
+    },
+    "STAT": {
+      "boundary": 17,
+      "missed": 6,
+      "spurious": 29
+    },
+    "AUTH": {
+      "spurious": 8,
+      "boundary": 13,
+      "missed": 95,
+      "both": 1,
+      "type": 2
+    },
+    "R.COUNSEL": {
+      "type": 10,
+      "missed": 2,
+      "spurious": 2
+    },
+    "RESP": {
+      "spurious": 8,
+      "both": 5,
+      "missed": 28,
+      "boundary": 2
+    }
+  },
+  "examples": {
+    "boundary": [
+      "COURT: [High Court of Punjab and Haryana] | pred: [High Court of Punjab]COURT",
+      "PREC: [Girija Shanker v. State of U.P.(2004) 3 SCC 793] | pred: [Girija Shanker v. State of U.P.(2004) 3 SCC]PREC",
+      "PREC: [Sevaka Perumal v. State of T.N.(1991) 3 SCC 471] | pred: [Sevaka Perumal v. State of T.N.(199]PREC",
+      "DATE: [January 28, 2015] | pred: [Jan]DATE; [uary 28, 2015]DATE",
+      "CASENO: [SLP (Crl) No. 6965 OF 2019] | pred: [SLP (Crl) No. 6965]CASENO"
+    ],
+    "missed": [
+      "APP: [Jage Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -",
+      "WIT: [Jagdish] | pred: -",
+      "WIT: [Jagdish] | pred: -"
+    ],
+    "both": [
+      "A.COUNSEL: [Vibha Datta Makhija] | pred: [Vibha Datta Mak]R.COUNSEL",
+      "APP: [Surendra Kumar] | pred: [Surendra]RESP",
+      "APP: [Surendra Kumar] | pred: [Surendra]RESP",
+      "JUDGE: [Mahajan] | pred: [Mahajan J.]PREC",
+      "JUDGE: [Fazal Ali] | pred: [Fazal Ali J]PREC"
+    ],
+    "type": [
+      "A.COUNSEL: [Gagan Gupta] | pred: [Gagan Gupta]R.COUNSEL",
+      "APP: [Surendra Kumar] | pred: [Surendra Kumar]WIT",
+      "APP: [Surendra] | pred: [Surendra]WIT",
+      "APP: [Surendra] | pred: [Surendra]RESP",
+      "JUDGE: [Krishna Murari] | pred: [Krishna Murari]PREC"
+    ],
+    "spurious": [
+      "COURT: [SUPREME COURT OF INDIA]",
+      "CASENO: [Criminal Appeal No.181 SB of 2000]",
+      "WIT: [Rakesh]",
+      "WIT: [Madan]",
+      "CASENO: [F.]"
+    ]
+  }
+}

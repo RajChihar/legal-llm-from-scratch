@@ -1,0 +1,27 @@
+{
+ "gen": {
+  "temperature": 0.4,
+  "top_k": 50,
+  "top_p": 0.9,
+  "repetition_penalty": 1.15,
+  "rep_penalty_window": 256,
+  "no_repeat_ngram": 6,
+  "max_new_tokens": 256
+ },
+ "ckpt": "/kaggle/working/cs781/runs/A_llama_decoder_v2/ckpt_best.pt",
+ "step": 6103,
+ "best_val": 1.9546575039625167,
+ "data": "data_ad2ea16aef",
+ "model": {
+  "block_size": 1024,
+  "n_layer": 11,
+  "n_head": 12,
+  "n_kv_head": 4,
+  "d_model": 768,
+  "ffn_mult": 2.6666666666666665,
+  "dropout": 0.0,
+  "rope_theta": 10000.0,
+  "tie_weights": true,
+  "bias": false
+ }
+}

@@ -1,0 +1,36 @@
+[data] train 32305 | dev 2511 | test 1517 cases | train label-1 share 0.414
+[model] arch B (EncDecLM) | layers 6/6 | attention bidirectional | method adapter | chunks 4x512 headtail | pool attn/attn
+[model] params total 43.30M | trainable 0.974M (2.249%) | class weights [0.854, 1.207]
+[train] 3 epochs x 8000 cases | ~3.32 chunks/case | 1000 steps/epoch | 3000 steps | amp torch.float16 | time limit 80 min
+[progress] epoch 1  20% | loss 0.7184 | 0.8 min | ETA all epochs 10.7 min
+[progress] epoch 1  40% | loss 0.7114 | 1.5 min | ETA all epochs 10.0 min
+[progress] epoch 1  60% | loss 0.7077 | 2.3 min | ETA all epochs 9.4 min
+[progress] epoch 1  80% | loss 0.7055 | 3.1 min | ETA all epochs 8.5 min
+[progress] epoch 1 100% | loss 0.7032 | 3.9 min | ETA all epochs 7.8 min
+[epoch] epoch 1 | train_loss 0.7032 | minutes 3.9200 | dev_macro_f1 0.5774 | dev_macro_p 0.5775 | dev_macro_r 0.5775 | dev_acc 0.5775 | dev_pred1_share 0.5034 | saved True
+[progress] epoch 2  20% | loss 0.7030 | 5.3 min | ETA all epochs 8.0 min
+[progress] epoch 2  40% | loss 0.6976 | 6.1 min | ETA all epochs 7.0 min
+[progress] epoch 2  60% | loss 0.6958 | 6.9 min | ETA all epochs 6.0 min
+[progress] epoch 2  80% | loss 0.6924 | 7.7 min | ETA all epochs 5.1 min
+[progress] epoch 2 100% | loss 0.6923 | 8.5 min | ETA all epochs 4.3 min
+[epoch] epoch 2 | train_loss 0.6923 | minutes 8.5100 | dev_macro_f1 0.5511 | dev_macro_p 0.5822 | dev_macro_r 0.5689 | dev_acc 0.5695 | dev_pred1_share 0.7009
+[progress] epoch 3  20% | loss 0.6878 | 9.9 min | ETA all epochs 3.6 min
+[progress] epoch 3  40% | loss 0.6906 | 10.7 min | ETA all epochs 2.7 min
+[progress] epoch 3  60% | loss 0.6879 | 11.5 min | ETA all epochs 1.8 min
+[progress] epoch 3  80% | loss 0.6865 | 12.3 min | ETA all epochs 0.9 min
+[progress] epoch 3 100% | loss 0.6858 | 13.1 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 0.6858 | minutes 13.1100 | dev_macro_f1 0.5667 | dev_macro_p 0.5819 | dev_macro_r 0.5755 | dev_acc 0.5751 | dev_pred1_share 0.3600
+[train] early stop: no dev improvement for 2 epochs
+
+dev, argmax (threshold 0.5)
+class         P      R     F1   gold   pred
+0         0.577  0.574  0.575   1252   1247
+1         0.578  0.581  0.579   1259   1264
+MACRO     0.577  0.577  0.577   (accuracy 0.577, 2511 cases, confusion [[TN FP] [FN TP]] = [[719, 533], [528, 731]])
+dev, calibrated threshold 0.50
+class         P      R     F1   gold   pred
+0         0.577  0.574  0.575   1252   1247
+1         0.578  0.581  0.579   1259   1264
+MACRO     0.577  0.577  0.577   (accuracy 0.577, 2511 cases, confusion [[TN FP] [FN TP]] = [[719, 533], [528, 731]])
+[dev] MACRO-F1 0.5774 (argmax) | 0.5774 (threshold 0.50) | P 0.5775 R 0.5775 | acc 0.5775
+[submit] /kaggle/working/runs/R2_B_adapter_hier/submission/submission.zip | 1517 cases | predicted label-1 share 0.498 (threshold 0.50)

@@ -1,0 +1,32 @@
+{
+  "run": "E1_C_full_linear",
+  "arch": "C",
+  "method": {
+    "name": "full"
+  },
+  "head": "linear",
+  "attention": "bidirectional",
+  "params_total": 70072985,
+  "params_trainable": 70072985,
+  "trainable_pct": 100.0,
+  "train_minutes": 4.9,
+  "peak_train_mem_gb": 2.351724624633789,
+  "best_dev_macro_f1": 0.5689485087663929,
+  "bio_ceiling_macro_f1": 0.9936730244199379,
+  "dev": {
+    "macro_f1": 0.5689485087663929,
+    "macro_p": 0.5991862551866625,
+    "macro_r": 0.565529335246972,
+    "micro_f1": 0.6302402260951484
+  },
+  "infer_tokens_per_sec": 33113,
+  "error_categories": {
+    "missed": 252,
+    "both": 21,
+    "boundary": 117,
+    "type": 56,
+    "spurious": 139
+  },
+  "submission": "/kaggle/working/runs/E1_C_full_linear/submission/submission.zip",
+  "test_entities": 3946
+}

@@ -1,0 +1,55 @@
+{
+  "run": "R4_KD_D6L_from_R1",
+  "arch": "D",
+  "backbone": "D_efficient_swa_mqa",
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 1024,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 45892100,
+  "params_trainable": 45892100,
+  "trainable_pct": 100.0,
+  "train_minutes": 32.4,
+  "peak_train_mem_gb": 1.6167230606079102,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "kd_teacher": {
+    "teacher_run": "/kaggle/working/runs/R1_A2_full_hier",
+    "teacher_backbone": "A_llama_decoder_v2",
+    "teacher_dev_macro_f1": 0.7088624540245317,
+    "teacher_params": 93908228,
+    "teacher_train_acc_on_student_cases": 0.7512
+  },
+  "threshold": 0.39,
+  "dev": {
+    "macro_f1": 0.6837693974274588,
+    "macro_p": 0.7092993100034208,
+    "macro_r": 0.6909754559503841,
+    "accuracy": 0.6905615292712067
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.7056583428201887,
+    "macro_p": 0.705859499977147,
+    "macro_r": 0.7057315126615524,
+    "accuracy": 0.705694942254082
+  },
+  "infer_docs_per_sec": 35.01,
+  "submission": "/kaggle/working/runs/R4_KD_D6L_from_R1/submission/submission.zip",
+  "test_share_pred_1": 0.489
+}

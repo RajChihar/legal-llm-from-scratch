@@ -1,0 +1,73 @@
+{
+  "run": "X4_B_ia3",
+  "arch": "B",
+  "backbone": "B_encoder_decoder",
+  "method": {
+    "name": "ia3"
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "uniform",
+    "overlap": 0.0,
+    "train_k": 2
+  },
+  "rep": {
+    "pool": "mean",
+    "agg": "mean",
+    "proj": 256,
+    "sim": "cos",
+    "tau": 0.05,
+    "learn_tau": false
+  },
+  "loss": "infonce",
+  "neg": {
+    "miner": "bm25",
+    "n_hard": 3,
+    "top": 100,
+    "skip_top": 0,
+    "in_batch": true,
+    "refresh_every": 1
+  },
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 42494401,
+  "params_trainable": 167040,
+  "trainable_pct": 0.393,
+  "nf4_weights": 0,
+  "train_minutes": 40.5,
+  "peak_train_mem_gb": 1.2866926193237305,
+  "best_epoch": 2,
+  "epochs_run": 4,
+  "train_instances": 5308,
+  "kd_teacher": null,
+  "dev_before": {
+    "epoch": 0,
+    "micro_p@7": 0.1598,
+    "micro_r@7": 0.1357,
+    "micro_f1@7": 0.1467,
+    "recall@7": 0.1357,
+    "recall@20": 0.2508,
+    "recall@50": 0.3679,
+    "recall@100": 0.5046,
+    "recall@200": 0.6578,
+    "mrr": 0.4029,
+    "map@100": 0.1647
+  },
+  "dev": {
+    "micro_p@7": 0.2627118644067797,
+    "micro_r@7": 0.22302158273381295,
+    "micro_f1@7": 0.24124513618677043,
+    "n_queries": 118,
+    "recall@7": 0.22302158273381295,
+    "recall@20": 0.39568345323741005,
+    "recall@50": 0.5519013360739979,
+    "recall@100": 0.6608427543679343,
+    "recall@200": 0.7615621788283659,
+    "mrr": 0.5515556701352847,
+    "map@100": 0.28868300164937555
+  },
+  "dev_encode_seconds": 16.1,
+  "docs_per_sec": 70.9,
+  "submission": "/kaggle/working/runs/X4_B_ia3/submission/submission.zip"
+}

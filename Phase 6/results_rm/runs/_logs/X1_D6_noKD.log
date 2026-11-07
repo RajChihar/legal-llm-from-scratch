@@ -1,0 +1,46 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1536 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch D (EfficientLM) | layers 6/12 | method full | positions {'positions': 8192, 'rope_scale': 1.0} | train sequence 2182
+[model] params total 45.80M | trainable 45.802M (100.0%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 6.0449 | dev_ppl 421.96
+[progress] epoch 1  10% | loss 4.9954 | ce 4.9954 | 7306 summary tok/s | 0.8 min | ETA all epochs 24.5 min
+[progress] epoch 1  20% | loss 4.4990 | ce 4.4990 | 7549 summary tok/s | 1.7 min | ETA all epochs 23.4 min
+[progress] epoch 1  30% | loss 4.2505 | ce 4.2505 | 7613 summary tok/s | 2.5 min | ETA all epochs 22.6 min
+[progress] epoch 1  40% | loss 4.0988 | ce 4.0988 | 7590 summary tok/s | 3.3 min | ETA all epochs 21.7 min
+[progress] epoch 1  50% | loss 3.9875 | ce 3.9875 | 7589 summary tok/s | 4.2 min | ETA all epochs 20.8 min
+[progress] epoch 1  60% | loss 3.8997 | ce 3.8997 | 7598 summary tok/s | 5.0 min | ETA all epochs 19.9 min
+[progress] epoch 1  70% | loss 3.8349 | ce 3.8349 | 7601 summary tok/s | 5.8 min | ETA all epochs 19.0 min
+[progress] epoch 1  80% | loss 3.7829 | ce 3.7829 | 7608 summary tok/s | 6.6 min | ETA all epochs 18.2 min
+[progress] epoch 1  90% | loss 3.7378 | ce 3.7378 | 7606 summary tok/s | 7.4 min | ETA all epochs 17.4 min
+[progress] epoch 1 100% | loss 3.6988 | ce 3.6988 | 7606 summary tok/s | 8.2 min | ETA all epochs 16.5 min
+[epoch] epoch 1 | train_loss 3.6982 | minutes 8.25 | train_ce 3.6982 | dev_loss 3.3296 | dev_ppl 27.93 | quick_rouge1 0.2842 | quick_rougeL 0.1704 | saved True
+[epoch] sample: The assessee was a dealer in the State of Andhra Pradesh. The assessee was a registered dealer in the year 1961. The assessee filed a return of the assessee 's returns for the assessment year 1961 62. The assessee claimed that the assessee had been assessed to income tax. The assessee 's claim was r
+[progress] epoch 2  10% | loss 3.1285 | ce 3.1285 | 688 summary tok/s | 9.3 min | ETA all epochs 16.0 min
+[progress] epoch 2  20% | loss 3.1345 | ce 3.1345 | 1260 summary tok/s | 10.1 min | ETA all epochs 15.2 min
+[progress] epoch 2  30% | loss 3.1278 | ce 3.1278 | 1738 summary tok/s | 10.9 min | ETA all epochs 14.3 min
+[progress] epoch 2  40% | loss 3.1270 | ce 3.1270 | 2151 summary tok/s | 11.7 min | ETA all epochs 13.4 min
+[progress] epoch 2  50% | loss 3.1224 | ce 3.1224 | 2506 summary tok/s | 12.6 min | ETA all epochs 12.6 min
+[progress] epoch 2  60% | loss 3.1173 | ce 3.1173 | 2817 summary tok/s | 13.4 min | ETA all epochs 11.7 min
+[progress] epoch 2  70% | loss 3.1102 | ce 3.1102 | 3091 summary tok/s | 14.2 min | ETA all epochs 10.9 min
+[progress] epoch 2  80% | loss 3.1039 | ce 3.1039 | 3338 summary tok/s | 15.0 min | ETA all epochs 10.0 min
+[progress] epoch 2  90% | loss 3.1026 | ce 3.1026 | 3558 summary tok/s | 15.8 min | ETA all epochs 9.2 min
+[progress] epoch 2 100% | loss 3.0986 | ce 3.0986 | 3762 summary tok/s | 16.7 min | ETA all epochs 8.3 min
+[epoch] epoch 2 | train_loss 3.0984 | minutes 16.67 | train_ce 3.0984 | dev_loss 3.2054 | dev_ppl 24.67 | quick_rouge1 0.2856 | quick_rougeL 0.1729 | saved True
+[epoch] sample: The assessee was assessed to income tax for the assessment year 1959 60. The assessee filed a return of the assessee 's income for the assessment years 1957 58 and 1959 60, but the Income Tax Officer rejected the claim of the assessee. The assessee 's appeal to the Appellate Assistant Commissioner w
+[progress] epoch 3  10% | loss 2.8966 | ce 2.8966 | 348 summary tok/s | 17.7 min | ETA all epochs 7.6 min
+[progress] epoch 3  20% | loss 2.9056 | ce 2.9056 | 672 summary tok/s | 18.5 min | ETA all epochs 6.7 min
+[progress] epoch 3  30% | loss 2.9003 | ce 2.9003 | 961 summary tok/s | 19.3 min | ETA all epochs 5.9 min
+[progress] epoch 3  40% | loss 2.9040 | ce 2.9040 | 1236 summary tok/s | 20.1 min | ETA all epochs 5.0 min
+[progress] epoch 3  50% | loss 2.9074 | ce 2.9074 | 1485 summary tok/s | 21.0 min | ETA all epochs 4.2 min
+[progress] epoch 3  60% | loss 2.9087 | ce 2.9087 | 1724 summary tok/s | 21.8 min | ETA all epochs 3.4 min
+[progress] epoch 3  70% | loss 2.9054 | ce 2.9054 | 1935 summary tok/s | 22.6 min | ETA all epochs 2.5 min
+[progress] epoch 3  80% | loss 2.9029 | ce 2.9029 | 2139 summary tok/s | 23.4 min | ETA all epochs 1.7 min
+[progress] epoch 3  90% | loss 2.9034 | ce 2.9034 | 2322 summary tok/s | 24.3 min | ETA all epochs 0.9 min
+[progress] epoch 3 100% | loss 2.9041 | ce 2.9041 | 2498 summary tok/s | 25.1 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 2.9043 | minutes 25.1 | train_ce 2.9043 | dev_loss 3.1807 | dev_ppl 24.06 | quick_rouge1 0.2856 | quick_rougeL 0.1715 | saved True
+[epoch] sample: The assessee was a dealer in the State of Uttar Pradesh. The Sales Tax Officer issued a notice to the assessee to show cause why the cancellation of the turnover of the turnover in respect of the turnover for the assessment year 1961 62 was not justified in holding that the assessee was liable to be
+[gen] 16/200 documents | 6s
+[gen] 176/200 documents | 68s
+[dev] 200 documents | ROUGE-1 0.3653 | ROUGE-2 0.1284 | ROUGE-L 0.2033 | words 386 (ref 898) | rep-3gram 0.171 | fact precision 0.156 | 2.512 docs/s
+[gen] 16/100 documents | 6s
+[submit] /kaggle/working/runs/X1_D6_noKD/submission/submission.zip | 100 documents | mean 395.3 words | empty generations replaced: 0

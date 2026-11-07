@@ -1,0 +1,40 @@
+{
+  "run": "E2_B_lorma",
+  "arch": "B",
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 8,
+    "alpha": 16,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": "linear",
+  "attention": "bidirectional",
+  "params_total": 42913177,
+  "params_trainable": 585817,
+  "trainable_pct": 1.365,
+  "train_minutes": 3.5,
+  "peak_train_mem_gb": 1.0311260223388672,
+  "best_dev_macro_f1": 0.2246430135839794,
+  "best_epoch": 14,
+  "bio_ceiling_macro_f1": 0.9936730244199379,
+  "dev": {
+    "macro_f1": 0.2246430135839794,
+    "macro_p": 0.21936192338090532,
+    "macro_r": 0.23237746472096352,
+    "micro_f1": 0.43740095087163233
+  },
+  "infer_tokens_per_sec": 42584,
+  "error_categories": {
+    "missed": 467,
+    "boundary": 163,
+    "both": 53,
+    "type": 18,
+    "spurious": 135
+  },
+  "submission": "/kaggle/working/runs/E2_B_lorma/submission/submission.zip",
+  "test_entities": 3150
+}

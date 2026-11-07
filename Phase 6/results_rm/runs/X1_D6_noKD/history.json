@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 6.0449,
+    "dev_ppl": 421.96
+  },
+  {
+    "epoch": 1,
+    "train_loss": 3.6982,
+    "minutes": 8.25,
+    "train_ce": 3.6982,
+    "dev_loss": 3.3296,
+    "dev_ppl": 27.93,
+    "quick_rouge1": 0.2842,
+    "quick_rougeL": 0.1704,
+    "sample": "The assessee was a dealer in the State of Andhra Pradesh. The assessee was a registered dealer in the year 1961. The assessee filed a return of the assessee 's returns for the assessment year 1961 62. The assessee claimed that the assessee had been assessed to income tax. The assessee 's claim was r",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 3.0984,
+    "minutes": 16.67,
+    "train_ce": 3.0984,
+    "dev_loss": 3.2054,
+    "dev_ppl": 24.67,
+    "quick_rouge1": 0.2856,
+    "quick_rougeL": 0.1729,
+    "sample": "The assessee was assessed to income tax for the assessment year 1959 60. The assessee filed a return of the assessee 's income for the assessment years 1957 58 and 1959 60, but the Income Tax Officer rejected the claim of the assessee. The assessee 's appeal to the Appellate Assistant Commissioner w",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.9043,
+    "minutes": 25.1,
+    "train_ce": 2.9043,
+    "dev_loss": 3.1807,
+    "dev_ppl": 24.06,
+    "quick_rouge1": 0.2856,
+    "quick_rougeL": 0.1715,
+    "sample": "The assessee was a dealer in the State of Uttar Pradesh. The Sales Tax Officer issued a notice to the assessee to show cause why the cancellation of the turnover of the turnover in respect of the turnover for the assessment year 1961 62 was not justified in holding that the assessee was liable to be",
+    "saved": true
+  }
+]

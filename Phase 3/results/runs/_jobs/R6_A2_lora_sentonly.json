@@ -1,0 +1,33 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "lora",
+  "r": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "targets": [
+   "attn",
+   "ffn"
+  ]
+ },
+ "window": {
+  "mode": "sentence"
+ },
+ "head": {
+  "context": "none",
+  "use_pos": false
+ },
+ "train": {
+  "epochs": 10,
+  "batch_size": 32,
+  "lr_new": 0.001
+ },
+ "run_name": "R6_A2_lora_sentonly",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": false
+}

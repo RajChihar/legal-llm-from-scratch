@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 2.3351,
+    "dev_ppl": 10.33
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.0516,
+    "minutes": 19.59,
+    "train_ce": 2.0516,
+    "dev_loss": 2.0442,
+    "dev_ppl": 7.72,
+    "quick_rouge1": 0.3267,
+    "quick_rougeL": 0.1908,
+    "sample": "The assessee was a dealer in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery was found in stock. The assessee filed a return of his turnover for the assessment year 1967 68 of which he claimed that he was not a dealer. The Income Tax Officer rejected the claim of",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.9318,
+    "minutes": 39.54,
+    "train_ce": 1.9318,
+    "dev_loss": 2.0208,
+    "dev_ppl": 7.54,
+    "quick_rouge1": 0.3283,
+    "quick_rougeL": 0.1919,
+    "sample": "The appellant assessee was a dealer in foodgrains and foodgrains. The Sales Tax Officer rejected the assessee 's claim for the first time in reference. The Commissioner of Sales Tax, however, reduced the taxable turnover of purchases by Rs. 1,50,000 and the tax payable thereon at Rs. 25,450. On appe",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.8618,
+    "minutes": 51.3,
+    "train_ce": 1.8618,
+    "dev_loss": 2.0221,
+    "dev_ppl": 7.55,
+    "quick_rouge1": 0.3256,
+    "quick_rougeL": 0.1852,
+    "sample": "The assessee, a dealer in foodgrains, was assessed to sales tax under section 8 A of the U.P. Sales Tax Act, 1948, on the basis of the returns filed by him on the basis that certain discrepancies found during the four surveys carried out at his shop and made a best judgment assessment under section "
+  }
+]

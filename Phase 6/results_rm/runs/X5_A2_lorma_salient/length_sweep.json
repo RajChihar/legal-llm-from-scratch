@@ -1,0 +1,58 @@
+[
+ {
+  "max_words": 100,
+  "mean_words": 100.0,
+  "rouge1_f": 0.2119,
+  "rouge1_r": 0.1302,
+  "rougeL_f": 0.1419,
+  "bertscore_f": 0.8362
+ },
+ {
+  "max_words": 200,
+  "mean_words": 200.0,
+  "rouge1_f": 0.3402,
+  "rouge1_r": 0.242,
+  "rougeL_f": 0.201,
+  "bertscore_f": 0.8435
+ },
+ {
+  "max_words": 300,
+  "mean_words": 298.5,
+  "rouge1_f": 0.4183,
+  "rouge1_r": 0.333,
+  "rougeL_f": 0.2305,
+  "bertscore_f": 0.8457
+ },
+ {
+  "max_words": 400,
+  "mean_words": 375.9,
+  "rouge1_f": 0.4544,
+  "rouge1_r": 0.3858,
+  "rougeL_f": 0.2437,
+  "bertscore_f": 0.8444
+ },
+ {
+  "max_words": 600,
+  "mean_words": 455.0,
+  "rouge1_f": 0.4775,
+  "rouge1_r": 0.4263,
+  "rougeL_f": 0.2496,
+  "bertscore_f": 0.8437
+ },
+ {
+  "max_words": 800,
+  "mean_words": 455.0,
+  "rouge1_f": 0.4775,
+  "rouge1_r": 0.4263,
+  "rougeL_f": 0.2496,
+  "bertscore_f": 0.8437
+ },
+ {
+  "max_words": "full",
+  "mean_words": 455.0,
+  "rouge1_f": 0.4775,
+  "rouge1_r": 0.4263,
+  "rougeL_f": 0.2496,
+  "bertscore_f": 0.8437
+ }
+]

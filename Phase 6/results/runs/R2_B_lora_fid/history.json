@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 3.1799,
+    "dev_ppl": 24.04
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.8597,
+    "minutes": 16.37,
+    "train_ce": 2.8597,
+    "dev_loss": 2.7988,
+    "dev_ppl": 16.42,
+    "quick_rouge1": 0.2773,
+    "quick_rougeL": 0.1665,
+    "sample": "The appellant, a dealer in the goods sold by him to the respondent, was assessed to sales tax under section 10(1)(a) of the Act. The respondent was assessed to tax under section 11(1)(c) of the U.P. Sales Tax Act, 1948. The respondent claimed that the sales tax was not leviable on the goods sold and",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.7621,
+    "minutes": 33.12,
+    "train_ce": 2.7621,
+    "dev_loss": 2.7792,
+    "dev_ppl": 16.11,
+    "quick_rouge1": 0.2751,
+    "quick_rougeL": 0.1669,
+    "sample": "The appellant, a dealer in the goods of the respondent, was assessed to sales tax under section 10(1)(a) of the Act. The respondent claimed that the sales tax was payable on the sale of goods and that the sales were not taxable. The High Court held that the sales of the goods were not taxable and th",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.7217,
+    "minutes": 49.88,
+    "train_ce": 2.7217,
+    "dev_loss": 2.7739,
+    "dev_ppl": 16.02,
+    "quick_rouge1": 0.2876,
+    "quick_rougeL": 0.1727,
+    "sample": "The appellant, a dealer in the goods, sold to the respondent, sold the goods to the respondent. The respondent sold the goods in the course of inter State trade. The respondent purchased the goods in his favour. The respondent filed a writ petition in the High Court challenging the order of the Sale",
+    "saved": true
+  }
+]

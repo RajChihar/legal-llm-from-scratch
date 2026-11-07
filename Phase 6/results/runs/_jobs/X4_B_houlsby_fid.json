@@ -1,0 +1,22 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/B_encoder_decoder/model_final.pt"
+ },
+ "method": {
+  "name": "houlsby",
+  "bottleneck": 64
+ },
+ "context": {
+  "src_len": 3072
+ },
+ "train": {
+  "lr_new": 0.001,
+  "max_minutes": 55
+ },
+ "run_name": "X4_B_houlsby_fid",
+ "data_dir": "/kaggle/working/p6data/Phase_6_Summ",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p6cache",
+ "max_docs": null
+}

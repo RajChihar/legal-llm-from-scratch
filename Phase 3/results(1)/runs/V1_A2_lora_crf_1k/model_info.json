@@ -1,0 +1,44 @@
+{
+  "arch": "A",
+  "class": "LlamaLM",
+  "model_kw": {
+    "block_size": 1024,
+    "n_layer": 11,
+    "n_head": 12,
+    "n_kv_head": 4,
+    "d_model": 768,
+    "ffn_mult": 2.6666666666666665,
+    "dropout": 0.0,
+    "rope_theta": 10000.0,
+    "tie_weights": true,
+    "bias": false,
+    "vocab_size": 32000,
+    "pad_id": 31996
+  },
+  "phase1_layers": 11,
+  "layers_used": 11,
+  "d_model": 768,
+  "max_len": 1024,
+  "window": null,
+  "attention": "bidirectional",
+  "params": {
+    "total": 96459728,
+    "trainable": 2660048,
+    "trainable_pct": 2.758
+  },
+  "class_weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

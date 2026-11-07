@@ -1,0 +1,46 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 6.0449,
+    "dev_ppl": 421.96
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.8338,
+    "minutes": 12.9,
+    "train_ce": 3.6648,
+    "train_kd": 2.0029,
+    "dev_loss": 3.306,
+    "dev_ppl": 27.28,
+    "quick_rouge1": 0.2783,
+    "quick_rougeL": 0.1684,
+    "sample": "The assessee was a dealer in the assessee 's business. The assessee was a registered dealer in the State of Bihar. The assessee filed a return of the assessee 'in respect of the assessment year 1961 62. The assessee claimed that the assessee had not been assessed to tax under section 10(1) of the Ac",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.3009,
+    "minutes": 25.96,
+    "train_ce": 3.1065,
+    "train_kd": 1.4952,
+    "dev_loss": 3.1764,
+    "dev_ppl": 23.96,
+    "quick_rouge1": 0.2899,
+    "quick_rougeL": 0.1727,
+    "sample": "The assessee was assessed to sales tax under section 3(1) of the Income Tax Act, 1922, under section 10(1) (a) of the Act. The assessee filed a return of the assessee 's returns for the assessment year 1957 58 and 1961 62 and the assessment year 1961 62. The assessee claimed that the assessee had no",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.1713,
+    "minutes": 39.0,
+    "train_ce": 2.9439,
+    "train_kd": 1.3986,
+    "dev_loss": 3.1406,
+    "dev_ppl": 23.12,
+    "quick_rouge1": 0.2802,
+    "quick_rougeL": 0.1678,
+    "sample": "The assessee was a dealer in the State of Uttar Pradesh. The assessee was assessed to sales tax under section 3(1) of the Act. The Sales Tax Officer assessed the assessee 's turnover of the turnover of the assessee. The assessee filed a return of the turnover for the assessment year 1964 65, but the",
+    "saved": true
+  }
+]

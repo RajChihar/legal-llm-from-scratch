@@ -1,0 +1,31 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "frozen"
+ },
+ "rep": {
+  "proj": 0
+ },
+ "train": {
+  "epochs": 0,
+  "max_minutes": 40
+ },
+ "run_name": "X0_A2_frozen",
+ "data_dir": "/kaggle/working/p7data/Phase_7_PCR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p7cache",
+ "max_queries": null,
+ "max_cands": null,
+ "bm25": {
+  "k1": 1.2,
+  "b": 0.75,
+  "ngrams": [
+   1,
+   2
+  ],
+  "query_tf": "sat"
+ }
+}

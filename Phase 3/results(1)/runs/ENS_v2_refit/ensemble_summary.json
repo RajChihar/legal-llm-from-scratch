@@ -1,0 +1,19 @@
+{
+  "run": "ENS_v2_refit",
+  "members": [
+    "V1_A2_lora_crf_1k",
+    "V2_A2_lorma_1k",
+    "V4_C_lora_crf_1k"
+  ],
+  "refit_members": true,
+  "dev": {
+    "macro_f1": 0.5898640595814899,
+    "macro_p": 0.6544227438384788,
+    "macro_r": 0.5611230677205333,
+    "macro_f1_vocab": 0.4991157427227991,
+    "accuracy": 0.6297852474323062
+  },
+  "dev_CL_macro_f1": 0.5177721437537449,
+  "dev_IT_macro_f1": 0.5893615740754641,
+  "submission": "/kaggle/working/runs/ENS_v2_refit/submission/submission.zip"
+}

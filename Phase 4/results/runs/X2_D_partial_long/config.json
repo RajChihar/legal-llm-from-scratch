@@ -1,0 +1,64 @@
+{
+  "run_name": "X2_D_partial_long",
+  "out_dir": "/kaggle/working/runs",
+  "data_dir": "/kaggle/working/p4data/Phase_4_CJPE",
+  "cache_dir": "/kaggle/working/p4cache",
+  "ckpt_root": "",
+  "backbone": {
+    "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/D_efficient_swa_mqa/model_final.pt",
+    "attention": "bidirectional",
+    "keep_layers": null,
+    "c_segment": 0,
+    "grad_ckpt": true
+  },
+  "chunks": {
+    "len": 1024,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "method": {
+    "name": "partial",
+    "train_last_k": 4
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "loss": {
+    "class_weight": "balanced",
+    "label_smoothing": 0.0
+  },
+  "kd": {
+    "teacher_run": "",
+    "kd_alpha": 0.5,
+    "kd_T": 2.0
+  },
+  "train": {
+    "epochs": 3,
+    "docs_per_epoch": 6000,
+    "batch_size": 4,
+    "grad_accum": 2,
+    "lr_backbone": 5e-05,
+    "lr_new": 0.001,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.06,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "seed": 1337,
+    "llrd": 1.0,
+    "max_minutes": 80,
+    "eval_batch_size": 16,
+    "chunk_bs": 16,
+    "log_every": 0.2
+  },
+  "calibrate": true,
+  "predict_test": true,
+  "max_docs": null,
+  "n_proc": 4
+}

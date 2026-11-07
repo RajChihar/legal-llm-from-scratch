@@ -1,0 +1,36 @@
+[data] train 42750 | dev 10181 | test 13019 documents | 100 statutes (ids 0..99) | statutes/doc train 3.70
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method qlora | chunks 4x512 headtail | head attn/attn | loss bce
+[model] params total 96.10M | trainable 2.302M (2.395%) | 4-bit NF4 weights 69.21M
+[train] 4 epochs x 10000 documents | ~2.27 chunks/doc | 1250 steps/epoch | 5000 steps | amp torch.float16 | time limit 70 min
+[progress] epoch 1  20% | loss 12.7854 | 2.3 min | ETA all epochs 43.7 min
+[progress] epoch 1  40% | loss 12.1514 | 4.4 min | ETA all epochs 39.5 min
+[progress] epoch 1  60% | loss 11.6932 | 6.6 min | ETA all epochs 37.6 min
+[progress] epoch 1  80% | loss 11.4764 | 8.8 min | ETA all epochs 35.2 min
+[progress] epoch 1 100% | loss 11.2870 | 10.8 min | ETA all epochs 32.5 min
+[epoch] epoch 1 | train_loss 11.2870 | minutes 10.8300 | dev_macro_f1 0.2854 | thr 0.1300 | dev_micro_f1 0.4225 | dev_subset_acc 0.0077 | dev_macro_f1_at_05 0.1617 | dev_pred_per_doc 6.9617 | dev_docs 3000 | saved True
+[progress] epoch 2  20% | loss 10.0929 | 14.3 min | ETA all epochs 33.3 min
+[progress] epoch 2  40% | loss 10.0543 | 16.4 min | ETA all epochs 30.5 min
+[progress] epoch 2  60% | loss 10.0945 | 18.7 min | ETA all epochs 28.0 min
+[progress] epoch 2  80% | loss 10.0512 | 20.9 min | ETA all epochs 25.5 min
+[progress] epoch 2 100% | loss 10.0459 | 23.1 min | ETA all epochs 23.1 min
+[epoch] epoch 2 | train_loss 10.0459 | minutes 23.0500 | dev_macro_f1 0.3159 | thr 0.1000 | dev_micro_f1 0.4189 | dev_subset_acc 0.0067 | dev_macro_f1_at_05 0.1961 | dev_pred_per_doc 8.9377 | dev_docs 3000 | saved True
+[progress] epoch 3  20% | loss 9.4237 | 26.4 min | ETA all epochs 21.6 min
+[progress] epoch 3  40% | loss 9.6118 | 28.5 min | ETA all epochs 19.0 min
+[progress] epoch 3  60% | loss 9.5730 | 30.8 min | ETA all epochs 16.6 min
+[progress] epoch 3  80% | loss 9.5756 | 33.0 min | ETA all epochs 14.1 min
+[progress] epoch 3 100% | loss 9.5350 | 35.2 min | ETA all epochs 11.7 min
+[epoch] epoch 3 | train_loss 9.5350 | minutes 35.2100 | dev_macro_f1 0.3454 | thr 0.1300 | dev_micro_f1 0.4591 | dev_subset_acc 0.0133 | dev_macro_f1_at_05 0.2232 | dev_pred_per_doc 7.0720 | dev_docs 3000 | saved True
+[progress] epoch 4  20% | loss 9.5387 | 38.6 min | ETA all epochs 9.7 min
+[progress] epoch 4  40% | loss 9.4336 | 40.9 min | ETA all epochs 7.2 min
+[progress] epoch 4  60% | loss 9.4040 | 43.1 min | ETA all epochs 4.8 min
+[progress] epoch 4  80% | loss 9.3037 | 45.2 min | ETA all epochs 2.4 min
+[progress] epoch 4 100% | loss 9.3178 | 47.3 min | ETA all epochs 0.0 min
+[epoch] epoch 4 | train_loss 9.3178 | minutes 47.3100 | dev_macro_f1 0.3625 | thr 0.1400 | dev_micro_f1 0.4773 | dev_subset_acc 0.0253 | dev_macro_f1_at_05 0.2331 | dev_pred_per_doc 6.6787 | dev_docs 3000 | saved True
+
+dev, threshold 0.5
+macro-F1 0.2354 (P 0.5216 R 0.1796) | macro-F1 over the 100 gold-present labels 0.2354 | micro-F1 0.4175 (P 0.6596 R 0.3054) | subset acc 0.0827 | statutes/doc gold 3.92 pred 1.81 | 10181 docs x 100 labels
+dev, thresholds 'per_label' (fitted on all of dev)
+macro-F1 0.3904 (P 0.3938 R 0.4130) | macro-F1 over the 100 gold-present labels 0.3904 | micro-F1 0.4888 (P 0.4434 R 0.5446) | subset acc 0.0417 | statutes/doc gold 3.92 pred 4.81 | 10181 docs x 100 labels
+[dev] cross-fitted macro-F1 (thresholds fitted on the other half of dev): fixed 0.2349 | global 0.3522 | per_label 0.3723 -> strategy 'per_label'
+[dev] MACRO-F1 0.3904 (in-sample, per_label) | 0.3723 (cross-fitted) | micro-F1 0.4888 | subset acc 0.0417
+[submit] /kaggle/working/runs/X3_A2_qlora_hier/submission/submission.zip | 13019 documents | statutes/doc 4.70 (thresholds 'per_label')

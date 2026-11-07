@@ -1,0 +1,28 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/B_encoder_decoder/model_final.pt"
+ },
+ "method": {
+  "name": "ia3"
+ },
+ "train": {
+  "lr_new": 0.003,
+  "max_minutes": 40
+ },
+ "run_name": "X4_B_ia3",
+ "data_dir": "/kaggle/working/p7data/Phase_7_PCR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p7cache",
+ "max_queries": null,
+ "max_cands": null,
+ "bm25": {
+  "k1": 1.2,
+  "b": 0.75,
+  "ngrams": [
+   1,
+   2
+  ],
+  "query_tf": "sat"
+ }
+}

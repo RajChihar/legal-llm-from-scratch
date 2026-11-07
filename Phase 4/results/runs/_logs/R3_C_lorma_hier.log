@@ -1,0 +1,35 @@
+[data] train 32305 | dev 2511 | test 1517 cases | train label-1 share 0.414
+[model] arch C (HybridLM) | layers 10/10 | attention bidirectional | method lorma | chunks 4x512 headtail | pool attn/attn
+[model] params total 71.21M | trainable 1.155M (1.623%) | class weights [0.854, 1.207]
+[train] 3 epochs x 8000 cases | ~3.32 chunks/case | 1000 steps/epoch | 3000 steps | amp torch.float16 | time limit 80 min
+[progress] epoch 1  20% | loss 0.7443 | 1.9 min | ETA all epochs 26.1 min
+[progress] epoch 1  40% | loss 0.7333 | 3.7 min | ETA all epochs 24.3 min
+[progress] epoch 1  60% | loss 0.7297 | 5.6 min | ETA all epochs 22.5 min
+[progress] epoch 1  80% | loss 0.7250 | 7.4 min | ETA all epochs 20.4 min
+[progress] epoch 1 100% | loss 0.7219 | 9.3 min | ETA all epochs 18.6 min
+[epoch] epoch 1 | train_loss 0.7219 | minutes 9.3000 | dev_macro_f1 0.3340 | dev_macro_p 0.2507 | dev_macro_r 0.5000 | dev_acc 0.5014 | dev_pred1_share 1.0000 | saved True
+[progress] epoch 2  20% | loss 0.7052 | 12.5 min | ETA all epochs 18.7 min
+[progress] epoch 2  40% | loss 0.7084 | 14.3 min | ETA all epochs 16.4 min
+[progress] epoch 2  60% | loss 0.7077 | 16.1 min | ETA all epochs 14.1 min
+[progress] epoch 2  80% | loss 0.7086 | 18.0 min | ETA all epochs 12.0 min
+[progress] epoch 2 100% | loss 0.7083 | 19.9 min | ETA all epochs 9.9 min
+[epoch] epoch 2 | train_loss 0.7083 | minutes 19.8700 | dev_macro_f1 0.3340 | dev_macro_p 0.2507 | dev_macro_r 0.5000 | dev_acc 0.5014 | dev_pred1_share 1.0000
+[progress] epoch 3  20% | loss 0.7113 | 23.0 min | ETA all epochs 8.4 min
+[progress] epoch 3  40% | loss 0.7062 | 24.9 min | ETA all epochs 6.2 min
+[progress] epoch 3  60% | loss 0.7019 | 26.7 min | ETA all epochs 4.1 min
+[progress] epoch 3  80% | loss 0.7025 | 28.6 min | ETA all epochs 2.0 min
+[progress] epoch 3 100% | loss 0.7012 | 30.5 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 0.7012 | minutes 30.4800 | dev_macro_f1 0.5036 | dev_macro_p 0.5092 | dev_macro_r 0.5088 | dev_acc 0.5086 | dev_pred1_share 0.3986 | saved True
+
+dev, argmax (threshold 0.5)
+class         P      R     F1   gold   pred
+0         0.506  0.610  0.553   1252   1510
+1         0.512  0.407  0.454   1259   1001
+MACRO     0.509  0.509  0.504   (accuracy 0.509, 2511 cases, confusion [[TN FP] [FN TP]] = [[764, 488], [746, 513]])
+dev, calibrated threshold 0.50
+class         P      R     F1   gold   pred
+0         0.506  0.610  0.553   1252   1510
+1         0.512  0.407  0.454   1259   1001
+MACRO     0.509  0.509  0.504   (accuracy 0.509, 2511 cases, confusion [[TN FP] [FN TP]] = [[764, 488], [746, 513]])
+[dev] MACRO-F1 0.5036 (argmax) | 0.5036 (threshold 0.50) | P 0.5092 R 0.5088 | acc 0.5086
+[submit] /kaggle/working/runs/R3_C_lorma_hier/submission/submission.zip | 1517 cases | predicted label-1 share 0.397 (threshold 0.50)

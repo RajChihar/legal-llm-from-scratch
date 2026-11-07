@@ -1,0 +1,199 @@
+{
+ "stats": {
+  "train": {
+   "documents": 6730,
+   "doc_words": {
+    "min": 93,
+    "p10": 1339,
+    "p50": 3129,
+    "p90": 7855,
+    "max": 139645,
+    "mean": 4362
+   },
+   "doc_tokens": {
+    "min": 203,
+    "p10": 1586,
+    "p50": 3682,
+    "p90": 9172,
+    "max": 162092,
+    "mean": 5110
+   },
+   "tokens_per_word_doc": 1.171,
+   "sentences_per_doc_p50": 129,
+   "doc_fits_in_1024": 0.031,
+   "doc_fits_in_2048": 0.187,
+   "doc_fits_in_4096": 0.567,
+   "doc_fits_in_8192": 0.87,
+   "sum_words": {
+    "min": 0,
+    "p10": 293,
+    "p50": 638,
+    "p90": 1493,
+    "max": 27768,
+    "mean": 839
+   },
+   "sum_tokens": {
+    "min": 1,
+    "p10": 344,
+    "p50": 758,
+    "p90": 1787,
+    "max": 32552,
+    "mean": 1001
+   },
+   "compression_words_p50": 4.61,
+   "sum_fits_in_256": 0.039,
+   "sum_fits_in_384": 0.137,
+   "sum_fits_in_512": 0.264,
+   "sum_fits_in_640": 0.392,
+   "sum_fits_in_768": 0.511,
+   "sum_fits_in_1024": 0.691,
+   "ref_novel_1gram": 0.0431,
+   "ref_novel_2gram": 0.2178,
+   "ref_novel_3gram": 0.3687
+  },
+  "dev": {
+   "documents": 300,
+   "doc_words": {
+    "min": 292,
+    "p10": 1432,
+    "p50": 3095,
+    "p90": 7738,
+    "max": 59081,
+    "mean": 4493
+   },
+   "doc_tokens": {
+    "min": 366,
+    "p10": 1700,
+    "p50": 3661,
+    "p90": 8891,
+    "max": 68154,
+    "mean": 5261
+   },
+   "tokens_per_word_doc": 1.171,
+   "sentences_per_doc_p50": 130,
+   "doc_fits_in_1024": 0.02,
+   "doc_fits_in_2048": 0.15,
+   "doc_fits_in_4096": 0.573,
+   "doc_fits_in_8192": 0.883,
+   "sum_words": {
+    "min": 57,
+    "p10": 276,
+    "p50": 638,
+    "p90": 1577,
+    "max": 5988,
+    "mean": 851
+   },
+   "sum_tokens": {
+    "min": 61,
+    "p10": 338,
+    "p50": 746,
+    "p90": 1862,
+    "max": 7376,
+    "mean": 1012
+   },
+   "compression_words_p50": 4.58,
+   "sum_fits_in_256": 0.06,
+   "sum_fits_in_384": 0.127,
+   "sum_fits_in_512": 0.237,
+   "sum_fits_in_640": 0.39,
+   "sum_fits_in_768": 0.507,
+   "sum_fits_in_1024": 0.66,
+   "ref_novel_1gram": 0.043,
+   "ref_novel_2gram": 0.2212,
+   "ref_novel_3gram": 0.375
+  },
+  "test": {
+   "documents": 100,
+   "doc_words": {
+    "min": 511,
+    "p10": 1503,
+    "p50": 3171,
+    "p90": 8562,
+    "max": 39695,
+    "mean": 4782
+   },
+   "doc_tokens": {
+    "min": 610,
+    "p10": 1775,
+    "p50": 3796,
+    "p90": 10339,
+    "max": 45684,
+    "mean": 5607
+   },
+   "tokens_per_word_doc": 1.172,
+   "sentences_per_doc_p50": 132,
+   "doc_fits_in_1024": 0.04,
+   "doc_fits_in_2048": 0.16,
+   "doc_fits_in_4096": 0.57,
+   "doc_fits_in_8192": 0.86
+  },
+  "overlap": {
+   "ids train&test": 0,
+   "ids train&dev": 0,
+   "identical_texts train&test": 0
+  }
+ },
+ "source_positions": [
+  0.0584,
+  0.1143,
+  0.106,
+  0.1002,
+  0.0873,
+  0.0962,
+  0.1009,
+  0.1142,
+  0.1143,
+  0.1082
+ ],
+ "coverage": {
+  "rows": [
+   {
+    "budget_tokens": 512,
+    "docs_longer_than_budget": 1.0,
+    "head": 0.2828,
+    "tail": 0.3229,
+    "headtail": 0.3017,
+    "uniform": 0.3027,
+    "salient": 0.3003
+   },
+   {
+    "budget_tokens": 768,
+    "docs_longer_than_budget": 0.995,
+    "head": 0.3738,
+    "tail": 0.414,
+    "headtail": 0.4047,
+    "uniform": 0.4015,
+    "salient": 0.3867
+   },
+   {
+    "budget_tokens": 1400,
+    "docs_longer_than_budget": 0.95,
+    "head": 0.5303,
+    "tail": 0.5711,
+    "headtail": 0.5721,
+    "uniform": 0.5674,
+    "salient": 0.5286
+   },
+   {
+    "budget_tokens": 1536,
+    "docs_longer_than_budget": 0.945,
+    "head": 0.5584,
+    "tail": 0.5948,
+    "headtail": 0.5982,
+    "uniform": 0.5941,
+    "salient": 0.5545
+   },
+   {
+    "budget_tokens": 3072,
+    "docs_longer_than_budget": 0.625,
+    "head": 0.7467,
+    "tail": 0.7563,
+    "headtail": 0.7662,
+    "uniform": 0.7655,
+    "salient": 0.7351
+   }
+  ],
+  "whole_document": 0.8767,
+  "docs": 200
+ }
+}

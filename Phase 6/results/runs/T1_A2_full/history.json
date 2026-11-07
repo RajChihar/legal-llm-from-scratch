@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 2.9059,
+    "dev_ppl": 18.28
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.0788,
+    "minutes": 18.78,
+    "train_ce": 2.0788,
+    "dev_loss": 2.0063,
+    "dev_ppl": 7.44,
+    "quick_rouge1": 0.3277,
+    "quick_rougeL": 0.1931,
+    "sample": "The appellant assessee was a dealer in foodgrains. The Sales Tax Officer, Muzaffarnagar by his order dated December 27, 1968 rejected the account books of the assessee on the basis of some discrepancies found during the four survey carried out at his shop and made a best judgment assessment under su",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.8059,
+    "minutes": 38.62,
+    "train_ce": 1.8059,
+    "dev_loss": 1.9804,
+    "dev_ppl": 7.25,
+    "quick_rouge1": 0.3293,
+    "quick_rougeL": 0.1867,
+    "sample": "The assessee, a dealer in foodgrains, was assessed to purchase foodgrains from its shop at Shahpur in the district of Muzaffarnagar, and was registered as a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee filed a return showing the turnover of purchases of wheat and the tax pa",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.6854,
+    "minutes": 55.01,
+    "train_ce": 1.6854,
+    "dev_loss": 1.9836,
+    "dev_ppl": 7.27,
+    "quick_rouge1": 0.3309,
+    "quick_rougeL": 0.1927,
+    "sample": "The appellant assessee was a dealer in foodgrains. The Sales Tax Officer rejected the account books of the assessee on the basis of some discrepancies found during the four survey carried out at his shop and made a best judgment assessment under section 7(3) of the Act. The assessee filed a writ pet"
+  }
+]

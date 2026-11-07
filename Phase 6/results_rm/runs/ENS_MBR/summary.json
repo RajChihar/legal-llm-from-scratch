@@ -1,0 +1,44 @@
+{
+  "run": "ENS_MBR",
+  "members": [
+    "X5_A2_lorma_salient",
+    "X2_A2_qlora",
+    "R1_A2_lorma",
+    "T1_A2_full"
+  ],
+  "dev": {
+    "rouge_impl": "rouge_score",
+    "rouge1_p": 0.6449412682532895,
+    "rouge1_r": 0.412974806292676,
+    "rouge1_f": 0.46510994732711575,
+    "rouge2_p": 0.31129911964370344,
+    "rouge2_r": 0.19439587237475592,
+    "rouge2_f": 0.2205961787291559,
+    "rougeL_p": 0.3435751215363139,
+    "rougeL_r": 0.21905997229566837,
+    "rougeL_f": 0.24574542780214842,
+    "words": 437.365,
+    "ref_words": 897.785,
+    "rep_3gram": 0.15677088999168892,
+    "rep_sent": 0.0,
+    "novel_1gram": 0.15324807162635193,
+    "novel_2gram": 0.4076527189385365,
+    "novel_3gram": 0.6041836989860078,
+    "fact_precision": 0.6760718638374936,
+    "fact_recall": 0.2530305242960547,
+    "facts_per_summary": 5.335
+  },
+  "dev_picks": {
+    "R1_A2_lorma": 74,
+    "X2_A2_qlora": 64,
+    "T1_A2_full": 56,
+    "X5_A2_lorma_salient": 6
+  },
+  "test_picks": {
+    "X2_A2_qlora": 37,
+    "R1_A2_lorma": 34,
+    "T1_A2_full": 26,
+    "X5_A2_lorma_salient": 3
+  },
+  "submission": "/kaggle/working/runs/ENS_MBR/submission/submission.zip"
+}

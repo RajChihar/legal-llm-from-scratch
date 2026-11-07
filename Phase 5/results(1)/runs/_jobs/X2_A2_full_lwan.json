@@ -1,0 +1,22 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "full"
+ },
+ "head": {
+  "agg": "label_attn"
+ },
+ "train": {
+  "lr_backbone": 3e-05,
+  "lr_new": 0.001,
+  "max_minutes": 70
+ },
+ "run_name": "X2_A2_full_lwan",
+ "data_dir": "/kaggle/working/p5data/Phase_5_LSI",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p5cache",
+ "max_docs": null
+}

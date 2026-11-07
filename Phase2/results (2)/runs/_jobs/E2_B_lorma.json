@@ -1,0 +1,34 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/B_encoder_decoder/model_final.pt",
+  "attention": "bidirectional"
+ },
+ "method": {
+  "name": "lorma",
+  "variant": "plus",
+  "r": 8,
+  "alpha": 16,
+  "targets": [
+   "attn",
+   "ffn"
+  ]
+ },
+ "head": {
+  "type": "linear"
+ },
+ "window": {
+  "max_len": 512,
+  "stride": 384
+ },
+ "train": {
+  "epochs": 15,
+  "batch_size": 8,
+  "lr_new": 0.001
+ },
+ "run_name": "E2_B_lorma",
+ "data_dir": "/kaggle/working/p2data/Phase_2_LNER",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p2cache",
+ "refit_full": false
+}

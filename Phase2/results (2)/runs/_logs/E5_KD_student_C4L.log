@@ -1,0 +1,40 @@
+[data] gold `end` is exclusive: 4120/4120 entity texts match text[s:e]
+[data] gold `end` is exclusive: 4273/4273 entity texts match text[s:e]
+[data] train docs 60 | dev docs 10 | test docs 35
+[data] BIO round-trip ceiling on train: macro-F1 0.9937 (overlaps dropped: 0)
+[data] tokenised in 0s | train tokens 416,781
+[kd] teacher /kaggle/working/runs/E1_C_full_linear | dev macro-F1 0.5543378071626729 | scores for 70 docs (70 computed, rest cached)
+[model] arch C (HybridLM) | layers 4/10 | attention bidirectional | method full | head linear
+[model] params total 40.33M | trainable 40.328M (100.0%)
+[train] 1094 windows/epoch | 137 steps/epoch | 1644 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 2.2713 | minutes 0.1700 | dev_macro_f1 0.2236 | dev_macro_p 0.3016 | dev_macro_r 0.2360 | dev_micro_f1 0.3629 | saved True
+[epoch] epoch 2 | train_loss 0.2469 | minutes 0.3600 | dev_macro_f1 0.3036 | dev_macro_p 0.2931 | dev_macro_r 0.3258 | dev_micro_f1 0.4407 | saved True
+[epoch] epoch 3 | train_loss 0.1287 | minutes 0.5500 | dev_macro_f1 0.3710 | dev_macro_p 0.3798 | dev_macro_r 0.3762 | dev_micro_f1 0.4972 | saved True
+[epoch] epoch 4 | train_loss 0.0746 | minutes 0.7300 | dev_macro_f1 0.3760 | dev_macro_p 0.3844 | dev_macro_r 0.3823 | dev_micro_f1 0.5115 | saved True
+[epoch] epoch 5 | train_loss 0.0482 | minutes 0.9200 | dev_macro_f1 0.4128 | dev_macro_p 0.4416 | dev_macro_r 0.4245 | dev_micro_f1 0.5250 | saved True
+[epoch] epoch 6 | train_loss 0.0350 | minutes 1.1100 | dev_macro_f1 0.3685 | dev_macro_p 0.4140 | dev_macro_r 0.3594 | dev_micro_f1 0.5081
+[epoch] epoch 7 | train_loss 0.0273 | minutes 1.2900 | dev_macro_f1 0.4388 | dev_macro_p 0.4862 | dev_macro_r 0.4274 | dev_micro_f1 0.5477 | saved True
+[epoch] epoch 8 | train_loss 0.0229 | minutes 1.4800 | dev_macro_f1 0.4437 | dev_macro_p 0.5008 | dev_macro_r 0.4270 | dev_micro_f1 0.5479 | saved True
+[epoch] epoch 9 | train_loss 0.0213 | minutes 1.6600 | dev_macro_f1 0.4593 | dev_macro_p 0.5048 | dev_macro_r 0.4482 | dev_micro_f1 0.5535 | saved True
+[epoch] epoch 10 | train_loss 0.0198 | minutes 1.8500 | dev_macro_f1 0.4400 | dev_macro_p 0.4856 | dev_macro_r 0.4317 | dev_micro_f1 0.5482
+[epoch] epoch 11 | train_loss 0.0187 | minutes 2.0300 | dev_macro_f1 0.4495 | dev_macro_p 0.4922 | dev_macro_r 0.4406 | dev_micro_f1 0.5513
+[epoch] epoch 12 | train_loss 0.0182 | minutes 2.2200 | dev_macro_f1 0.4484 | dev_macro_p 0.4909 | dev_macro_r 0.4403 | dev_micro_f1 0.5513
+[train] early stop: no dev improvement for 3 epochs
+
+label           P      R     F1  support
+APP         0.143  0.017  0.030      119
+RESP        0.278  0.119  0.167       42
+A.COUNSEL   0.378  0.438  0.406       32
+R.COUNSEL   0.739  0.486  0.586       35
+JUDGE       0.606  0.606  0.606       33
+WIT         0.238  0.139  0.175       36
+AUTH        0.567  0.236  0.333      144
+COURT       0.704  0.691  0.697      110
+STAT        0.761  0.869  0.812      176
+PREC        0.193  0.299  0.235      127
+DATE        0.917  0.921  0.919      191
+CASENO      0.534  0.557  0.545       70
+MACRO       0.505  0.448  0.459
+micro       0.593  0.519  0.554
+[errors] {'missed': 308, 'type': 40, 'boundary': 140, 'both': 48, 'spurious': 147}
+[submit] /kaggle/working/runs/E5_KD_student_C4L/submission/submission.zip | 3721 entities over 35 docs

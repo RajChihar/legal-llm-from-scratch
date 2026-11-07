@@ -1,0 +1,41 @@
+[data] train docs 80 | dev docs 10 | test docs 10 | labels 13
+[data] tokenised in 1s | train sentences 16,845 | train tokens 665,165
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method lora | head crf/gru | window context
+[model] params total 96.46M | trainable 2.660M (2.758%)
+[train] ~920 windows/epoch | 115 steps/epoch | 1150 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 1.6785 | minutes 1.0400 | dev_macro_f1 0.3331 | dev_macro_p 0.4207 | dev_macro_r 0.3466 | dev_acc 0.4935 | dev_CL 0.3470 | dev_IT 0.3330 | saved True
+[epoch] epoch 2 | train_loss 0.9761 | minutes 2.2000 | dev_macro_f1 0.4565 | dev_macro_p 0.6822 | dev_macro_r 0.4206 | dev_acc 0.5453 | dev_CL 0.4421 | dev_IT 0.4584 | saved True
+[epoch] epoch 3 | train_loss 0.5832 | minutes 3.3300 | dev_macro_f1 0.5159 | dev_macro_p 0.5919 | dev_macro_r 0.4937 | dev_acc 0.5528 | dev_CL 0.4412 | dev_IT 0.5427 | saved True
+[epoch] epoch 4 | train_loss 0.3655 | minutes 4.4600 | dev_macro_f1 0.5181 | dev_macro_p 0.6560 | dev_macro_r 0.5026 | dev_acc 0.5929 | dev_CL 0.4678 | dev_IT 0.4858 | saved True
+[epoch] epoch 5 | train_loss 0.2189 | minutes 5.6000 | dev_macro_f1 0.5688 | dev_macro_p 0.6539 | dev_macro_r 0.5532 | dev_acc 0.6209 | dev_CL 0.4976 | dev_IT 0.5518 | saved True
+[epoch] epoch 6 | train_loss 0.1389 | minutes 6.7300 | dev_macro_f1 0.5501 | dev_macro_p 0.6369 | dev_macro_r 0.5278 | dev_acc 0.5910 | dev_CL 0.4911 | dev_IT 0.5563
+[epoch] epoch 7 | train_loss 0.0762 | minutes 7.8600 | dev_macro_f1 0.5434 | dev_macro_p 0.6399 | dev_macro_r 0.5084 | dev_acc 0.6013 | dev_CL 0.4589 | dev_IT 0.5532
+[epoch] epoch 8 | train_loss 0.0490 | minutes 8.9800 | dev_macro_f1 0.5567 | dev_macro_p 0.6551 | dev_macro_r 0.5245 | dev_acc 0.6106 | dev_CL 0.5090 | dev_IT 0.5705
+[train] early stop: no dev improvement for 3 epochs
+
+label                           P      R     F1   gold   pred
+Fact                        0.694  0.676  0.685    444    432
+Issue                       0.857  0.400  0.545     15      7
+ArgumentPetitioner          0.700  0.595  0.643    400    340
+ArgumentRespondent          0.821  0.423  0.558    272    140
+Statute                     0.793  0.733  0.762    120    111
+Dissent                     0.000  0.000  0.000      0      0
+PrecedentReliedUpon         0.581  0.465  0.516    254    203
+PrecedentNotReliedUpon      0.291  0.600  0.392     50    103
+PrecedentOverruled          0.000  0.000  0.000      0      0
+RulingByLowerCourt          0.881  0.363  0.514    102     42
+RatioOfTheDecision          0.518  0.886  0.654    403    689
+RulingByPresentCourt        0.577  0.612  0.594     49     52
+None                        0.478  0.333  0.393     33     23
+MACRO                       0.654  0.553  0.569   (vocab-macro-F1 0.481, accuracy 0.621, 2142 sentences)
+[dev] MACRO-F1 all 0.5688 | CL 0.4976378196464592 | IT 0.5518478248463942 | sklearn 0.5688
+[dev] top confusions: ['Fact -> RatioOfTheDecision: 79', 'ArgumentRespondent -> ArgumentPetitioner: 71', 'ArgumentPetitioner -> RatioOfTheDecision: 65', 'PrecedentReliedUpon -> RatioOfTheDecision: 60', 'PrecedentReliedUpon -> Fact: 51', 'ArgumentRespondent -> RatioOfTheDecision: 37']
+[submit] /kaggle/working/runs/V1_A2_lora_crf_1k/submission/submission.zip | 10 docs, 2197 sentences
+[refit] training on train+dev (90 docs) for 5 epochs (best dev epoch)
+[train] ~1037 windows/epoch | 130 steps/epoch | 650 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 1.5696 | minutes 1.1900
+[epoch] epoch 2 | train_loss 0.8684 | minutes 2.3900
+[epoch] epoch 3 | train_loss 0.5177 | minutes 3.5900
+[epoch] epoch 4 | train_loss 0.3013 | minutes 4.7900
+[epoch] epoch 5 | train_loss 0.1745 | minutes 5.9900
+[refit] /kaggle/working/runs/V1_A2_lora_crf_1k/submission_refit/submission.zip

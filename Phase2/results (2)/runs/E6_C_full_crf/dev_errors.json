@@ -1,0 +1,145 @@
+{
+  "categories": {
+    "missed": 275,
+    "type": 60,
+    "boundary": 94,
+    "spurious": 99,
+    "both": 21
+  },
+  "type_confusion": {
+    "APP->AUTH": 16,
+    "R.COUNSEL->A.COUNSEL": 11,
+    "PREC->COURT": 7,
+    "A.COUNSEL->R.COUNSEL": 6,
+    "APP->RESP": 5,
+    "JUDGE->PREC": 2,
+    "WIT->APP": 2,
+    "CASENO->DATE": 2,
+    "PREC->APP": 2,
+    "AUTH->COURT": 2,
+    "APP->WIT": 1,
+    "PREC->AUTH": 1,
+    "PREC->JUDGE": 1,
+    "R.COUNSEL->APP": 1,
+    "RESP->APP": 1
+  },
+  "boundary_kind": {
+    "start ok / end late": 44,
+    "start early / end ok": 12,
+    "start late / end ok": 13,
+    "start ok / end early": 17,
+    "start early / end late": 5,
+    "start early / end early": 1,
+    "start late / end late": 2
+  },
+  "by_label": {
+    "WIT": {
+      "missed": 32,
+      "type": 2
+    },
+    "APP": {
+      "missed": 59,
+      "type": 22,
+      "boundary": 20,
+      "spurious": 6,
+      "both": 3
+    },
+    "A.COUNSEL": {
+      "type": 6,
+      "missed": 3,
+      "both": 1,
+      "spurious": 2
+    },
+    "PREC": {
+      "boundary": 32,
+      "spurious": 27,
+      "type": 11,
+      "missed": 19,
+      "both": 3
+    },
+    "DATE": {
+      "boundary": 2,
+      "spurious": 2,
+      "missed": 11
+    },
+    "R.COUNSEL": {
+      "type": 12,
+      "missed": 6,
+      "both": 1
+    },
+    "CASENO": {
+      "missed": 7,
+      "spurious": 13,
+      "boundary": 9,
+      "type": 2
+    },
+    "JUDGE": {
+      "spurious": 6,
+      "type": 2,
+      "missed": 7,
+      "boundary": 1
+    },
+    "COURT": {
+      "boundary": 12,
+      "spurious": 4,
+      "missed": 18
+    },
+    "RESP": {
+      "spurious": 7,
+      "boundary": 3,
+      "missed": 18,
+      "both": 10,
+      "type": 1
+    },
+    "STAT": {
+      "missed": 7,
+      "boundary": 9,
+      "spurious": 22,
+      "both": 2
+    },
+    "AUTH": {
+      "spurious": 10,
+      "boundary": 6,
+      "missed": 88,
+      "both": 1,
+      "type": 2
+    }
+  },
+  "examples": {
+    "missed": [
+      "WIT: [Jagdish] | pred: -",
+      "WIT: [Mange Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -",
+      "APP: [Jage Ram] | pred: -"
+    ],
+    "type": [
+      "A.COUNSEL: [Vibha Datta Makhija] | pred: [Vibha Datta Makhija]R.COUNSEL",
+      "R.COUNSEL: [Kamal Mohan Gupta] | pred: [Kamal Mohan Gupta]A.COUNSEL",
+      "R.COUNSEL: [Gaurav Yadav] | pred: [Gaurav Yadav]A.COUNSEL",
+      "R.COUNSEL: [Akshat Goel] | pred: [Akshat Goel]A.COUNSEL",
+      "APP: [Surendra Kumar] | pred: [Surendra Kumar]WIT"
+    ],
+    "boundary": [
+      "PREC: [State of M.P. vs. Bablu Natt] | pred: [State of M.P. vs. Bablu Natt[3]; Alister Anthony Pareira vs. State of Maharashtra]PREC",
+      "PREC: [Alister Anthony Pareira vs. State of Maharashtra] | pred: [State of M.P. vs. Bablu Natt[3]; Alister Anthony Pareira vs. State of Maharashtra]PREC",
+      "DATE: [January 28, 2015] | pred: [uary 28, 2015]DATE",
+      "CASENO: [Criminal Appeal No] | pred: [Criminal Appeal No. 346 of 2009]CASENO",
+      "COURT: [Division Bench of the High Court of Judicature at Allahabad] | pred: [High Court of Judicature at Allahabad]COURT"
+    ],
+    "spurious": [
+      "DATE: [92/2015]",
+      "CASENO: [Criminal Appeal No.181 SB of 2000]",
+      "PREC: [Rakesh]",
+      "CASENO: [Criminal Appeal No(s). 92/2015]",
+      "CASENO: [SLP(Crl.) No. 488/2012]"
+    ],
+    "both": [
+      "AUTH: [All India Council for Technical Education] | pred: [Bharathidasan University & Anr. -vs\u00ad All India Council for Technical Education & Ors. reported in (2001) 8 SCC 676]PREC",
+      "R.COUNSEL: [Tapesh Kumar Singh] | pred: [Kumar Singh]A.COUNSEL",
+      "A.COUNSEL: [Ghosh] | pred: [Alok Kr. Ghosh]R.COUNSEL",
+      "APP: [Kolkata Municipal Corporation] | pred: [Learned Municipal Assessment Tribunal, Kolkata Municipal Corporation]AUTH",
+      "PREC: [Supreme Court of India] | pred: [Supreme Court]COURT"
+    ]
+  }
+}

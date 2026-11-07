@@ -1,0 +1,23 @@
+{
+  "run_name": "E4_D_adapter",
+  "backbone": {
+    "ckpt": "@D",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "adapter",
+    "bottleneck": 64
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 1024,
+    "stride": 768
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 4,
+    "lr_new": 0.001
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/D_efficient_swa_mqa/model_final.pt",
+  "keep_layers": 6,
+  "grad_ckpt": true
+ },
+ "method": {
+  "name": "full"
+ },
+ "chunks": {
+  "len": 1024,
+  "k": 4
+ },
+ "kd": {
+  "teacher_run": "/kaggle/working/runs/R1_A2_full_hier",
+  "kd_alpha": 0.5,
+  "kd_T": 2.0
+ },
+ "train": {
+  "epochs": 3,
+  "docs_per_epoch": 6000,
+  "batch_size": 4,
+  "grad_accum": 2,
+  "lr_backbone": 5e-05,
+  "lr_new": 0.001,
+  "chunk_bs": 16,
+  "max_minutes": 80
+ },
+ "run_name": "R4_KD_D6L_from_R1",
+ "data_dir": "/kaggle/working/p4data/Phase_4_CJPE",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p4cache",
+ "max_docs": null
+}

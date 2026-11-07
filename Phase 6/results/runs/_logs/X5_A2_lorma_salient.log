@@ -1,0 +1,42 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (salient) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch A (LlamaLM) | layers 11/11 | method lorma | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 96.23M | trainable 2.433M (2.528%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 2.9001 | dev_ppl 18.18
+[progress] epoch 1  10% | loss 2.5320 | ce 2.5320 | 2937 summary tok/s | 2.1 min | ETA all epochs 60.9 min
+[progress] epoch 1  20% | loss 2.3477 | ce 2.3477 | 2999 summary tok/s | 4.2 min | ETA all epochs 59.0 min
+[progress] epoch 1  30% | loss 2.2658 | ce 2.2658 | 3013 summary tok/s | 6.3 min | ETA all epochs 57.0 min
+[progress] epoch 1  40% | loss 2.2174 | ce 2.2174 | 3005 summary tok/s | 8.4 min | ETA all epochs 54.8 min
+[progress] epoch 1  50% | loss 2.1893 | ce 2.1893 | 3003 summary tok/s | 10.5 min | ETA all epochs 52.6 min
+[progress] epoch 1  60% | loss 2.1653 | ce 2.1653 | 3001 summary tok/s | 12.6 min | ETA all epochs 50.4 min
+[progress] epoch 1  70% | loss 2.1465 | ce 2.1465 | 2999 summary tok/s | 14.7 min | ETA all epochs 48.3 min
+[progress] epoch 1  80% | loss 2.1347 | ce 2.1347 | 2998 summary tok/s | 16.7 min | ETA all epochs 46.1 min
+[progress] epoch 1  90% | loss 2.1208 | ce 2.1208 | 2998 summary tok/s | 18.8 min | ETA all epochs 44.0 min
+[progress] epoch 1 100% | loss 2.1103 | ce 2.1103 | 2998 summary tok/s | 20.9 min | ETA all epochs 41.9 min
+[epoch] epoch 1 | train_loss 2.1101 | minutes 20.93 | train_ce 2.1101 | dev_loss 2.039 | dev_ppl 7.68 | quick_rouge1 0.3258 | quick_rougeL 0.1871 | saved True
+[epoch] sample: The appellant, a dealer in a shop, entered into a contract with the respondent, entered into an agreement with the respondent for purchase of a shop. The respondent was assessed to purchase the shop for the purchase of a kutcha arhatiya at Rs. 3,80,000. The respondent filed a suit for a declaration 
+[progress] epoch 2  10% | loss 1.9862 | ce 1.9862 | 272 summary tok/s | 23.5 min | ETA all epochs 40.6 min
+[progress] epoch 2  20% | loss 1.9768 | ce 1.9768 | 499 summary tok/s | 25.6 min | ETA all epochs 38.4 min
+[progress] epoch 2  30% | loss 1.9700 | ce 1.9700 | 687 summary tok/s | 27.7 min | ETA all epochs 36.2 min
+[progress] epoch 2  40% | loss 1.9651 | ce 1.9651 | 850 summary tok/s | 29.7 min | ETA all epochs 34.0 min
+[progress] epoch 2  50% | loss 1.9622 | ce 1.9622 | 990 summary tok/s | 31.8 min | ETA all epochs 31.8 min
+[progress] epoch 2  60% | loss 1.9596 | ce 1.9596 | 1113 summary tok/s | 33.9 min | ETA all epochs 29.7 min
+[progress] epoch 2  70% | loss 1.9580 | ce 1.9580 | 1221 summary tok/s | 36.0 min | ETA all epochs 27.5 min
+[progress] epoch 2  80% | loss 1.9590 | ce 1.9590 | 1318 summary tok/s | 38.0 min | ETA all epochs 25.4 min
+[progress] epoch 2  90% | loss 1.9591 | ce 1.9591 | 1404 summary tok/s | 40.1 min | ETA all epochs 23.3 min
+[progress] epoch 2 100% | loss 1.9540 | ce 1.9540 | 1485 summary tok/s | 42.2 min | ETA all epochs 21.2 min
+[epoch] epoch 2 | train_loss 1.954 | minutes 42.23 | train_ce 1.954 | dev_loss 2.0072 | dev_ppl 7.44 | quick_rouge1 0.3423 | quick_rougeL 0.1968 | saved True
+[epoch] sample: The assessee, a dealer in a shop, filed a return of his turnover of Rs. 3,80,000 as a dealer in the State of U.P. The Sales Tax Officer rejected the assessee 's claim for the amount of tax paid by him on the ground that he was not a dealer within the meaning of section 2(c) of the U.P Sales Tax Act,
+[progress] epoch 3  10% | loss 1.8662 | ce 1.8662 | 137 summary tok/s | 44.7 min | ETA all epochs 19.2 min
+[progress] epoch 3  20% | loss 1.8835 | ce 1.8835 | 265 summary tok/s | 46.8 min | ETA all epochs 17.0 min
+[progress] epoch 3  30% | loss 1.8831 | ce 1.8831 | 379 summary tok/s | 48.9 min | ETA all epochs 14.9 min
+[progress] epoch 3  40% | loss 1.8869 | ce 1.8869 | 489 summary tok/s | 51.0 min | ETA all epochs 12.8 min
+[progress] epoch 3  50% | loss 1.8918 | ce 1.8918 | 587 summary tok/s | 53.1 min | ETA all epochs 10.6 min
+[train] time limit 55 min reached in epoch 3 (59%): evaluating and stopping
+[epoch] epoch 3 | train_loss 1.8893 | minutes 55.01 | train_ce 1.8893 | dev_loss 2.0078 | dev_ppl 7.45 | quick_rouge1 0.3264 | quick_rougeL 0.1865
+[epoch] sample: The appellant assessee was a dealer in the State of U.P. and was assessed to sales tax under the U.P., Sales Tax Act, 1948. The Sales Tax Officer rejected the account books of the assessee on the basis of some discrepancies found during the four surveys carried out at his shop and made a best judgme
+[gen] 16/200 documents | 20s
+[gen] 176/200 documents | 216s
+[dev] 200 documents | ROUGE-1 0.4659 | ROUGE-2 0.2226 | ROUGE-L 0.2446 | words 450 (ref 898) | rep-3gram 0.165 | fact precision 0.670 | 0.804 docs/s
+[gen] 16/100 documents | 20s
+[submit] /kaggle/working/runs/X5_A2_lorma_salient/submission/submission.zip | 100 documents | mean 451.1 words | empty generations replaced: 0

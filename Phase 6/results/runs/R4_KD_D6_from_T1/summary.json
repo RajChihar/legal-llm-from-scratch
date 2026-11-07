@@ -1,0 +1,85 @@
+{
+  "run": "R4_KD_D6_from_T1",
+  "arch": "D",
+  "backbone": "D_efficient_swa_mqa",
+  "method": {
+    "name": "full"
+  },
+  "context": {
+    "src_len": 1536,
+    "strategy": "headtail",
+    "head_frac": 0.5,
+    "k": 4,
+    "lead": 256,
+    "gap": true
+  },
+  "resolved": {
+    "tgt_len": 640,
+    "src_len": 1536,
+    "sep_ids": [
+      314,
+      83,
+      7550,
+      77,
+      11980,
+      3212
+    ],
+    "max_new": 640,
+    "min_new": 320,
+    "gap_ids": [
+      1978
+    ]
+  },
+  "rope": {
+    "positions": 8192,
+    "rope_scale": 1.0
+  },
+  "layers": 6,
+  "params_total": 45801600,
+  "params_trainable": 45801600,
+  "trainable_pct": 100.0,
+  "nf4_weights": 0,
+  "train_minutes": 38.8,
+  "peak_train_mem_gb": 3.4495649337768555,
+  "peak_gen_mem_gb": 1.4315829277038574,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "best_dev_loss": 3.1406409908351587,
+  "dev_loss_before": 6.0449,
+  "kd_teacher": "/kaggle/working/runs/T1_A2_full",
+  "dapt": null,
+  "adalora_final_ranks": null,
+  "gen": {
+    "method": "greedy",
+    "beams": 4,
+    "max_new": "auto",
+    "min_new": "auto",
+    "no_repeat_ngram": 4,
+    "rep_penalty": 1.0,
+    "rep_window": 512,
+    "length_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.9,
+    "batch_size": 16,
+    "seed": 0
+  },
+  "dev": {
+    "rouge1_f": 0.3630728588749653,
+    "rouge2_f": 0.12664411815561671,
+    "rougeL_f": 0.2038508078669762,
+    "words": 379.42,
+    "ref_words": 897.785,
+    "rep_3gram": 0.18962813095943346,
+    "rep_sent": 0.0,
+    "novel_3gram": 0.8735818283631249,
+    "fact_precision": 0.1966852286907232,
+    "fact_recall": 0.04512242106679985
+  },
+  "gen_docs_per_sec": 2.341,
+  "gen_tokens_per_sec": 1054.9,
+  "submission": "/kaggle/working/runs/R4_KD_D6_from_T1/submission/submission.zip",
+  "test_words": 392.8,
+  "test_empty_replaced": 0,
+  "test_gen_seconds": 45.3
+}

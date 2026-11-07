@@ -1,0 +1,52 @@
+{
+  "run": "R2_C_lorma_ctx",
+  "arch": "C",
+  "backbone": "C_hybrid_prefix_mlm",
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 8,
+    "alpha": 16,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 10,
+  "params_total": 72523277,
+  "params_trainable": 2466317,
+  "trainable_pct": 3.401,
+  "train_minutes": 3.0,
+  "peak_train_mem_gb": 1.8830571174621582,
+  "best_epoch": 1,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.20659924827052914,
+    "macro_p": 0.35818945821009707,
+    "macro_r": 0.19803896418849662,
+    "macro_f1_vocab": 0.19070699840356536,
+    "accuracy": 0.30485527544351076
+  },
+  "dev_CL_macro_f1": 0.18790334387485097,
+  "dev_IT_macro_f1": 0.19572543083971003,
+  "infer_sentences_per_sec": 719.9,
+  "top_confusions": [
+    "RatioOfTheDecision -> ArgumentPetitioner: 252",
+    "ArgumentRespondent -> ArgumentPetitioner: 180",
+    "PrecedentReliedUpon -> ArgumentPetitioner: 155",
+    "ArgumentPetitioner -> ArgumentRespondent: 109",
+    "Fact -> ArgumentPetitioner: 98",
+    "RatioOfTheDecision -> PrecedentNotReliedUpon: 50",
+    "PrecedentReliedUpon -> PrecedentNotReliedUpon: 49",
+    "Fact -> ArgumentRespondent: 42",
+    "RulingByLowerCourt -> ArgumentPetitioner: 40",
+    "Statute -> ArgumentPetitioner: 35",
+    "RatioOfTheDecision -> Dissent: 35",
+    "RatioOfTheDecision -> Fact: 30"
+  ],
+  "submission": "/kaggle/working/runs/R2_C_lorma_ctx/submission/submission.zip"
+}

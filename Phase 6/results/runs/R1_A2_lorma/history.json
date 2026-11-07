@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 2.9059,
+    "dev_ppl": 18.28
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.1026,
+    "minutes": 17.87,
+    "train_ce": 2.1026,
+    "dev_loss": 2.0525,
+    "dev_ppl": 7.79,
+    "quick_rouge1": 0.3166,
+    "quick_rougeL": 0.1829,
+    "sample": "The appellant was a dealer in jaggery, amchur, khandsari, etc. on its own account and as kutcha arhatiya was found to be posted upto February 29, 1968. The Sales Tax Officer, Muzaffarnagar by his order dated December 27, 1968 rejected the claim of the appellant for the first time in reference to the",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.945,
+    "minutes": 36.16,
+    "train_ce": 1.945,
+    "dev_loss": 2.0252,
+    "dev_ppl": 7.58,
+    "quick_rouge1": 0.3385,
+    "quick_rougeL": 0.1951,
+    "sample": "The appellant, a dealer in foodgrains, entered into a contract with the respondent, for purchase of certain foodgrains, for a sum of Rs. 5,30,000 and the tax payable thereon at the rate of Rs. 25,450. On the basis of the said contract, the respondent was assessed to sales tax under section 7(3) of t",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.8722,
+    "minutes": 54.42,
+    "train_ce": 1.8722,
+    "dev_loss": 2.0194,
+    "dev_ppl": 7.53,
+    "quick_rouge1": 0.3373,
+    "quick_rougeL": 0.1968,
+    "sample": "The appellant assessee was a dealer in foodgrains and foodgrains. The Sales Tax Officer, Muzaffarnagar by his order dated December 27, 1968 rejected the account books of the assessee on the basis of some discrepancies found during the four surveys carried out at his shop and made a best judgment ass",
+    "saved": true
+  }
+]

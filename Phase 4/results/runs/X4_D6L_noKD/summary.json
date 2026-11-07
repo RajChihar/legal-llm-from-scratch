@@ -1,0 +1,49 @@
+{
+  "run": "X4_D6L_noKD",
+  "arch": "D",
+  "backbone": "D_efficient_swa_mqa",
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 1024,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 45892100,
+  "params_trainable": 45892100,
+  "trainable_pct": 100.0,
+  "train_minutes": 33.5,
+  "peak_train_mem_gb": 1.6156935691833496,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "kd_teacher": null,
+  "threshold": 0.37,
+  "dev": {
+    "macro_f1": 0.6509750760684578,
+    "macro_p": 0.6860167409870759,
+    "macro_r": 0.6623857745002754,
+    "accuracy": 0.6618876941457587
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.6788998481971509,
+    "macro_p": 0.6791791477069185,
+    "macro_r": 0.6789654424247653,
+    "accuracy": 0.6790123456790124
+  },
+  "infer_docs_per_sec": 34.0,
+  "submission": "/kaggle/working/runs/X4_D6L_noKD/submission/submission.zip",
+  "test_share_pred_1": 0.525
+}

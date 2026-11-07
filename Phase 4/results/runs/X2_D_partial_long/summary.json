@@ -1,0 +1,50 @@
+{
+  "run": "X2_D_partial_long",
+  "arch": "D",
+  "backbone": "D_efficient_swa_mqa",
+  "method": {
+    "name": "partial",
+    "train_last_k": 4
+  },
+  "chunks": {
+    "len": 1024,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 12,
+  "params_total": 71213060,
+  "params_trainable": 16971780,
+  "trainable_pct": 23.832,
+  "train_minutes": 35.4,
+  "peak_train_mem_gb": 1.306349754333496,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "kd_teacher": null,
+  "threshold": 0.42,
+  "dev": {
+    "macro_f1": 0.6207051286782342,
+    "macro_p": 0.6544065077574461,
+    "macro_r": 0.6337250391430899,
+    "accuracy": 0.6332138590203107
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.6383552309336068,
+    "macro_p": 0.6384077983625013,
+    "macro_r": 0.6383682850885763,
+    "accuracy": 0.6383910792512943
+  },
+  "infer_docs_per_sec": 17.7,
+  "submission": "/kaggle/working/runs/X2_D_partial_long/submission/submission.zip",
+  "test_share_pred_1": 0.512
+}

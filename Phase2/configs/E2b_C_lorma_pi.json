@@ -1,0 +1,27 @@
+{
+  "run_name": "E2b_C_lorma_pi",
+  "backbone": {
+    "ckpt": "@C",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "lorma",
+    "variant": "pi",
+    "r": 8,
+    "targets": [
+      "attn"
+    ]
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 8,
+    "lr_new": 0.001
+  }
+}

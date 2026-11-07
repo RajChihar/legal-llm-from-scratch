@@ -1,0 +1,39 @@
+{
+  "run": "E3_A2_lora_bidir",
+  "arch": "A",
+  "method": {
+    "name": "lora",
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": "linear",
+  "attention": "bidirectional",
+  "params_total": 94877721,
+  "params_trainable": 1078041,
+  "trainable_pct": 1.136,
+  "train_minutes": 4.5,
+  "peak_train_mem_gb": 2.3276500701904297,
+  "best_dev_macro_f1": 0.5623225440107943,
+  "bio_ceiling_macro_f1": 0.9936730244199379,
+  "dev": {
+    "macro_f1": 0.5623225440107943,
+    "macro_p": 0.583573135022014,
+    "macro_r": 0.5652537948928363,
+    "micro_f1": 0.6233163028332559
+  },
+  "infer_tokens_per_sec": 23356,
+  "error_categories": {
+    "boundary": 120,
+    "missed": 240,
+    "both": 29,
+    "type": 55,
+    "spurious": 164
+  },
+  "submission": "/kaggle/working/runs/E3_A2_lora_bidir/submission/submission.zip",
+  "test_entities": 3957
+}

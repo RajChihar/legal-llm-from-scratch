@@ -1,0 +1,45 @@
+[data] train 827 queries / 4320 candidates | dev 118 / 1023 | test 237 / 1727
+[model] arch C (HybridLM) | layers 10/10 | attention bidirectional | method partial | chunks 4x512 uniform (train 2) | rep mean/mean/cos proj 256
+[model] params total 70.22M | trainable 19.994M (28.473%)
+[train] 5308 (query, relevant) instances from 827 queries | pool 4320 | 4 epochs x 5308 | 664 steps/epoch | batch 8 queries + 3 hard negatives each (bm25) | in-batch True | loss infonce | amp torch.float16
+[epoch] epoch 0 (before fine-tuning) | dev micro-F1@7 0.2557 | recall@100 0.6588
+[progress] epoch 1  10% | loss 2.2822 | task 2.2822 | 1.1 min | ETA all epochs 44.6 min
+[progress] epoch 1  20% | loss 2.1667 | task 2.1667 | 2.3 min | ETA all epochs 43.3 min
+[progress] epoch 1  30% | loss 2.1205 | task 2.1205 | 3.4 min | ETA all epochs 42.2 min
+[progress] epoch 1  40% | loss 2.1318 | task 2.1318 | 4.5 min | ETA all epochs 41.1 min
+[progress] epoch 1  50% | loss 2.1153 | task 2.1153 | 5.7 min | ETA all epochs 39.9 min
+[progress] epoch 1  60% | loss 2.0931 | task 2.0931 | 6.8 min | ETA all epochs 38.8 min
+[progress] epoch 1  70% | loss 2.1002 | task 2.1002 | 7.9 min | ETA all epochs 37.7 min
+[progress] epoch 1  80% | loss 2.0918 | task 2.0918 | 9.1 min | ETA all epochs 36.6 min
+[progress] epoch 1  89% | loss 2.0909 | task 2.0909 | 10.2 min | ETA all epochs 35.4 min
+[progress] epoch 1  99% | loss 2.0882 | task 2.0882 | 11.3 min | ETA all epochs 34.3 min
+[epoch] epoch 1 | train_loss 2.086 | minutes 11.83 | train_task 2.086 | micro_p@7 0.3196 | micro_r@7 0.2713 | micro_f1@7 0.2935 | recall@7 0.2713 | recall@20 0.4573 | recall@50 0.5807 | recall@100 0.6793 | recall@200 0.7646 | mrr 0.6835 | map@100 0.3874 | saved True
+[progress] epoch 2  10% | loss 1.8001 | task 1.8001 | 13.0 min | ETA all epochs 34.2 min
+[progress] epoch 2  20% | loss 1.8316 | task 1.8316 | 14.1 min | ETA all epochs 32.9 min
+[progress] epoch 2  30% | loss 1.8507 | task 1.8507 | 15.2 min | ETA all epochs 31.7 min
+[progress] epoch 2  40% | loss 1.8114 | task 1.8114 | 16.4 min | ETA all epochs 30.5 min
+[progress] epoch 2  50% | loss 1.7926 | task 1.7926 | 17.5 min | ETA all epochs 29.3 min
+[progress] epoch 2  60% | loss 1.7575 | task 1.7575 | 18.6 min | ETA all epochs 28.1 min
+[progress] epoch 2  70% | loss 1.7594 | task 1.7594 | 19.8 min | ETA all epochs 26.9 min
+[progress] epoch 2  80% | loss 1.7443 | task 1.7443 | 20.9 min | ETA all epochs 25.7 min
+[progress] epoch 2  89% | loss 1.7407 | task 1.7407 | 22.0 min | ETA all epochs 24.5 min
+[progress] epoch 2  99% | loss 1.7424 | task 1.7424 | 23.2 min | ETA all epochs 23.3 min
+[epoch] epoch 2 | train_loss 1.7425 | minutes 23.66 | train_task 1.7425 | micro_p@7 0.3438 | micro_r@7 0.2919 | micro_f1@7 0.3157 | recall@7 0.2919 | recall@20 0.4666 | recall@50 0.5982 | recall@100 0.6989 | recall@200 0.7893 | mrr 0.686 | map@100 0.4161 | saved True
+[progress] epoch 3  10% | loss 1.5479 | task 1.5479 | 24.8 min | ETA all epochs 22.4 min
+[progress] epoch 3  20% | loss 1.5289 | task 1.5289 | 25.9 min | ETA all epochs 21.2 min
+[progress] epoch 3  30% | loss 1.5610 | task 1.5610 | 27.1 min | ETA all epochs 20.0 min
+[progress] epoch 3  40% | loss 1.5335 | task 1.5335 | 28.2 min | ETA all epochs 18.8 min
+[progress] epoch 3  50% | loss 1.5468 | task 1.5468 | 29.3 min | ETA all epochs 17.7 min
+[progress] epoch 3  60% | loss 1.5368 | task 1.5368 | 30.5 min | ETA all epochs 16.5 min
+[progress] epoch 3  70% | loss 1.5307 | task 1.5307 | 31.6 min | ETA all epochs 15.3 min
+[progress] epoch 3  80% | loss 1.5130 | task 1.5130 | 32.7 min | ETA all epochs 14.1 min
+[progress] epoch 3  89% | loss 1.5103 | task 1.5103 | 33.9 min | ETA all epochs 12.9 min
+[progress] epoch 3  99% | loss 1.5145 | task 1.5145 | 35.0 min | ETA all epochs 11.8 min
+[epoch] epoch 3 | train_loss 1.5123 | minutes 35.48 | train_task 1.5123 | micro_p@7 0.3438 | micro_r@7 0.2919 | micro_f1@7 0.3157 | recall@7 0.2919 | recall@20 0.4748 | recall@50 0.6177 | recall@100 0.702 | recall@200 0.7893 | mrr 0.6926 | map@100 0.4335
+[progress] epoch 4  10% | loss 1.3316 | task 1.3316 | 36.6 min | ETA all epochs 10.6 min
+[progress] epoch 4  20% | loss 1.3736 | task 1.3736 | 37.8 min | ETA all epochs 9.5 min
+[progress] epoch 4  30% | loss 1.3863 | task 1.3863 | 38.9 min | ETA all epochs 8.3 min
+[train] time limit 40 min reached in epoch 4: evaluating and stopping
+[epoch] epoch 4 | train_loss 1.3711 | minutes 40.43 | train_task 1.3711 | micro_p@7 0.3487 | micro_r@7 0.296 | micro_f1@7 0.3202 | recall@7 0.296 | recall@20 0.4717 | recall@50 0.6053 | recall@100 0.6978 | recall@200 0.7842 | mrr 0.6981 | map@100 0.4339 | saved True
+[dev] micro-F1@7 0.3202 | P@7 0.3487 | R@7 0.2960 | recall@100 0.6978 | MRR 0.6981
+[submit] /kaggle/working/runs/R3_C_partial/submission/submission.zip | 237 queries x 7 candidates

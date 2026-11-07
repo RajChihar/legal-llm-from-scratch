@@ -1,0 +1,20 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt"
+ },
+ "method": {
+  "name": "partial",
+  "train_last_k": 4
+ },
+ "train": {
+  "lr_backbone": 5e-05,
+  "lr_new": 0.001,
+  "max_minutes": 70
+ },
+ "run_name": "R3_C_partial_hier",
+ "data_dir": "/kaggle/working/p5data/Phase_5_LSI",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p5cache",
+ "max_docs": null
+}

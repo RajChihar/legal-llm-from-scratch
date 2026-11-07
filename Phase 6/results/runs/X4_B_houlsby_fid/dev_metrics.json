@@ -1,0 +1,30 @@
+{
+  "rouge_impl": "rouge_score",
+  "rouge1_p": 0.5351317183271874,
+  "rouge1_r": 0.30746642942385805,
+  "rouge1_f": 0.35265902349004546,
+  "rouge2_p": 0.1830800913921371,
+  "rouge2_r": 0.09857656685532717,
+  "rouge2_f": 0.1152611008207306,
+  "rougeL_p": 0.3035171306851902,
+  "rougeL_r": 0.17361378798775243,
+  "rougeL_f": 0.19803832700870555,
+  "words": 396.63,
+  "ref_words": 897.785,
+  "rep_3gram": 0.21056487246613018,
+  "rep_sent": 0.0,
+  "novel_1gram": 0.3170614279396316,
+  "novel_2gram": 0.6793669776663875,
+  "novel_3gram": 0.8870576158502012,
+  "fact_precision": 0.21154193272614324,
+  "fact_recall": 0.04077675429978851,
+  "facts_per_summary": 3.64,
+  "generation": {
+    "seconds": 123.0,
+    "docs_per_sec": 1.626,
+    "tokens_per_sec": 766.7,
+    "mean_new_tokens": 471.4
+  },
+  "n_docs": 200,
+  "empty_replaced": 0
+}

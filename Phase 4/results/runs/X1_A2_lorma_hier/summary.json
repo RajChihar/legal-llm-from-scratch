@@ -1,0 +1,56 @@
+{
+  "run": "X1_A2_lorma_hier",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 8,
+    "alpha": 16,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 11,
+  "params_total": 95124740,
+  "params_trainable": 1325060,
+  "trainable_pct": 1.393,
+  "train_minutes": 43.8,
+  "peak_train_mem_gb": 7.233094692230225,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "kd_teacher": null,
+  "threshold": 0.38,
+  "dev": {
+    "macro_f1": 0.6792357709473906,
+    "macro_p": 0.7094582261501499,
+    "macro_r": 0.6878249764633932,
+    "accuracy": 0.6873755475906014
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.7072136350461908,
+    "macro_p": 0.7074227212580987,
+    "macro_r": 0.707249021105548,
+    "accuracy": 0.7072879330943848
+  },
+  "infer_docs_per_sec": 22.71,
+  "submission": "/kaggle/working/runs/X1_A2_lorma_hier/submission/submission.zip",
+  "test_share_pred_1": 0.519
+}

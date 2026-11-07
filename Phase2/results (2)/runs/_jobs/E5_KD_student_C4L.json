@@ -1,0 +1,34 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt",
+  "attention": "bidirectional",
+  "keep_layers": 4
+ },
+ "method": {
+  "name": "full"
+ },
+ "head": {
+  "type": "linear"
+ },
+ "kd": {
+  "teacher_run": "/kaggle/working/runs/E1_C_full_linear",
+  "kd_alpha": 0.5,
+  "kd_T": 2.0
+ },
+ "window": {
+  "max_len": 512,
+  "stride": 384
+ },
+ "train": {
+  "epochs": 12,
+  "batch_size": 8,
+  "lr_backbone": 0.0001,
+  "lr_new": 0.001
+ },
+ "run_name": "E5_KD_student_C4L",
+ "data_dir": "/kaggle/working/p2data/Phase_2_LNER",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p2cache",
+ "refit_full": false
+}

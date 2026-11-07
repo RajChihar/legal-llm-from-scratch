@@ -1,0 +1,92 @@
+{
+  "run": "X5_A2_lorma_salient",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 16,
+    "alpha": 32,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "context": {
+    "src_len": 1400,
+    "strategy": "salient",
+    "head_frac": 0.5,
+    "k": 4,
+    "lead": 256,
+    "gap": true
+  },
+  "resolved": {
+    "tgt_len": 640,
+    "src_len": 1400,
+    "sep_ids": [
+      314,
+      83,
+      7550,
+      77,
+      11980,
+      3212
+    ],
+    "max_new": 640,
+    "min_new": 320,
+    "gap_ids": [
+      1978
+    ]
+  },
+  "rope": {
+    "positions": 2048,
+    "rope_scale": 1.998
+  },
+  "layers": 11,
+  "params_total": 96232704,
+  "params_trainable": 2433024,
+  "trainable_pct": 2.528,
+  "nf4_weights": 0,
+  "train_minutes": 55.7,
+  "peak_train_mem_gb": 2.086116313934326,
+  "peak_gen_mem_gb": 1.5876893997192383,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "best_dev_loss": 2.0057477918078823,
+  "dev_loss_before": 2.9001,
+  "kd_teacher": null,
+  "dapt": null,
+  "adalora_final_ranks": null,
+  "gen": {
+    "method": "greedy",
+    "beams": 4,
+    "max_new": "auto",
+    "min_new": "auto",
+    "no_repeat_ngram": 4,
+    "rep_penalty": 1.0,
+    "rep_window": 512,
+    "length_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.9,
+    "batch_size": 16,
+    "seed": 0
+  },
+  "dev": {
+    "rouge1_f": 0.477499379508828,
+    "rouge2_f": 0.22979527959259868,
+    "rougeL_f": 0.24957448283211786,
+    "words": 455.015,
+    "ref_words": 897.785,
+    "rep_3gram": 0.15254893507177555,
+    "rep_sent": 0.0,
+    "novel_3gram": 0.604975103278991,
+    "fact_precision": 0.6612109823047323,
+    "fact_recall": 0.23630401825739714
+  },
+  "gen_docs_per_sec": 0.813,
+  "gen_tokens_per_sec": 433.1,
+  "submission": "/kaggle/working/runs/X5_A2_lorma_salient/submission/submission.zip",
+  "test_words": 452.6,
+  "test_empty_replaced": 0,
+  "test_gen_seconds": 127.4
+}

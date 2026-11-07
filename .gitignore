@@ -1,0 +1,21 @@
+# Model weights, archives, caches (too large for GitHub; kept on Kaggle)
+*.pt
+*.bin
+*.safetensors
+*.zip
+*.pkl
+*.npz
+*.npy
+*.lock
+*.metadata
+# Downloaded competition data & caches
+p*data/
+p*cache/
+.cache/
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Large per-run dumps (> GitHub-friendly size)
+dev_predictions.json
+dev_generations.json

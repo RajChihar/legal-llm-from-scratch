@@ -1,0 +1,9 @@
+run,arch,backbone,layers,method,head,window,params_M,trainable_M,trainable_%,train_min,best_epoch,peak_mem_GB,sent_per_s,dev_macroF1,dev_macroP,dev_macroR,dev_CL_F1,dev_IT_F1,dev_acc,refit
+R1_A2_lora_ctx,A,A_llama_decoder_v2,11,lora,linear/gru,context,96.5,2.66,2.757,8.1,5,2.3,558.8,0.5231,0.5809,0.5171,0.4058,0.5678,0.5635,False
+R2_C_lorma_ctx,C,C_hybrid_prefix_mlm,10,lorma,linear/gru,context,72.5,2.466,3.401,3.0,1,1.88,719.9,0.2066,0.3582,0.198,0.1879,0.1957,0.3049,False
+R3_B_rslora_ctx,B,B_encoder_decoder,6,lora(rs),linear/gru,context,44.5,2.186,4.911,2.9,4,1.01,1292.0,0.4869,0.5807,0.4819,0.5104,0.4258,0.5243,False
+R4_D_ia3_ctx,D,D_efficient_swa_mqa,12,ia3,linear/gru,context,72.5,1.424,1.962,8.5,10,1.65,755.9,0.4311,0.4659,0.4184,0.3537,0.4649,0.535,False
+R5_KD_C4L_from_R1,C,C_hybrid_prefix_mlm,4,full+KD,linear/gru,context,41.7,41.714,100.0,2.8,6,1.13,2213.3,0.4907,0.5577,0.4735,0.4082,0.4898,0.5458,False
+R6_A2_lora_sentonly,A,A_llama_decoder_v2,11,lora,linear/none,sentence,94.9,1.072,1.13,7.1,6,2.29,1079.4,0.3566,0.3913,0.3491,0.2852,0.4264,0.4141,False
+X_A2_full_ctx,A,A_llama_decoder_v2,11,full,linear/gru,context,95.4,95.401,100.0,5.9,3,2.98,686.0,0.5292,0.5442,0.5506,0.4383,0.5398,0.5672,False
+X_C4L_noKD,C,C_hybrid_prefix_mlm,4,full,linear/gru,context,41.7,41.714,100.0,1.9,3,1.13,2139.6,0.4652,0.4993,0.4654,0.356,0.4999,0.528,False

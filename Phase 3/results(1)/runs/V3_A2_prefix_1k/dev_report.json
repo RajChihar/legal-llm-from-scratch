@@ -1,0 +1,522 @@
+{
+  "all": {
+    "macro_f1": 0.4844015180492179,
+    "macro_p": 0.5321312610960239,
+    "macro_r": 0.4643193635491297,
+    "macro_f1_vocab": 0.40987820758010746,
+    "accuracy": 0.5536881419234361,
+    "n_sentences": 2142,
+    "labels_in_average": 11,
+    "per_label": {
+      "Fact": {
+        "p": 0.6990950226244343,
+        "r": 0.6959459459459459,
+        "f1": 0.6975169300225734,
+        "support": 444,
+        "predicted": 442
+      },
+      "Issue": {
+        "p": 0.6,
+        "r": 0.4,
+        "f1": 0.48,
+        "support": 15,
+        "predicted": 10
+      },
+      "ArgumentPetitioner": {
+        "p": 0.5957446808510638,
+        "r": 0.42,
+        "f1": 0.49266862170087977,
+        "support": 400,
+        "predicted": 282
+      },
+      "ArgumentRespondent": {
+        "p": 0.40217391304347827,
+        "r": 0.27205882352941174,
+        "f1": 0.32456140350877194,
+        "support": 272,
+        "predicted": 184
+      },
+      "Statute": {
+        "p": 0.7304347826086957,
+        "r": 0.7,
+        "f1": 0.7148936170212765,
+        "support": 120,
+        "predicted": 115
+      },
+      "Dissent": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 0
+      },
+      "PrecedentReliedUpon": {
+        "p": 0.5398550724637681,
+        "r": 0.5866141732283464,
+        "f1": 0.5622641509433962,
+        "support": 254,
+        "predicted": 276
+      },
+      "PrecedentNotReliedUpon": {
+        "p": 0.19148936170212766,
+        "r": 0.18,
+        "f1": 0.18556701030927833,
+        "support": 50,
+        "predicted": 47
+      },
+      "PrecedentOverruled": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 0
+      },
+      "RulingByLowerCourt": {
+        "p": 0.4647887323943662,
+        "r": 0.3235294117647059,
+        "f1": 0.3815028901734104,
+        "support": 102,
+        "predicted": 71
+      },
+      "RatioOfTheDecision": {
+        "p": 0.48343373493975905,
+        "r": 0.7965260545905707,
+        "f1": 0.6016869728209934,
+        "support": 403,
+        "predicted": 664
+      },
+      "RulingByPresentCourt": {
+        "p": 0.7714285714285715,
+        "r": 0.5510204081632653,
+        "f1": 0.6428571428571429,
+        "support": 49,
+        "predicted": 35
+      },
+      "None": {
+        "p": 0.375,
+        "r": 0.18181818181818182,
+        "f1": 0.24489795918367344,
+        "support": 33,
+        "predicted": 16
+      }
+    }
+  },
+  "CL": {
+    "macro_f1": 0.4016987636104636,
+    "macro_p": 0.41685620237834375,
+    "macro_r": 0.40310536002226854,
+    "macro_f1_vocab": 0.3398989538242384,
+    "accuracy": 0.5515759312320917,
+    "n_sentences": 1396,
+    "labels_in_average": 11,
+    "per_label": {
+      "Fact": {
+        "p": 0.6305220883534136,
+        "r": 0.6305220883534136,
+        "f1": 0.6305220883534136,
+        "support": 249,
+        "predicted": 249
+      },
+      "Issue": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 3,
+        "predicted": 3
+      },
+      "ArgumentPetitioner": {
+        "p": 0.6371681415929203,
+        "r": 0.4186046511627907,
+        "f1": 0.5052631578947369,
+        "support": 344,
+        "predicted": 226
+      },
+      "ArgumentRespondent": {
+        "p": 0.4457831325301205,
+        "r": 0.3135593220338983,
+        "f1": 0.3681592039800995,
+        "support": 236,
+        "predicted": 166
+      },
+      "Statute": {
+        "p": 0.7454545454545455,
+        "r": 0.7068965517241379,
+        "f1": 0.7256637168141592,
+        "support": 58,
+        "predicted": 55
+      },
+      "Dissent": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 0
+      },
+      "PrecedentReliedUpon": {
+        "p": 0.5801526717557252,
+        "r": 0.5352112676056338,
+        "f1": 0.5567765567765568,
+        "support": 142,
+        "predicted": 131
+      },
+      "PrecedentNotReliedUpon": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 4
+      },
+      "PrecedentOverruled": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 0
+      },
+      "RulingByLowerCourt": {
+        "p": 0.3170731707317073,
+        "r": 0.23214285714285715,
+        "f1": 0.26804123711340205,
+        "support": 56,
+        "predicted": 41
+      },
+      "RatioOfTheDecision": {
+        "p": 0.5070422535211268,
+        "r": 0.875,
+        "f1": 0.6420382165605095,
+        "support": 288,
+        "predicted": 497
+      },
+      "RulingByPresentCourt": {
+        "p": 0.7222222222222222,
+        "r": 0.7222222222222222,
+        "f1": 0.7222222222222222,
+        "support": 18,
+        "predicted": 18
+      },
+      "None": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 2,
+        "predicted": 6
+      }
+    }
+  },
+  "IT": {
+    "macro_f1": 0.47290082613096707,
+    "macro_p": 0.5460060047081616,
+    "macro_r": 0.4466669644053935,
+    "macro_f1_vocab": 0.40014685288004903,
+    "accuracy": 0.5576407506702413,
+    "n_sentences": 746,
+    "labels_in_average": 11,
+    "per_label": {
+      "Fact": {
+        "p": 0.7875647668393783,
+        "r": 0.7794871794871795,
+        "f1": 0.7835051546391752,
+        "support": 195,
+        "predicted": 193
+      },
+      "Issue": {
+        "p": 0.8571428571428571,
+        "r": 0.5,
+        "f1": 0.631578947368421,
+        "support": 12,
+        "predicted": 7
+      },
+      "ArgumentPetitioner": {
+        "p": 0.42857142857142855,
+        "r": 0.42857142857142855,
+        "f1": 0.42857142857142855,
+        "support": 56,
+        "predicted": 56
+      },
+      "ArgumentRespondent": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 36,
+        "predicted": 18
+      },
+      "Statute": {
+        "p": 0.7166666666666667,
+        "r": 0.6935483870967742,
+        "f1": 0.7049180327868854,
+        "support": 62,
+        "predicted": 60
+      },
+      "Dissent": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 0
+      },
+      "PrecedentReliedUpon": {
+        "p": 0.503448275862069,
+        "r": 0.6517857142857143,
+        "f1": 0.5680933852140078,
+        "support": 112,
+        "predicted": 145
+      },
+      "PrecedentNotReliedUpon": {
+        "p": 0.20930232558139536,
+        "r": 0.18,
+        "f1": 0.19354838709677422,
+        "support": 50,
+        "predicted": 43
+      },
+      "PrecedentOverruled": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "predicted": 0
+      },
+      "RulingByLowerCourt": {
+        "p": 0.6666666666666666,
+        "r": 0.43478260869565216,
+        "f1": 0.5263157894736841,
+        "support": 46,
+        "predicted": 30
+      },
+      "RatioOfTheDecision": {
+        "p": 0.41317365269461076,
+        "r": 0.6,
+        "f1": 0.48936170212765956,
+        "support": 115,
+        "predicted": 167
+      },
+      "RulingByPresentCourt": {
+        "p": 0.8235294117647058,
+        "r": 0.45161290322580644,
+        "f1": 0.5833333333333333,
+        "support": 31,
+        "predicted": 17
+      },
+      "None": {
+        "p": 0.6,
+        "r": 0.1935483870967742,
+        "f1": 0.2926829268292683,
+        "support": 31,
+        "predicted": 10
+      }
+    }
+  },
+  "confusion": [
+    [
+      309,
+      0,
+      20,
+      2,
+      11,
+      0,
+      3,
+      0,
+      0,
+      14,
+      80,
+      2,
+      3
+    ],
+    [
+      1,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      1
+    ],
+    [
+      27,
+      0,
+      168,
+      104,
+      8,
+      0,
+      21,
+      7,
+      0,
+      9,
+      55,
+      1,
+      0
+    ],
+    [
+      8,
+      0,
+      85,
+      74,
+      0,
+      0,
+      16,
+      9,
+      0,
+      2,
+      77,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      84,
+      0,
+      13,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      37,
+      0,
+      1,
+      0,
+      0,
+      0,
+      149,
+      19,
+      0,
+      0,
+      45,
+      1,
+      2
+    ],
+    [
+      10,
+      0,
+      0,
+      2,
+      0,
+      0,
+      14,
+      9,
+      0,
+      4,
+      10,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      35,
+      1,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      33,
+      27,
+      2,
+      1
+    ],
+    [
+      12,
+      3,
+      4,
+      0,
+      9,
+      0,
+      40,
+      3,
+      0,
+      9,
+      321,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      2,
+      0,
+      0,
+      0,
+      16,
+      27,
+      1
+    ],
+    [
+      3,
+      0,
+      1,
+      0,
+      0,
+      0,
+      18,
+      0,
+      0,
+      0,
+      5,
+      0,
+      6
+    ]
+  ],
+  "top_confusions": [
+    "ArgumentPetitioner -> ArgumentRespondent: 104",
+    "ArgumentRespondent -> ArgumentPetitioner: 85",
+    "Fact -> RatioOfTheDecision: 80",
+    "ArgumentRespondent -> RatioOfTheDecision: 77",
+    "ArgumentPetitioner -> RatioOfTheDecision: 55",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 45",
+    "RatioOfTheDecision -> PrecedentReliedUpon: 40",
+    "PrecedentReliedUpon -> Fact: 37",
+    "RulingByLowerCourt -> Fact: 35",
+    "RulingByLowerCourt -> RatioOfTheDecision: 27",
+    "ArgumentPetitioner -> Fact: 27",
+    "Statute -> RatioOfTheDecision: 22"
+  ],
+  "errors_at_label_change": 231,
+  "errors_inside_run": 725,
+  "sklearn_macro_f1": 0.4844015180492179
+}

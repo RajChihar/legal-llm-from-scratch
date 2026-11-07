@@ -1,0 +1,49 @@
+{
+  "run": "X3_A2_full_tail512",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 512,
+    "k": 1,
+    "strategy": "tail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 11,
+  "params_total": 93908228,
+  "params_trainable": 93908228,
+  "trainable_pct": 100.0,
+  "train_minutes": 12.3,
+  "peak_train_mem_gb": 4.664523124694824,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "kd_teacher": null,
+  "threshold": 0.43,
+  "dev": {
+    "macro_f1": 0.6716505304655342,
+    "macro_p": 0.6886578332287315,
+    "macro_r": 0.6769711749524827,
+    "accuracy": 0.6766228594185584
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.6766166534496432,
+    "macro_p": 0.6766208356172727,
+    "macro_r": 0.676615905417099,
+    "accuracy": 0.6766228594185584
+  },
+  "infer_docs_per_sec": 114.37,
+  "submission": "/kaggle/working/runs/X3_A2_full_tail512/submission/submission.zip",
+  "test_share_pred_1": 0.513
+}

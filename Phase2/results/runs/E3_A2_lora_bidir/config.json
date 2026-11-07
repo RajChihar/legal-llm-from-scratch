@@ -1,0 +1,73 @@
+{
+  "run_name": "E3_A2_lora_bidir",
+  "out_dir": "/kaggle/working/runs",
+  "data_dir": "/kaggle/working/p2data/Phase_2_LNER",
+  "backbone": {
+    "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt",
+    "attention": "bidirectional",
+    "keep_layers": null,
+    "c_segment": 0,
+    "grad_ckpt": false
+  },
+  "tokenizer": {
+    "path": "",
+    "fine_punct": true
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384,
+    "random_offset": true
+  },
+  "method": {
+    "name": "lora",
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": {
+    "type": "linear",
+    "dropout": 0.1,
+    "hidden": 0
+  },
+  "loss": {
+    "class_weight": "none",
+    "cw_power": 0.5,
+    "cw_max": 10.0,
+    "label_smoothing": 0.0,
+    "focal_gamma": 0
+  },
+  "kd": {
+    "teacher_run": "",
+    "kd_alpha": 0.5,
+    "kd_T": 2.0
+  },
+  "decode": {
+    "strategy": "bio_viterbi",
+    "trim": true
+  },
+  "split": {
+    "mode": "random",
+    "dev_frac": 0.15,
+    "seed": 1337
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 8,
+    "grad_accum": 1,
+    "lr_backbone": 5e-05,
+    "lr_new": 0.001,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.1,
+    "patience": 3,
+    "grad_clip": 1.0,
+    "seed": 1337,
+    "eval_every_epochs": 1,
+    "num_workers": 0
+  },
+  "predict_test": true,
+  "ckpt_root": ""
+}

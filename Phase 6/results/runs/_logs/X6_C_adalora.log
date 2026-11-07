@@ -1,0 +1,44 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch C (HybridLM) | layers 10/10 | method adalora | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 71.29M | trainable 1.237M (1.735%)
+[adalora] 40 modules | rank budget 480 -> 160 over 1263 steps
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 3.2024 | dev_ppl 24.59
+[progress] epoch 1  10% | loss 3.8176 | ce 3.1873 orth 0.6303 | 3037 summary tok/s | 2.0 min | ETA all epochs 58.9 min
+[progress] epoch 1  20% | loss 3.3852 | ce 3.0468 orth 0.3385 | 3093 summary tok/s | 4.1 min | ETA all epochs 57.2 min
+[progress] epoch 1  30% | loss 3.0693 | ce 2.8361 orth 0.2331 | 3109 summary tok/s | 6.1 min | ETA all epochs 55.3 min
+[progress] epoch 1  40% | loss 2.8841 | ce 2.7069 orth 0.1773 | 3099 summary tok/s | 8.2 min | ETA all epochs 53.1 min
+[progress] epoch 1  50% | loss 2.7702 | ce 2.6270 orth 0.1432 | 3099 summary tok/s | 10.2 min | ETA all epochs 51.0 min
+[progress] epoch 1  60% | loss 2.6873 | ce 2.5671 orth 0.1203 | 3097 summary tok/s | 12.2 min | ETA all epochs 48.9 min
+[progress] epoch 1  70% | loss 2.6242 | ce 2.5205 orth 0.1037 | 3096 summary tok/s | 14.2 min | ETA all epochs 46.8 min
+[progress] epoch 1  80% | loss 2.5799 | ce 2.4887 orth 0.0913 | 3095 summary tok/s | 16.2 min | ETA all epochs 44.7 min
+[progress] epoch 1  90% | loss 2.5403 | ce 2.4588 orth 0.0815 | 3095 summary tok/s | 18.2 min | ETA all epochs 42.6 min
+[progress] epoch 1 100% | loss 2.5090 | ce 2.4353 orth 0.0737 | 3095 summary tok/s | 20.2 min | ETA all epochs 40.6 min
+[epoch] epoch 1 | train_loss 2.5088 | minutes 20.28 | train_ce 2.4352 | train_orth 0.0736 | dev_loss 2.2724 | dev_ppl 9.7 | adalora_budget 255 | quick_rouge1 0.3117 | quick_rougeL 0.1787 | saved True
+[epoch] sample: The assessee, a dealer, was assessed to sales tax under section 8A of the Act, on the basis of some discrepancies found during the four surveys carried out at his shop and made a best judgment assessment under section 7(3) of the Act. The assessee, however, filed a statement of the case before the A
+[progress] epoch 2  10% | loss 2.2416 | ce 2.2380 orth 0.0037 | 281 summary tok/s | 22.7 min | ETA all epochs 39.2 min
+[progress] epoch 2  20% | loss 2.2226 | ce 2.2190 orth 0.0036 | 516 summary tok/s | 24.8 min | ETA all epochs 37.2 min
+[progress] epoch 2  30% | loss 2.2205 | ce 2.2171 orth 0.0034 | 710 summary tok/s | 26.8 min | ETA all epochs 35.1 min
+[progress] epoch 2  40% | loss 2.2182 | ce 2.2148 orth 0.0034 | 877 summary tok/s | 28.8 min | ETA all epochs 33.0 min
+[progress] epoch 2  50% | loss 2.2141 | ce 2.2108 orth 0.0033 | 1021 summary tok/s | 30.8 min | ETA all epochs 30.9 min
+[progress] epoch 2  60% | loss 2.2107 | ce 2.2074 orth 0.0032 | 1148 summary tok/s | 32.9 min | ETA all epochs 28.8 min
+[progress] epoch 2  70% | loss 2.2094 | ce 2.2062 orth 0.0032 | 1259 summary tok/s | 34.9 min | ETA all epochs 26.7 min
+[progress] epoch 2  80% | loss 2.2084 | ce 2.2053 orth 0.0031 | 1358 summary tok/s | 36.9 min | ETA all epochs 24.7 min
+[progress] epoch 2  90% | loss 2.2089 | ce 2.2059 orth 0.0030 | 1447 summary tok/s | 38.9 min | ETA all epochs 22.6 min
+[progress] epoch 2 100% | loss 2.2047 | ce 2.2017 orth 0.0030 | 1530 summary tok/s | 41.0 min | ETA all epochs 20.5 min
+[epoch] epoch 2 | train_loss 2.2047 | minutes 40.99 | train_ce 2.2017 | train_orth 0.003 | dev_loss 2.2461 | dev_ppl 9.45 | adalora_budget 162 | quick_rouge1 0.2948 | quick_rougeL 0.1783 | saved True
+[epoch] sample: The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. The assessee, a firm, was registered as a dealer under section 8A of the Act, and was registered as dealer under section 7A of the U.P. Sales Tax Act, 1948. The assess
+[progress] epoch 3  10% | loss 2.1691 | ce 2.1665 orth 0.0026 | 142 summary tok/s | 43.4 min | ETA all epochs 18.6 min
+[progress] epoch 3  20% | loss 2.1836 | ce 2.1810 orth 0.0026 | 273 summary tok/s | 45.4 min | ETA all epochs 16.5 min
+[progress] epoch 3  30% | loss 2.1773 | ce 2.1748 orth 0.0025 | 391 summary tok/s | 47.4 min | ETA all epochs 14.5 min
+[progress] epoch 3  40% | loss 2.1779 | ce 2.1754 orth 0.0025 | 503 summary tok/s | 49.5 min | ETA all epochs 12.4 min
+[progress] epoch 3  50% | loss 2.1838 | ce 2.1814 orth 0.0024 | 605 summary tok/s | 51.5 min | ETA all epochs 10.3 min
+[progress] epoch 3  60% | loss 2.1793 | ce 2.1769 orth 0.0024 | 702 summary tok/s | 53.5 min | ETA all epochs 8.3 min
+[train] time limit 55 min reached in epoch 3 (67%): evaluating and stopping
+[epoch] epoch 3 | train_loss 2.1769 | minutes 55.0 | train_ce 2.1746 | train_orth 0.0023 | dev_loss 2.2353 | dev_ppl 9.35 | adalora_budget 160 | quick_rouge1 0.3127 | quick_rougeL 0.1831 | saved True
+[epoch] sample: The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. The assessee, a firm, was registered as a dealer under section 8A of the Act, and was registered as dealer under section 7A of the U.P. Sales Tax Act, 1948. The assess
+[gen] 16/200 documents | 16s
+[gen] 176/200 documents | 177s
+[dev] 200 documents | ROUGE-1 0.4368 | ROUGE-2 0.1993 | ROUGE-L 0.2329 | words 432 (ref 898) | rep-3gram 0.177 | fact precision 0.639 | 0.954 docs/s
+[gen] 16/100 documents | 16s
+[submit] /kaggle/working/runs/X6_C_adalora/submission/submission.zip | 100 documents | mean 420.8 words | empty generations replaced: 0

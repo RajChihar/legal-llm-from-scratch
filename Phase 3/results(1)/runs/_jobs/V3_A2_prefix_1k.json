@@ -1,0 +1,22 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "prefix",
+  "n_prefix": 16
+ },
+ "window": {
+  "max_len": 1024
+ },
+ "train": {
+  "epochs": 12,
+  "lr_new": 0.003
+ },
+ "run_name": "V3_A2_prefix_1k",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": true
+}

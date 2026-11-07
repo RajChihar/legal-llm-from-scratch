@@ -1,0 +1,46 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 3072 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch B (EncDecLM) | layers 12/12 | method lora | positions {'dec_positions': 642, 'dec_rope_scale': 1.6693} | train sequence 641 | FiD 4 x 768
+[model] params total 76.35M | trainable 2.157M (2.825%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 3.1799 | dev_ppl 24.04
+[progress] epoch 1  10% | loss 3.0810 | ce 3.0810 | 4014 summary tok/s | 1.5 min | ETA all epochs 45.0 min
+[progress] epoch 1  20% | loss 2.9963 | ce 2.9963 | 3921 summary tok/s | 3.2 min | ETA all epochs 45.2 min
+[progress] epoch 1  30% | loss 2.9545 | ce 2.9545 | 3872 summary tok/s | 4.9 min | ETA all epochs 44.0 min
+[progress] epoch 1  40% | loss 2.9256 | ce 2.9256 | 3846 summary tok/s | 6.5 min | ETA all epochs 42.6 min
+[progress] epoch 1  50% | loss 2.9060 | ce 2.9060 | 3851 summary tok/s | 8.2 min | ETA all epochs 41.0 min
+[progress] epoch 1  60% | loss 2.8925 | ce 2.8925 | 3841 summary tok/s | 9.8 min | ETA all epochs 39.4 min
+[progress] epoch 1  70% | loss 2.8819 | ce 2.8819 | 3833 summary tok/s | 11.5 min | ETA all epochs 37.7 min
+[progress] epoch 1  80% | loss 2.8750 | ce 2.8750 | 3842 summary tok/s | 13.1 min | ETA all epochs 36.0 min
+[progress] epoch 1  90% | loss 2.8650 | ce 2.8650 | 3841 summary tok/s | 14.7 min | ETA all epochs 34.4 min
+[progress] epoch 1 100% | loss 2.8598 | ce 2.8598 | 3835 summary tok/s | 16.3 min | ETA all epochs 32.8 min
+[epoch] epoch 1 | train_loss 2.8597 | minutes 16.37 | train_ce 2.8597 | dev_loss 2.7988 | dev_ppl 16.42 | quick_rouge1 0.2773 | quick_rougeL 0.1665 | saved True
+[epoch] sample: The appellant, a dealer in the goods sold by him to the respondent, was assessed to sales tax under section 10(1)(a) of the Act. The respondent was assessed to tax under section 11(1)(c) of the U.P. Sales Tax Act, 1948. The respondent claimed that the sales tax was not leviable on the goods sold and
+[progress] epoch 2  10% | loss 2.7592 | ce 2.7592 | 347 summary tok/s | 18.3 min | ETA all epochs 31.7 min
+[progress] epoch 2  20% | loss 2.7699 | ce 2.7699 | 633 summary tok/s | 20.0 min | ETA all epochs 30.0 min
+[progress] epoch 2  30% | loss 2.7667 | ce 2.7667 | 875 summary tok/s | 21.6 min | ETA all epochs 28.3 min
+[progress] epoch 2  40% | loss 2.7664 | ce 2.7664 | 1086 summary tok/s | 23.3 min | ETA all epochs 26.6 min
+[progress] epoch 2  50% | loss 2.7645 | ce 2.7645 | 1265 summary tok/s | 24.9 min | ETA all epochs 24.9 min
+[progress] epoch 2  60% | loss 2.7668 | ce 2.7668 | 1423 summary tok/s | 26.5 min | ETA all epochs 23.2 min
+[progress] epoch 2  70% | loss 2.7661 | ce 2.7661 | 1562 summary tok/s | 28.2 min | ETA all epochs 21.6 min
+[progress] epoch 2  80% | loss 2.7638 | ce 2.7638 | 1684 summary tok/s | 29.8 min | ETA all epochs 19.9 min
+[progress] epoch 2  90% | loss 2.7643 | ce 2.7643 | 1794 summary tok/s | 31.4 min | ETA all epochs 18.2 min
+[progress] epoch 2 100% | loss 2.7623 | ce 2.7623 | 1894 summary tok/s | 33.1 min | ETA all epochs 16.6 min
+[epoch] epoch 2 | train_loss 2.7621 | minutes 33.12 | train_ce 2.7621 | dev_loss 2.7792 | dev_ppl 16.11 | quick_rouge1 0.2751 | quick_rougeL 0.1669 | saved True
+[epoch] sample: The appellant, a dealer in the goods of the respondent, was assessed to sales tax under section 10(1)(a) of the Act. The respondent claimed that the sales tax was payable on the sale of goods and that the sales were not taxable. The High Court held that the sales of the goods were not taxable and th
+[progress] epoch 3  10% | loss 2.7183 | ce 2.7183 | 178 summary tok/s | 35.1 min | ETA all epochs 15.0 min
+[progress] epoch 3  20% | loss 2.7296 | ce 2.7296 | 340 summary tok/s | 36.7 min | ETA all epochs 13.4 min
+[progress] epoch 3  30% | loss 2.7219 | ce 2.7219 | 490 summary tok/s | 38.3 min | ETA all epochs 11.7 min
+[progress] epoch 3  40% | loss 2.7168 | ce 2.7168 | 626 summary tok/s | 40.0 min | ETA all epochs 10.0 min
+[progress] epoch 3  50% | loss 2.7235 | ce 2.7235 | 755 summary tok/s | 41.6 min | ETA all epochs 8.3 min
+[progress] epoch 3  60% | loss 2.7248 | ce 2.7248 | 873 summary tok/s | 43.3 min | ETA all epochs 6.7 min
+[progress] epoch 3  70% | loss 2.7228 | ce 2.7228 | 977 summary tok/s | 44.9 min | ETA all epochs 5.0 min
+[progress] epoch 3  80% | loss 2.7217 | ce 2.7217 | 1077 summary tok/s | 46.6 min | ETA all epochs 3.4 min
+[progress] epoch 3  90% | loss 2.7220 | ce 2.7220 | 1171 summary tok/s | 48.2 min | ETA all epochs 1.7 min
+[progress] epoch 3 100% | loss 2.7216 | ce 2.7216 | 1257 summary tok/s | 49.9 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 2.7217 | minutes 49.88 | train_ce 2.7217 | dev_loss 2.7739 | dev_ppl 16.02 | quick_rouge1 0.2876 | quick_rougeL 0.1727 | saved True
+[epoch] sample: The appellant, a dealer in the goods, sold to the respondent, sold the goods to the respondent. The respondent sold the goods in the course of inter State trade. The respondent purchased the goods in his favour. The respondent filed a writ petition in the High Court challenging the order of the Sale
+[gen] 16/200 documents | 11s
+[gen] 176/200 documents | 128s
+[dev] 200 documents | ROUGE-1 0.3633 | ROUGE-2 0.1193 | ROUGE-L 0.2029 | words 409 (ref 898) | rep-3gram 0.212 | fact precision 0.190 | 1.327 docs/s
+[gen] 16/100 documents | 12s
+[submit] /kaggle/working/runs/R2_B_lora_fid/submission/submission.zip | 100 documents | mean 426.3 words | empty generations replaced: 0

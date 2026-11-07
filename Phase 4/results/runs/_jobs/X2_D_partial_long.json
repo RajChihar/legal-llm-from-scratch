@@ -1,0 +1,30 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/D_efficient_swa_mqa/model_final.pt",
+  "grad_ckpt": true
+ },
+ "method": {
+  "name": "partial",
+  "train_last_k": 4
+ },
+ "chunks": {
+  "len": 1024,
+  "k": 4
+ },
+ "train": {
+  "epochs": 3,
+  "docs_per_epoch": 6000,
+  "batch_size": 4,
+  "grad_accum": 2,
+  "lr_backbone": 5e-05,
+  "lr_new": 0.001,
+  "chunk_bs": 16,
+  "max_minutes": 80
+ },
+ "run_name": "X2_D_partial_long",
+ "data_dir": "/kaggle/working/p4data/Phase_4_CJPE",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p4cache",
+ "max_docs": null
+}

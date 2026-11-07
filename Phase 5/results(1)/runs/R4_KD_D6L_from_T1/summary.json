@@ -1,0 +1,77 @@
+{
+  "run": "R4_KD_D6L_from_T1",
+  "arch": "D",
+  "backbone": "D_efficient_swa_mqa",
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 1024,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "loss": {
+    "name": "bce",
+    "pos_weight": "none",
+    "pos_weight_max": 30.0,
+    "gamma_pos": 0.0,
+    "gamma_neg": 4.0,
+    "asl_clip": 0.05
+  },
+  "sampler": "uniform",
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 45954918,
+  "params_trainable": 45954918,
+  "trainable_pct": 100.0,
+  "nf4_weights": 0,
+  "train_minutes": 31.6,
+  "peak_train_mem_gb": 1.6110901832580566,
+  "best_epoch": 4,
+  "epochs_run": 4,
+  "kd_teacher": {
+    "teacher_run": "/kaggle/working/runs/T1_A2_full_hier",
+    "teacher_backbone": "A_llama_decoder_v2",
+    "teacher_dev_macro_f1": 0.39951690430086173,
+    "teacher_params": 93983590,
+    "teacher_train_macro_f1_on_student_docs": 0.4465
+  },
+  "n_labels": 100,
+  "threshold_strategy": "per_label",
+  "crossfit_macro_f1": {
+    "fixed": 0.23933647948123138,
+    "global": 0.3584359775802991,
+    "per_label": 0.3773987549468478
+  },
+  "dev_at_0.5": {
+    "macro_f1": 0.2398698154557516,
+    "macro_p": 0.5528010101562437,
+    "macro_r": 0.1808240288871311,
+    "macro_f1_present": 0.2398698154557516,
+    "micro_f1": 0.41655480984340043,
+    "subset_acc": 0.08358707396130047,
+    "pred_per_doc": 1.791965425793144
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.39363013015547216,
+    "macro_p": 0.3965082371375651,
+    "macro_r": 0.4176986093030586,
+    "macro_f1_present": 0.39363013015547216,
+    "micro_f1": 0.49207350027022156,
+    "subset_acc": 0.04125331499852667,
+    "pred_per_doc": 4.807975640899715
+  },
+  "infer_docs_per_sec": 77.37,
+  "submission": "/kaggle/working/runs/R4_KD_D6L_from_T1/submission/submission.zip",
+  "test_pred_per_doc": 4.72
+}

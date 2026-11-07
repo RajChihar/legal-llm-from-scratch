@@ -1,0 +1,29 @@
+{
+  "arch": "C",
+  "class": "HybridLM",
+  "model_kw": {
+    "block_size": 1024,
+    "n_layer": 10,
+    "n_head": 10,
+    "d_model": 640,
+    "ffn_mult": 2.6666666666666665,
+    "dropout": 0.0,
+    "rope_theta": 10000.0,
+    "tie_weights": true,
+    "bias": false,
+    "n_segments": 3,
+    "vocab_size": 32000,
+    "pad_id": 31996
+  },
+  "phase1_layers": 10,
+  "layers_used": 10,
+  "d_model": 640,
+  "max_len": 1024,
+  "window": null,
+  "attention": "bidirectional",
+  "params": {
+    "total": 70072985,
+    "trainable": 70072985,
+    "trainable_pct": 100.0
+  }
+}

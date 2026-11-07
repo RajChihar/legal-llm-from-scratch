@@ -1,0 +1,23 @@
+{
+  "run_name": "X_C_frozen_probe",
+  "backbone": {
+    "ckpt": "@C",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "frozen"
+  },
+  "head": {
+    "type": "linear",
+    "hidden": 256
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 10,
+    "batch_size": 8,
+    "lr_new": 0.002
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "run": "V5_KD_A2L4_from_V1",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "full"
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 4,
+  "params_total": 51349773,
+  "params_trainable": 51349773,
+  "trainable_pct": 100.0,
+  "train_minutes": 2.6,
+  "peak_train_mem_gb": 1.9958367347717285,
+  "best_epoch": 3,
+  "kd_teacher": {
+    "teacher_run": "/kaggle/working/runs/V1_A2_lora_crf_1k",
+    "teacher_backbone": "A_llama_decoder_v2",
+    "teacher_dev_macro_f1": 0.5688187561336371,
+    "teacher_params": 96459728
+  },
+  "dev": {
+    "macro_f1": 0.47983073938262993,
+    "macro_p": 0.5306779001087453,
+    "macro_r": 0.4746608910853823,
+    "macro_f1_vocab": 0.4060106256314561,
+    "accuracy": 0.5410830999066293
+  },
+  "dev_CL_macro_f1": 0.40092375931396,
+  "dev_IT_macro_f1": 0.47461365645875975,
+  "infer_sentences_per_sec": 1625.4,
+  "top_confusions": [
+    "ArgumentPetitioner -> RatioOfTheDecision: 70",
+    "ArgumentRespondent -> RatioOfTheDecision: 69",
+    "Fact -> RatioOfTheDecision: 67",
+    "ArgumentRespondent -> ArgumentPetitioner: 64",
+    "RatioOfTheDecision -> Fact: 54",
+    "RatioOfTheDecision -> PrecedentReliedUpon: 52",
+    "ArgumentPetitioner -> Fact: 50",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 48",
+    "ArgumentRespondent -> PrecedentReliedUpon: 48",
+    "PrecedentReliedUpon -> Fact: 44",
+    "Fact -> RulingByLowerCourt: 31",
+    "ArgumentPetitioner -> PrecedentReliedUpon: 31"
+  ],
+  "submission": "/kaggle/working/runs/V5_KD_A2L4_from_V1/submission/submission.zip",
+  "submission_refit": "/kaggle/working/runs/V5_KD_A2L4_from_V1/submission_refit/submission.zip",
+  "refit_minutes": 1.4
+}

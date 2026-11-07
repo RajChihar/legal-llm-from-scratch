@@ -1,0 +1,86 @@
+{
+  "run": "R3_C_pfeiffer",
+  "arch": "C",
+  "backbone": "C_hybrid_prefix_mlm",
+  "method": {
+    "name": "pfeiffer",
+    "bottleneck": 128
+  },
+  "context": {
+    "src_len": 1400,
+    "strategy": "headtail",
+    "head_frac": 0.5,
+    "k": 4,
+    "lead": 256,
+    "gap": true
+  },
+  "resolved": {
+    "tgt_len": 640,
+    "src_len": 1400,
+    "sep_ids": [
+      314,
+      83,
+      7550,
+      77,
+      11980,
+      3212
+    ],
+    "max_new": 640,
+    "min_new": 320,
+    "gap_ids": [
+      1978
+    ]
+  },
+  "rope": {
+    "positions": 2048,
+    "rope_scale": 1.998
+  },
+  "layers": 10,
+  "params_total": 71703040,
+  "params_trainable": 1646080,
+  "trainable_pct": 2.296,
+  "nf4_weights": 0,
+  "train_minutes": 55.6,
+  "peak_train_mem_gb": 2.072739601135254,
+  "peak_gen_mem_gb": 2.8761982917785645,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "best_dev_loss": 2.2307720729024836,
+  "dev_loss_before": 3.2024,
+  "kd_teacher": null,
+  "dapt": null,
+  "adalora_final_ranks": null,
+  "gen": {
+    "method": "greedy",
+    "beams": 4,
+    "max_new": "auto",
+    "min_new": "auto",
+    "no_repeat_ngram": 4,
+    "rep_penalty": 1.0,
+    "rep_window": 512,
+    "length_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.9,
+    "batch_size": 16,
+    "seed": 0
+  },
+  "dev": {
+    "rouge1_f": 0.43874483030254213,
+    "rouge2_f": 0.2070058117855907,
+    "rougeL_f": 0.23616604559472584,
+    "words": 427.325,
+    "ref_words": 897.785,
+    "rep_3gram": 0.1664979142521293,
+    "rep_sent": 0.0,
+    "novel_3gram": 0.617536783655661,
+    "fact_precision": 0.6890970820467022,
+    "fact_recall": 0.21279862864710214
+  },
+  "gen_docs_per_sec": 1.051,
+  "gen_tokens_per_sec": 525.9,
+  "submission": "/kaggle/working/runs/R3_C_pfeiffer/submission/submission.zip",
+  "test_words": 423.0,
+  "test_empty_replaced": 0,
+  "test_gen_seconds": 101.7
+}

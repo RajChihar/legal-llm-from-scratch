@@ -1,0 +1,33 @@
+{
+  "run": "E4_D_adapter",
+  "arch": "D",
+  "method": {
+    "name": "adapter",
+    "bottleneck": 64
+  },
+  "head": "linear",
+  "attention": "bidirectional",
+  "params_total": 73121561,
+  "params_trainable": 1999001,
+  "trainable_pct": 2.734,
+  "train_minutes": 5.2,
+  "peak_train_mem_gb": 1.6299834251403809,
+  "best_dev_macro_f1": 0.44622411716739013,
+  "bio_ceiling_macro_f1": 0.9936730244199379,
+  "dev": {
+    "macro_f1": 0.44622411716739013,
+    "macro_p": 0.4651366286698424,
+    "macro_r": 0.4578062810209072,
+    "micro_f1": 0.5251964863615348
+  },
+  "infer_tokens_per_sec": 27370,
+  "error_categories": {
+    "boundary": 184,
+    "missed": 284,
+    "type": 44,
+    "both": 35,
+    "spurious": 182
+  },
+  "submission": "/kaggle/working/runs/E4_D_adapter/submission/submission.zip",
+  "test_entities": 3885
+}

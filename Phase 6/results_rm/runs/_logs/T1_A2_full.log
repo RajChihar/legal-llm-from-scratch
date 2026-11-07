@@ -1,0 +1,46 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch A (LlamaLM) | layers 11/11 | method full | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 93.80M | trainable 93.800M (100.0%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 2.9059 | dev_ppl 18.28
+[progress] epoch 1  10% | loss 2.5723 | ce 2.5723 | 3646 summary tok/s | 1.7 min | ETA all epochs 49.0 min
+[progress] epoch 1  20% | loss 2.3726 | ce 2.3726 | 3571 summary tok/s | 3.5 min | ETA all epochs 49.5 min
+[progress] epoch 1  30% | loss 2.2726 | ce 2.2726 | 3547 summary tok/s | 5.4 min | ETA all epochs 48.4 min
+[progress] epoch 1  40% | loss 2.2123 | ce 2.2123 | 3517 summary tok/s | 7.2 min | ETA all epochs 46.8 min
+[progress] epoch 1  50% | loss 2.1774 | ce 2.1774 | 3500 summary tok/s | 9.0 min | ETA all epochs 45.1 min
+[progress] epoch 1  60% | loss 2.1477 | ce 2.1477 | 3493 summary tok/s | 10.8 min | ETA all epochs 43.3 min
+[progress] epoch 1  70% | loss 2.1238 | ce 2.1238 | 3484 summary tok/s | 12.6 min | ETA all epochs 41.5 min
+[progress] epoch 1  80% | loss 2.1087 | ce 2.1087 | 3477 summary tok/s | 14.4 min | ETA all epochs 39.8 min
+[progress] epoch 1  90% | loss 2.0923 | ce 2.0923 | 3474 summary tok/s | 16.2 min | ETA all epochs 38.0 min
+[progress] epoch 1 100% | loss 2.0787 | ce 2.0787 | 3473 summary tok/s | 18.0 min | ETA all epochs 36.2 min
+[epoch] epoch 1 | train_loss 2.0788 | minutes 18.07 | train_ce 2.0788 | dev_loss 2.0063 | dev_ppl 7.44 | quick_rouge1 0.3247 | quick_rougeL 0.1944 | saved True
+[epoch] sample: The appellant assessee was a dealer in foodgrains. The Sales Tax Officer, Muzaffarnagar by his order dated December 27, 1968 rejected the account books of the assessee on the basis of some discrepancies found during the four survey carried out at his shop and made a best judgment assessment under su
+[progress] epoch 2  10% | loss 1.8328 | ce 1.8328 | 315 summary tok/s | 20.3 min | ETA all epochs 35.0 min
+[progress] epoch 2  20% | loss 1.8188 | ce 1.8188 | 578 summary tok/s | 22.1 min | ETA all epochs 33.2 min
+[progress] epoch 2  30% | loss 1.8172 | ce 1.8172 | 794 summary tok/s | 23.9 min | ETA all epochs 31.3 min
+[progress] epoch 2  40% | loss 1.8162 | ce 1.8162 | 982 summary tok/s | 25.7 min | ETA all epochs 29.4 min
+[progress] epoch 2  50% | loss 1.8131 | ce 1.8131 | 1143 summary tok/s | 27.5 min | ETA all epochs 27.6 min
+[progress] epoch 2  60% | loss 1.8105 | ce 1.8105 | 1284 summary tok/s | 29.4 min | ETA all epochs 25.7 min
+[progress] epoch 2  70% | loss 1.8097 | ce 1.8097 | 1408 summary tok/s | 31.2 min | ETA all epochs 23.9 min
+[progress] epoch 2  80% | loss 1.8088 | ce 1.8088 | 1519 summary tok/s | 33.0 min | ETA all epochs 22.0 min
+[progress] epoch 2  90% | loss 1.8096 | ce 1.8096 | 1618 summary tok/s | 34.8 min | ETA all epochs 20.2 min
+[progress] epoch 2 100% | loss 1.8058 | ce 1.8058 | 1710 summary tok/s | 36.6 min | ETA all epochs 18.4 min
+[epoch] epoch 2 | train_loss 1.8059 | minutes 36.67 | train_ce 1.8059 | dev_loss 1.9804 | dev_ppl 7.25 | quick_rouge1 0.3312 | quick_rougeL 0.1894 | saved True
+[epoch] sample: The assessee, a dealer in foodgrains, was assessed to purchase foodgrains from its shop at Shahpur in the district of Muzaffarnagar, and was registered as a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee filed a return showing the turnover of purchases of wheat and the tax pa
+[progress] epoch 3  10% | loss 1.6710 | ce 1.6710 | 158 summary tok/s | 38.8 min | ETA all epochs 16.6 min
+[progress] epoch 3  20% | loss 1.6867 | ce 1.6867 | 305 summary tok/s | 40.7 min | ETA all epochs 14.8 min
+[progress] epoch 3  30% | loss 1.6816 | ce 1.6816 | 437 summary tok/s | 42.5 min | ETA all epochs 12.9 min
+[progress] epoch 3  40% | loss 1.6845 | ce 1.6845 | 562 summary tok/s | 44.3 min | ETA all epochs 11.1 min
+[progress] epoch 3  50% | loss 1.6907 | ce 1.6907 | 675 summary tok/s | 46.2 min | ETA all epochs 9.3 min
+[progress] epoch 3  60% | loss 1.6893 | ce 1.6893 | 783 summary tok/s | 48.0 min | ETA all epochs 7.4 min
+[progress] epoch 3  70% | loss 1.6872 | ce 1.6872 | 878 summary tok/s | 49.8 min | ETA all epochs 5.6 min
+[progress] epoch 3  80% | loss 1.6859 | ce 1.6859 | 971 summary tok/s | 51.6 min | ETA all epochs 3.7 min
+[progress] epoch 3  90% | loss 1.6853 | ce 1.6853 | 1054 summary tok/s | 53.5 min | ETA all epochs 1.9 min
+[train] time limit 55 min reached in epoch 3 (98%): evaluating and stopping
+[epoch] epoch 3 | train_loss 1.6871 | minutes 55.01 | train_ce 1.6871 | dev_loss 1.9833 | dev_ppl 7.27 | quick_rouge1 0.332 | quick_rougeL 0.1929
+[epoch] sample: The appellant assessee was a dealer in foodgrains. The Sales Tax Officer rejected the account books of the assessee on the basis of some discrepancies found during the four survey carried out at his shop and made a best judgment assessment under section 7(3) of the U.P. Sales Tax Act, 1948. The asse
+[gen] 16/200 documents | 17s
+[gen] 176/200 documents | 190s
+[dev] 200 documents | ROUGE-1 0.4510 | ROUGE-2 0.2112 | ROUGE-L 0.2399 | words 431 (ref 898) | rep-3gram 0.160 | fact precision 0.672 | 0.919 docs/s
+[gen] 16/100 documents | 17s
+[submit] /kaggle/working/runs/T1_A2_full/submission/submission.zip | 100 documents | mean 423.8 words | empty generations replaced: 0

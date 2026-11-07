@@ -1,0 +1,49 @@
+[data] train docs 80 | dev docs 10 | test docs 10 | labels 13
+[data] tokenised in 0s | train sentences 16,845 | train tokens 665,165
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method prefix | head linear/gru | window context
+[model] params total 95.54M | trainable 1.736M (1.817%)
+[train] ~920 windows/epoch | 115 steps/epoch | 1380 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 2.1413 | minutes 0.8100 | dev_macro_f1 0.2404 | dev_macro_p 0.3704 | dev_macro_r 0.2746 | dev_acc 0.3749 | dev_CL 0.2828 | dev_IT 0.1964 | saved True
+[epoch] epoch 2 | train_loss 1.7332 | minutes 1.6800 | dev_macro_f1 0.3146 | dev_macro_p 0.4121 | dev_macro_r 0.2997 | dev_acc 0.3908 | dev_CL 0.3562 | dev_IT 0.3098 | saved True
+[epoch] epoch 3 | train_loss 1.3927 | minutes 2.5400 | dev_macro_f1 0.2949 | dev_macro_p 0.4287 | dev_macro_r 0.3213 | dev_acc 0.4034 | dev_CL 0.2766 | dev_IT 0.2798
+[epoch] epoch 4 | train_loss 1.0927 | minutes 3.3900 | dev_macro_f1 0.3757 | dev_macro_p 0.4184 | dev_macro_r 0.3987 | dev_acc 0.4865 | dev_CL 0.3491 | dev_IT 0.3711 | saved True
+[epoch] epoch 5 | train_loss 0.8960 | minutes 4.2500 | dev_macro_f1 0.3893 | dev_macro_p 0.4149 | dev_macro_r 0.4201 | dev_acc 0.5084 | dev_CL 0.3501 | dev_IT 0.3470 | saved True
+[epoch] epoch 6 | train_loss 0.7250 | minutes 5.1100 | dev_macro_f1 0.4133 | dev_macro_p 0.4784 | dev_macro_r 0.3979 | dev_acc 0.5131 | dev_CL 0.3620 | dev_IT 0.3799 | saved True
+[epoch] epoch 7 | train_loss 0.5764 | minutes 5.9700 | dev_macro_f1 0.4419 | dev_macro_p 0.4628 | dev_macro_r 0.4329 | dev_acc 0.5649 | dev_CL 0.4127 | dev_IT 0.4075 | saved True
+[epoch] epoch 8 | train_loss 0.4458 | minutes 6.8200 | dev_macro_f1 0.4382 | dev_macro_p 0.4896 | dev_macro_r 0.4199 | dev_acc 0.5168 | dev_CL 0.3723 | dev_IT 0.4420
+[epoch] epoch 9 | train_loss 0.3309 | minutes 7.6700 | dev_macro_f1 0.4844 | dev_macro_p 0.5321 | dev_macro_r 0.4643 | dev_acc 0.5537 | dev_CL 0.4017 | dev_IT 0.4729 | saved True
+[epoch] epoch 10 | train_loss 0.2543 | minutes 8.5300 | dev_macro_f1 0.4257 | dev_macro_p 0.4873 | dev_macro_r 0.4037 | dev_acc 0.5415 | dev_CL 0.3912 | dev_IT 0.4318
+[epoch] epoch 11 | train_loss 0.2126 | minutes 9.3800 | dev_macro_f1 0.4418 | dev_macro_p 0.5051 | dev_macro_r 0.4167 | dev_acc 0.5364 | dev_CL 0.3750 | dev_IT 0.4431
+[epoch] epoch 12 | train_loss 0.1793 | minutes 10.2400 | dev_macro_f1 0.4319 | dev_macro_p 0.4997 | dev_macro_r 0.4067 | dev_acc 0.5373 | dev_CL 0.3738 | dev_IT 0.4344
+[train] early stop: no dev improvement for 3 epochs
+
+label                           P      R     F1   gold   pred
+Fact                        0.699  0.696  0.698    444    442
+Issue                       0.600  0.400  0.480     15     10
+ArgumentPetitioner          0.596  0.420  0.493    400    282
+ArgumentRespondent          0.402  0.272  0.325    272    184
+Statute                     0.730  0.700  0.715    120    115
+Dissent                     0.000  0.000  0.000      0      0
+PrecedentReliedUpon         0.540  0.587  0.562    254    276
+PrecedentNotReliedUpon      0.191  0.180  0.186     50     47
+PrecedentOverruled          0.000  0.000  0.000      0      0
+RulingByLowerCourt          0.465  0.324  0.382    102     71
+RatioOfTheDecision          0.483  0.797  0.602    403    664
+RulingByPresentCourt        0.771  0.551  0.643     49     35
+None                        0.375  0.182  0.245     33     16
+MACRO                       0.532  0.464  0.484   (vocab-macro-F1 0.410, accuracy 0.554, 2142 sentences)
+[dev] MACRO-F1 all 0.4844 | CL 0.4016987636104636 | IT 0.47290082613096707 | sklearn 0.4844
+[dev] top confusions: ['ArgumentPetitioner -> ArgumentRespondent: 104', 'ArgumentRespondent -> ArgumentPetitioner: 85', 'Fact -> RatioOfTheDecision: 80', 'ArgumentRespondent -> RatioOfTheDecision: 77', 'ArgumentPetitioner -> RatioOfTheDecision: 55', 'PrecedentReliedUpon -> RatioOfTheDecision: 45']
+[submit] /kaggle/working/runs/V3_A2_prefix_1k/submission/submission.zip | 10 docs, 2197 sentences
+[refit] training on train+dev (90 docs) for 9 epochs (best dev epoch)
+[train] ~1037 windows/epoch | 130 steps/epoch | 1170 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 2.1045 | minutes 0.9000
+[epoch] epoch 2 | train_loss 1.6405 | minutes 1.8000
+[epoch] epoch 3 | train_loss 1.3371 | minutes 2.7000
+[epoch] epoch 4 | train_loss 1.0762 | minutes 3.6000
+[epoch] epoch 5 | train_loss 0.8335 | minutes 4.5000
+[epoch] epoch 6 | train_loss 0.6530 | minutes 5.3900
+[epoch] epoch 7 | train_loss 0.4928 | minutes 6.2900
+[epoch] epoch 8 | train_loss 0.3983 | minutes 7.1900
+[epoch] epoch 9 | train_loss 0.3141 | minutes 8.0900
+[refit] /kaggle/working/runs/V3_A2_prefix_1k/submission_refit/submission.zip

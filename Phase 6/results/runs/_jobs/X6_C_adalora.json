@@ -1,0 +1,23 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt"
+ },
+ "method": {
+  "name": "adalora",
+  "r": 12,
+  "alpha": 24
+ },
+ "adalora": {
+  "target_r": 4
+ },
+ "train": {
+  "lr_new": 0.001,
+  "max_minutes": 55
+ },
+ "run_name": "X6_C_adalora",
+ "data_dir": "/kaggle/working/p6data/Phase_6_Summ",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p6cache",
+ "max_docs": null
+}

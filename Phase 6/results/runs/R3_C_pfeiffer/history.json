@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 3.2024,
+    "dev_ppl": 24.59
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.351,
+    "minutes": 18.59,
+    "train_ce": 2.351,
+    "dev_loss": 2.2786,
+    "dev_ppl": 9.76,
+    "quick_rouge1": 0.3145,
+    "quick_rougeL": 0.1806,
+    "sample": "The assessee, a dealer, was assessed to sales tax under section 8A of the Act, for the assessment year 1967 68 of Messrs Bishamber Singh Layaq Ram which carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. The assessee, however, was registered ",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.1797,
+    "minutes": 37.6,
+    "train_ce": 2.1797,
+    "dev_loss": 2.2407,
+    "dev_ppl": 9.4,
+    "quick_rouge1": 0.3033,
+    "quick_rougeL": 0.1803,
+    "sample": "The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. in the district of Muzaffarnagar, and is registered as a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee, a manufacturer of wheat, was registered as a dealers under section 8A of the U P. Sales Tax ",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.1265,
+    "minutes": 55.0,
+    "train_ce": 2.1265,
+    "dev_loss": 2.2308,
+    "dev_ppl": 9.31,
+    "quick_rouge1": 0.3148,
+    "quick_rougeL": 0.1854,
+    "sample": "The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. foodgrains etc. were found in stock in stock. The assessee, however, was registered as a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee was reg",
+    "saved": true
+  }
+]

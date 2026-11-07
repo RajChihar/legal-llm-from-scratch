@@ -1,0 +1,45 @@
+{
+  "run": "R4_D_ia3_ctx",
+  "arch": "D",
+  "backbone": "D_efficient_swa_mqa",
+  "method": {
+    "name": "ia3"
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 12,
+  "params_total": 72546189,
+  "params_trainable": 1423629,
+  "trainable_pct": 1.962,
+  "train_minutes": 8.5,
+  "peak_train_mem_gb": 1.64503812789917,
+  "best_epoch": 10,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.4310920725424297,
+    "macro_p": 0.4659129920343268,
+    "macro_r": 0.41840514909336113,
+    "macro_f1_vocab": 0.39793114388531975,
+    "accuracy": 0.5350140056022409
+  },
+  "dev_CL_macro_f1": 0.35373646301063816,
+  "dev_IT_macro_f1": 0.46489958222700883,
+  "infer_sentences_per_sec": 755.9,
+  "top_confusions": [
+    "ArgumentPetitioner -> RatioOfTheDecision: 84",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 67",
+    "ArgumentRespondent -> RatioOfTheDecision: 67",
+    "Fact -> RatioOfTheDecision: 58",
+    "RatioOfTheDecision -> PrecedentReliedUpon: 56",
+    "RatioOfTheDecision -> Fact: 55",
+    "ArgumentPetitioner -> ArgumentRespondent: 50",
+    "ArgumentRespondent -> ArgumentPetitioner: 44",
+    "PrecedentReliedUpon -> Fact: 42",
+    "RulingByLowerCourt -> Fact: 41",
+    "ArgumentPetitioner -> Fact: 38",
+    "ArgumentRespondent -> PrecedentReliedUpon: 32"
+  ],
+  "submission": "/kaggle/working/runs/R4_D_ia3_ctx/submission/submission.zip"
+}

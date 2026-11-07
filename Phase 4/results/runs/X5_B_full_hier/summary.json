@@ -1,0 +1,49 @@
+{
+  "run": "X5_B_full_hier",
+  "arch": "B",
+  "backbone": "B_encoder_decoder",
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 42408836,
+  "params_trainable": 42408836,
+  "trainable_pct": 100.0,
+  "train_minutes": 16.9,
+  "peak_train_mem_gb": 3.574284076690674,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "kd_teacher": null,
+  "threshold": 0.41,
+  "dev": {
+    "macro_f1": 0.6366609327766573,
+    "macro_p": 0.6490957331600606,
+    "macro_r": 0.6414946569999518,
+    "accuracy": 0.641178813221824
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.6432240356740244,
+    "macro_p": 0.643992602165872,
+    "macro_r": 0.6434867040376382,
+    "accuracy": 0.643568299482278
+  },
+  "infer_docs_per_sec": 71.38,
+  "submission": "/kaggle/working/runs/X5_B_full_hier/submission/submission.zip",
+  "test_share_pred_1": 0.545
+}

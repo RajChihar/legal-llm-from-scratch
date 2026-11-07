@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 3.1857,
+    "dev_ppl": 24.18
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.8666,
+    "minutes": 7.0,
+    "train_ce": 2.8666,
+    "dev_loss": 2.8029,
+    "dev_ppl": 16.49,
+    "quick_rouge1": 0.2875,
+    "quick_rougeL": 0.173,
+    "sample": "The appellant was assessed to sales tax under the Central Sales Tax Act, 1956. The assessment year 1956 60 was the year of assessment. The assessment was made on the basis of the assessment year 1957 60. The assessment years 1957 60 and 1958 60 were the years 1957 62 and 1958 62. The assessment peri",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.7689,
+    "minutes": 14.2,
+    "train_ce": 2.7689,
+    "dev_loss": 2.784,
+    "dev_ppl": 16.18,
+    "quick_rouge1": 0.2776,
+    "quick_rougeL": 0.1685,
+    "sample": "The appellant, a dealer in the goods manufactured by him, was assessed to sales tax under the Central Sales Tax Act, 1956. The assessment year 1957 58 was the year of assessment. The assessment years were the years of assessment. In the assessment year 1958 58 the appellant claimed that the assessme",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.7277,
+    "minutes": 21.34,
+    "train_ce": 2.7277,
+    "dev_loss": 2.7797,
+    "dev_ppl": 16.11,
+    "quick_rouge1": 0.2855,
+    "quick_rougeL": 0.1715,
+    "sample": "The appellant, a dealer in the taxable territories, was assessed to sales tax under the Central Sales Tax Act, 1956. The assessment year 1957 58 was the year of assessment. The assessment years were the years of assessment. In the assessment year 1956 58 the appellant claimed that the assessment yea",
+    "saved": true
+  }
+]

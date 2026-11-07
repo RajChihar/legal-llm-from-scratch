@@ -1,0 +1,80 @@
+{
+  "run_name": "X3_A2_qlora_hier",
+  "out_dir": "/kaggle/working/runs",
+  "data_dir": "/kaggle/working/p5data/Phase_5_LSI",
+  "cache_dir": "/kaggle/working/p5cache",
+  "ckpt_root": "",
+  "backbone": {
+    "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt",
+    "attention": "bidirectional",
+    "keep_layers": null,
+    "c_segment": 0,
+    "grad_ckpt": false
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "method": {
+    "name": "qlora",
+    "r": 16,
+    "alpha": 32,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "loss": {
+    "name": "bce",
+    "pos_weight": "none",
+    "pos_weight_max": 30.0,
+    "gamma_pos": 0.0,
+    "gamma_neg": 4.0,
+    "asl_clip": 0.05
+  },
+  "kd": {
+    "teacher_run": "",
+    "kd_alpha": 0.5,
+    "kd_T": 2.0
+  },
+  "train": {
+    "epochs": 4,
+    "docs_per_epoch": 10000,
+    "batch_size": 8,
+    "grad_accum": 1,
+    "lr_backbone": 3e-05,
+    "lr_new": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.06,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "seed": 1337,
+    "llrd": 1.0,
+    "max_minutes": 70,
+    "eval_batch_size": 16,
+    "chunk_bs": 32,
+    "log_every": 0.2,
+    "sampler": "uniform",
+    "rare_power": 0.5,
+    "eval_docs": 3000
+  },
+  "calibrate": {
+    "strategy": "auto",
+    "min_support": 3,
+    "min_labels": 1
+  },
+  "predict_test": true,
+  "max_docs": null,
+  "n_proc": 4
+}

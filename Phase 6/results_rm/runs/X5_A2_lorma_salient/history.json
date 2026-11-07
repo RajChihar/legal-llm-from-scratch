@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 2.9001,
+    "dev_ppl": 18.18
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.1101,
+    "minutes": 19.65,
+    "train_ce": 2.1101,
+    "dev_loss": 2.039,
+    "dev_ppl": 7.68,
+    "quick_rouge1": 0.3257,
+    "quick_rougeL": 0.1868,
+    "sample": "The appellant, a dealer in a shop, entered into a contract with the respondent, entered into an agreement with the respondent for purchase of a shop. The respondent was assessed to purchase the shop for the purchase of a kutcha arhatiya at Rs. 3,80,000. The respondent filed a suit for a declaration ",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.954,
+    "minutes": 39.73,
+    "train_ce": 1.954,
+    "dev_loss": 2.0072,
+    "dev_ppl": 7.44,
+    "quick_rouge1": 0.3418,
+    "quick_rougeL": 0.1978,
+    "sample": "The assessee, a dealer in a shop, filed a return of his turnover of Rs. 3,80,000 as a dealer in the State of U.P. The Sales Tax Officer rejected the assessee 's claim for the amount of tax paid by him on the ground that he was not a dealer within the meaning of section 2(c) of the U.P Sales Tax Act,",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.8838,
+    "minutes": 55.0,
+    "train_ce": 1.8838,
+    "dev_loss": 2.0057,
+    "dev_ppl": 7.43,
+    "quick_rouge1": 0.3397,
+    "quick_rougeL": 0.1889,
+    "sample": "The appellant assessee was a dealer in a shop in the State of U.P. and was assessed to sales tax under the U.P., Sales Tax Act, 1948. The Sales Tax Officer rejected the account books of the assessee on the basis of some discrepancies found during the four surveys carried out at his shop and made a b",
+    "saved": true
+  }
+]

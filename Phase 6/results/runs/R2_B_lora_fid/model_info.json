@@ -1,0 +1,33 @@
+{
+  "arch": "B",
+  "class": "EncDecLM",
+  "model_kw": {
+    "enc_block": 768,
+    "dec_block": 384,
+    "n_enc_layer": 6,
+    "n_dec_layer": 6,
+    "n_head": 9,
+    "d_model": 576,
+    "ffn_mult": 2.6666666666666665,
+    "dropout": 0.0,
+    "rope_theta": 10000.0,
+    "bias": false,
+    "vocab_size": 32000,
+    "pad_id": 31996
+  },
+  "phase1_layers": 12,
+  "layers_used": 12,
+  "rope": {
+    "dec_positions": 642,
+    "dec_rope_scale": 1.6693
+  },
+  "train_seq_len": 641,
+  "random_init": false,
+  "fid_chunks": 4,
+  "params": {
+    "total": 76345344,
+    "trainable": 2156544,
+    "trainable_pct": 2.825,
+    "nf4_weights": 0
+  }
+}

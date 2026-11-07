@@ -1,0 +1,9 @@
+{
+  "teacher_run": "/kaggle/working/runs/E1_C_full_linear",
+  "teacher_dev_macro_f1": 0.5689485087663929,
+  "teacher_params": {
+    "total": 70072985,
+    "trainable": 70072985,
+    "trainable_pct": 100.0
+  }
+}

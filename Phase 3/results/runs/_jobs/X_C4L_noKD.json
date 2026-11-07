@@ -1,0 +1,20 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt",
+  "keep_layers": 4
+ },
+ "method": {
+  "name": "full"
+ },
+ "train": {
+  "epochs": 10,
+  "lr_backbone": 0.0001,
+  "lr_new": 0.001
+ },
+ "run_name": "X_C4L_noKD",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": false
+}

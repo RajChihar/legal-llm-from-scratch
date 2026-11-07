@@ -1,0 +1,53 @@
+{
+  "run": "R3_B_rslora_ctx",
+  "arch": "B",
+  "backbone": "B_encoder_decoder",
+  "method": {
+    "name": "lora",
+    "rslora": true,
+    "r": 16,
+    "alpha": 8,
+    "dropout": 0.05,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 44513613,
+  "params_trainable": 2186253,
+  "trainable_pct": 4.911,
+  "train_minutes": 2.9,
+  "peak_train_mem_gb": 1.010244369506836,
+  "best_epoch": 4,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.4869368767771102,
+    "macro_p": 0.5807160028770894,
+    "macro_r": 0.48189651472010003,
+    "macro_f1_vocab": 0.41202351111909324,
+    "accuracy": 0.5242763772175537
+  },
+  "dev_CL_macro_f1": 0.5103899652449004,
+  "dev_IT_macro_f1": 0.4257703319289274,
+  "infer_sentences_per_sec": 1292.0,
+  "top_confusions": [
+    "RatioOfTheDecision -> PrecedentReliedUpon: 221",
+    "ArgumentPetitioner -> ArgumentRespondent: 176",
+    "Fact -> RatioOfTheDecision: 60",
+    "ArgumentPetitioner -> PrecedentReliedUpon: 60",
+    "ArgumentRespondent -> PrecedentReliedUpon: 59",
+    "Fact -> PrecedentReliedUpon: 47",
+    "Fact -> ArgumentPetitioner: 34",
+    "RulingByLowerCourt -> Fact: 31",
+    "Statute -> PrecedentReliedUpon: 28",
+    "Fact -> RulingByLowerCourt: 27",
+    "ArgumentPetitioner -> RatioOfTheDecision: 26",
+    "PrecedentNotReliedUpon -> PrecedentReliedUpon: 21"
+  ],
+  "submission": "/kaggle/working/runs/R3_B_rslora_ctx/submission/submission.zip"
+}

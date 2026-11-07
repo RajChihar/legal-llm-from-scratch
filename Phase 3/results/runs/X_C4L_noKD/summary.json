@@ -1,0 +1,45 @@
+{
+  "run": "X_C4L_noKD",
+  "arch": "C",
+  "backbone": "C_hybrid_prefix_mlm",
+  "method": {
+    "name": "full"
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 4,
+  "params_total": 41713677,
+  "params_trainable": 41713677,
+  "trainable_pct": 100.0,
+  "train_minutes": 1.9,
+  "peak_train_mem_gb": 1.1288862228393555,
+  "best_epoch": 3,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.4652008832662931,
+    "macro_p": 0.49930759974575595,
+    "macro_r": 0.46535477435136224,
+    "macro_f1_vocab": 0.39363151660994034,
+    "accuracy": 0.5280112044817927
+  },
+  "dev_CL_macro_f1": 0.35603313233401396,
+  "dev_IT_macro_f1": 0.4998661112486394,
+  "infer_sentences_per_sec": 2139.6,
+  "top_confusions": [
+    "ArgumentPetitioner -> ArgumentRespondent: 118",
+    "RatioOfTheDecision -> PrecedentReliedUpon: 70",
+    "ArgumentRespondent -> ArgumentPetitioner: 55",
+    "PrecedentReliedUpon -> Fact: 44",
+    "RatioOfTheDecision -> Fact: 42",
+    "ArgumentRespondent -> PrecedentReliedUpon: 41",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 39",
+    "Fact -> RatioOfTheDecision: 37",
+    "ArgumentPetitioner -> PrecedentReliedUpon: 37",
+    "ArgumentPetitioner -> RulingByLowerCourt: 36",
+    "ArgumentRespondent -> Fact: 32",
+    "ArgumentPetitioner -> Fact: 29"
+  ],
+  "submission": "/kaggle/working/runs/X_C4L_noKD/submission/submission.zip"
+}

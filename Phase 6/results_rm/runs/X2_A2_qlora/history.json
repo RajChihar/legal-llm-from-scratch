@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 2.919,
+    "dev_ppl": 18.52
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.1295,
+    "minutes": 21.31,
+    "train_ce": 2.1295,
+    "dev_loss": 2.0562,
+    "dev_ppl": 7.82,
+    "quick_rouge1": 0.3282,
+    "quick_rougeL": 0.1906,
+    "sample": "The assessee was a dealer in foodgrains and foodgrains. The assessee was a registered dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee, who was a registered dealers under section 8A of the Act, applied for a declaration that the assessee was not a dealer. The Assistant Commissi",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.9527,
+    "minutes": 43.17,
+    "train_ce": 1.9527,
+    "dev_loss": 2.0267,
+    "dev_ppl": 7.59,
+    "quick_rouge1": 0.3247,
+    "quick_rougeL": 0.1898,
+    "sample": "The assessee, a dealer in foodgrains, was assessed to sales tax for the assessment year 1967 68 of which the Sales Tax Officer was the assessing authority. The assessee filed a return of his turnover for the assessment years 1967 68, 1967 68 and 1968 68. The Sales Tax Officer rejected the assessee '",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.8961,
+    "minutes": 55.01,
+    "train_ce": 1.8961,
+    "dev_loss": 2.0242,
+    "dev_ppl": 7.57,
+    "quick_rouge1": 0.3363,
+    "quick_rougeL": 0.1909,
+    "sample": "The appellant assessee was a dealer in foodgrains. The Sales Tax Officer, Muzaffarnagar by his order dated December 27, 1968 rejected the account books of the assessee on the basis of some discrepancies found during the four surveys carried out at his shop and made a best judgment assessment under s",
+    "saved": true
+  }
+]

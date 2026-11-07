@@ -1,0 +1,80 @@
+{
+  "run": "R1_A2_lorma",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 16,
+    "alpha": 32,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "uniform",
+    "overlap": 0.0,
+    "train_k": 2
+  },
+  "rep": {
+    "pool": "mean",
+    "agg": "mean",
+    "proj": 256,
+    "sim": "cos",
+    "tau": 0.05,
+    "learn_tau": false
+  },
+  "loss": "infonce",
+  "neg": {
+    "miner": "bm25",
+    "n_hard": 3,
+    "top": 100,
+    "skip_top": 0,
+    "in_batch": true,
+    "refresh_every": 1
+  },
+  "attention": "bidirectional",
+  "layers": 11,
+  "params_total": 96429313,
+  "params_trainable": 2629632,
+  "trainable_pct": 2.727,
+  "nf4_weights": 0,
+  "train_minutes": 41.6,
+  "peak_train_mem_gb": 2.5214638710021973,
+  "best_epoch": 2,
+  "epochs_run": 2,
+  "train_instances": 5308,
+  "kd_teacher": null,
+  "dev_before": {
+    "epoch": 0,
+    "micro_p@7": 0.2676,
+    "micro_r@7": 0.2271,
+    "micro_f1@7": 0.2457,
+    "recall@7": 0.2271,
+    "recall@20": 0.407,
+    "recall@50": 0.5529,
+    "recall@100": 0.6485,
+    "recall@200": 0.7585,
+    "mrr": 0.6066,
+    "map@100": 0.3094
+  },
+  "dev": {
+    "micro_p@7": 0.3099273607748184,
+    "micro_r@7": 0.263103802672148,
+    "micro_f1@7": 0.28460255697609776,
+    "n_queries": 118,
+    "recall@7": 0.263103802672148,
+    "recall@20": 0.4367934224049332,
+    "recall@50": 0.5683453237410072,
+    "recall@100": 0.6670092497430626,
+    "recall@200": 0.7492291880781089,
+    "mrr": 0.6401001137748367,
+    "map@100": 0.3546970752157386
+  },
+  "dev_encode_seconds": 47.1,
+  "docs_per_sec": 24.2,
+  "submission": "/kaggle/working/runs/R1_A2_lorma/submission/submission.zip"
+}

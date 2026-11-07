@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 3.1799,
+    "dev_ppl": 24.04
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.8784,
+    "minutes": 12.94,
+    "train_ce": 2.8784,
+    "dev_loss": 2.8216,
+    "dev_ppl": 16.8,
+    "quick_rouge1": 0.2621,
+    "quick_rougeL": 0.1595,
+    "sample": "The appellant was a dealer in the manufacture of goods and was liable to pay tax under the Act. The respondent was a dealer of the goods. The appellant was a registered dealer in the State of Uttar Pradesh. The Sales Tax Officer, however, held that the appellant was liable to be assessed under the A",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.7908,
+    "minutes": 26.14,
+    "train_ce": 2.7908,
+    "dev_loss": 2.7994,
+    "dev_ppl": 16.43,
+    "quick_rouge1": 0.2727,
+    "quick_rougeL": 0.1644,
+    "sample": "The appellant, a dealer in the goods of the respondent, was assessed to sales tax under section 10(1)(a) of the Income tax Act, 1961. The Income tax Officer assessed the appellant as a dealer in respect of the goods in question. The Income Tax Officer assessed the respondent as a dealer on the basis",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.7531,
+    "minutes": 39.33,
+    "train_ce": 2.7531,
+    "dev_loss": 2.7917,
+    "dev_ppl": 16.31,
+    "quick_rouge1": 0.2776,
+    "quick_rougeL": 0.1687,
+    "sample": "The appellant was a dealer in the manufacture of goods and was assessed to sales tax under the Income tax Act, 1961. The Income tax Officer assessed the appellant under the Act on the basis of the assessment made by him on the basis that the appellant was not liable to pay sales tax on the basis on ",
+    "saved": true
+  }
+]

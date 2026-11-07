@@ -1,0 +1,23 @@
+[data] train 827 queries / 4320 candidates | dev 118 / 1023 | test 237 / 1727
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method full | chunks 4x512 uniform (train 2) | rep mean/mean/cos proj 256
+[model] params total 94.00M | trainable 93.996M (100.0%)
+[train] 5308 (query, relevant) instances from 827 queries | pool 4320 | 4 epochs x 5308 | 664 steps/epoch | batch 8 queries + 3 hard negatives each (model) | in-batch True | loss multipos | amp torch.float16
+[epoch] epoch 0 (before fine-tuning) | dev micro-F1@7 0.2557 | recall@100 0.6526
+[progress] epoch 1  10% | loss 2.1685 | task 2.1685 | 3.0 min | ETA all epochs 117.9 min
+[progress] epoch 1  20% | loss 2.0381 | task 2.0381 | 6.0 min | ETA all epochs 114.6 min
+[progress] epoch 1  30% | loss 2.0056 | task 2.0056 | 9.0 min | ETA all epochs 111.7 min
+[progress] epoch 1  40% | loss 2.0176 | task 2.0176 | 12.0 min | ETA all epochs 108.7 min
+[progress] epoch 1  50% | loss 2.0095 | task 2.0095 | 15.0 min | ETA all epochs 105.6 min
+[progress] epoch 1  60% | loss 1.9804 | task 1.9804 | 18.0 min | ETA all epochs 102.6 min
+[progress] epoch 1  70% | loss 1.9756 | task 1.9756 | 21.0 min | ETA all epochs 99.7 min
+[progress] epoch 1  80% | loss 1.9706 | task 1.9706 | 24.0 min | ETA all epochs 96.7 min
+[progress] epoch 1  89% | loss 1.9615 | task 1.9615 | 27.0 min | ETA all epochs 93.7 min
+[progress] epoch 1  99% | loss 1.9513 | task 1.9513 | 30.0 min | ETA all epochs 90.7 min
+[epoch] epoch 1 | train_loss 1.9489 | minutes 30.77 | train_task 1.9489 | micro_p@7 0.3172 | micro_r@7 0.2693 | micro_f1@7 0.2913 | recall@7 0.2693 | recall@20 0.4573 | recall@50 0.5745 | recall@100 0.6721 | recall@200 0.7616 | mrr 0.6517 | map@100 0.3827 | saved True
+[neg] re-mined hard negatives with the current model in 170s
+[progress] epoch 2  10% | loss 2.0952 | task 2.0952 | 36.6 min | ETA all epochs 96.6 min
+[progress] epoch 2  20% | loss 2.1122 | task 2.1122 | 39.6 min | ETA all epochs 92.6 min
+[train] time limit 40 min reached in epoch 2: evaluating and stopping
+[epoch] epoch 2 | train_loss 2.1053 | minutes 40.66 | train_task 2.1053 | micro_p@7 0.3426 | micro_r@7 0.2909 | micro_f1@7 0.3146 | recall@7 0.2909 | recall@20 0.4728 | recall@50 0.6012 | recall@100 0.6865 | recall@200 0.7934 | mrr 0.6602 | map@100 0.4031 | saved True
+[dev] micro-F1@7 0.3146 | P@7 0.3426 | R@7 0.2909 | recall@100 0.6865 | MRR 0.6602
+[submit] /kaggle/working/runs/X8_A2_ance/submission/submission.zip | 237 queries x 7 candidates

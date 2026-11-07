@@ -1,0 +1,29 @@
+{
+  "run_name": "E2_B_lorma",
+  "backbone": {
+    "ckpt": "@B",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 8,
+    "alpha": 16,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 8,
+    "lr_new": 0.001
+  }
+}

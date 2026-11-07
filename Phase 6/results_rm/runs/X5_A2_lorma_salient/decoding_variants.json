@@ -1,0 +1,80 @@
+[
+ {
+  "variant": "greedy, no-repeat-4 (default)",
+  "rouge1_f": 0.4751,
+  "rouge2_f": 0.2313,
+  "rougeL_f": 0.2484,
+  "words": 457.5,
+  "rep_3gram": 0.1505,
+  "novel_3gram": 0.5989,
+  "fact_precision": 0.6391,
+  "fact_recall": 0.2133,
+  "docs_per_s": 0.789,
+  "bertscore_f": 0.8432
+ },
+ {
+  "variant": "beam 4",
+  "rouge1_f": 0.4912,
+  "rouge2_f": 0.2655,
+  "rougeL_f": 0.2641,
+  "words": 427.6,
+  "rep_3gram": 0.1282,
+  "novel_3gram": 0.4009,
+  "fact_precision": 0.6827,
+  "fact_recall": 0.2876,
+  "docs_per_s": 0.194,
+  "bertscore_f": 0.849
+ },
+ {
+  "variant": "sampling T=0.7 top-p 0.9",
+  "rouge1_f": 0.4728,
+  "rouge2_f": 0.2261,
+  "rougeL_f": 0.2404,
+  "words": 446.6,
+  "rep_3gram": 0.1088,
+  "novel_3gram": 0.6351,
+  "fact_precision": 0.5581,
+  "fact_recall": 0.2072,
+  "docs_per_s": 0.766,
+  "bertscore_f": 0.8436
+ },
+ {
+  "variant": "greedy, no n-gram blocking",
+  "rouge1_f": 0.2323,
+  "rouge2_f": 0.1005,
+  "rougeL_f": 0.1544,
+  "words": 194.2,
+  "rep_3gram": 0.4116,
+  "novel_3gram": 0.4746,
+  "fact_precision": 0.7515,
+  "fact_recall": 0.0982,
+  "docs_per_s": 0.763,
+  "bertscore_f": 0.8177
+ },
+ {
+  "variant": "greedy, no blocking + rep. penalty 1.2",
+  "rouge1_f": 0.4462,
+  "rouge2_f": 0.2197,
+  "rougeL_f": 0.2387,
+  "words": 370.1,
+  "rep_3gram": 0.2322,
+  "novel_3gram": 0.495,
+  "fact_precision": 0.7425,
+  "fact_recall": 0.2432,
+  "docs_per_s": 0.784,
+  "bertscore_f": 0.8442
+ },
+ {
+  "variant": "greedy, max length / 2",
+  "rouge1_f": 0.3929,
+  "rouge2_f": 0.1983,
+  "rougeL_f": 0.2221,
+  "words": 268.3,
+  "rep_3gram": 0.1203,
+  "novel_3gram": 0.5415,
+  "fact_precision": 0.6804,
+  "fact_recall": 0.1956,
+  "docs_per_s": 1.556,
+  "bertscore_f": 0.8459
+ }
+]

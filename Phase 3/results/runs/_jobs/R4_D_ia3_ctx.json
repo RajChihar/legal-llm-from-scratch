@@ -1,0 +1,18 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/D_efficient_swa_mqa/model_final.pt"
+ },
+ "method": {
+  "name": "ia3"
+ },
+ "train": {
+  "epochs": 12,
+  "lr_new": 0.003
+ },
+ "run_name": "R4_D_ia3_ctx",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": false
+}

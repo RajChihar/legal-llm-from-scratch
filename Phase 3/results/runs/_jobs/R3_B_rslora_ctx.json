@@ -1,0 +1,26 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/B_encoder_decoder/model_final.pt"
+ },
+ "method": {
+  "name": "lora",
+  "rslora": true,
+  "r": 16,
+  "alpha": 8,
+  "dropout": 0.05,
+  "targets": [
+   "attn",
+   "ffn"
+  ]
+ },
+ "train": {
+  "epochs": 12,
+  "lr_new": 0.001
+ },
+ "run_name": "R3_B_rslora_ctx",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": false
+}

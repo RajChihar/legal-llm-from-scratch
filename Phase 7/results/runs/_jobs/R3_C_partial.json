@@ -1,0 +1,29 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt"
+ },
+ "method": {
+  "name": "partial",
+  "train_last_k": 4
+ },
+ "train": {
+  "lr_backbone": 3e-05,
+  "max_minutes": 40
+ },
+ "run_name": "R3_C_partial",
+ "data_dir": "/kaggle/working/p7data/Phase_7_PCR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p7cache",
+ "max_queries": null,
+ "max_cands": null,
+ "bm25": {
+  "k1": 1.2,
+  "b": 0.75,
+  "ngrams": [
+   1,
+   2
+  ],
+  "query_tf": "sat"
+ }
+}

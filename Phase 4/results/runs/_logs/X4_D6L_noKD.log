@@ -1,0 +1,35 @@
+[data] train 32305 | dev 2511 | test 1517 cases | train label-1 share 0.414
+[model] arch D (EfficientLM) | layers 6/12 | attention bidirectional | method full | chunks 4x1024 headtail | pool attn/attn
+[model] params total 45.89M | trainable 45.892M (100.0%) | class weights [0.854, 1.207]
+[train] 3 epochs x 6000 cases | ~2.75 chunks/case | 750 steps/epoch | 2250 steps | amp torch.float16 | time limit 80 min
+[progress] epoch 1  20% | loss 0.7341 | 2.0 min | ETA all epochs 27.7 min
+[progress] epoch 1  40% | loss 0.7358 | 3.9 min | ETA all epochs 25.6 min
+[progress] epoch 1  60% | loss 0.7251 | 5.9 min | ETA all epochs 23.7 min
+[progress] epoch 1  80% | loss 0.7157 | 7.9 min | ETA all epochs 21.8 min
+[progress] epoch 1 100% | loss 0.7055 | 10.0 min | ETA all epochs 19.9 min
+[epoch] epoch 1 | train_loss 0.7055 | minutes 9.9600 | dev_macro_f1 0.6172 | dev_macro_p 0.6174 | dev_macro_r 0.6173 | dev_acc 0.6173 | dev_pred1_share 0.4851 | saved True
+[progress] epoch 2  20% | loss 0.6505 | 13.2 min | ETA all epochs 19.8 min
+[progress] epoch 2  40% | loss 0.6456 | 15.2 min | ETA all epochs 17.4 min
+[progress] epoch 2  60% | loss 0.6393 | 17.2 min | ETA all epochs 15.0 min
+[progress] epoch 2  80% | loss 0.6311 | 19.2 min | ETA all epochs 12.8 min
+[progress] epoch 2 100% | loss 0.6257 | 21.1 min | ETA all epochs 10.6 min
+[epoch] epoch 2 | train_loss 0.6257 | minutes 21.1300 | dev_macro_f1 0.6482 | dev_macro_p 0.6716 | dev_macro_r 0.6563 | dev_acc 0.6559 | dev_pred1_share 0.3509 | saved True
+[progress] epoch 3  20% | loss 0.5941 | 24.4 min | ETA all epochs 8.9 min
+[progress] epoch 3  40% | loss 0.5916 | 26.4 min | ETA all epochs 6.6 min
+[progress] epoch 3  60% | loss 0.5920 | 28.5 min | ETA all epochs 4.4 min
+[progress] epoch 3  80% | loss 0.5861 | 30.4 min | ETA all epochs 2.2 min
+[progress] epoch 3 100% | loss 0.5862 | 32.3 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 0.5862 | minutes 32.2900 | dev_macro_f1 0.6510 | dev_macro_p 0.6860 | dev_macro_r 0.6624 | dev_acc 0.6619 | dev_pred1_share 0.3218 | saved True
+
+dev, argmax (threshold 0.5)
+class         P      R     F1   gold   pred
+0         0.618  0.841  0.713   1252   1703
+1         0.754  0.484  0.589   1259    808
+MACRO     0.686  0.662  0.651   (accuracy 0.662, 2511 cases, confusion [[TN FP] [FN TP]] = [[1053, 199], [650, 609]])
+dev, calibrated threshold 0.37
+class         P      R     F1   gold   pred
+0         0.684  0.662  0.673   1252   1212
+1         0.674  0.696  0.685   1259   1299
+MACRO     0.679  0.679  0.679   (accuracy 0.679, 2511 cases, confusion [[TN FP] [FN TP]] = [[829, 423], [383, 876]])
+[dev] MACRO-F1 0.6510 (argmax) | 0.6789 (threshold 0.37) | P 0.6792 R 0.6790 | acc 0.6790
+[submit] /kaggle/working/runs/X4_D6L_noKD/submission/submission.zip | 1517 cases | predicted label-1 share 0.525 (threshold 0.37)

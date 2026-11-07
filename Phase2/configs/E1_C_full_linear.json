@@ -1,0 +1,24 @@
+{
+  "run_name": "E1_C_full_linear",
+  "backbone": {
+    "ckpt": "@C",
+    "attention": "bidirectional",
+    "c_segment": 0
+  },
+  "method": {
+    "name": "full"
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 10,
+    "batch_size": 8,
+    "lr_backbone": 5e-05,
+    "lr_new": 0.001
+  }
+}

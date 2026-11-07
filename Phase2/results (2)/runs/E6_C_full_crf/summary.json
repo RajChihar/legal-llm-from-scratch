@@ -1,0 +1,33 @@
+{
+  "run": "E6_C_full_crf",
+  "arch": "C",
+  "method": {
+    "name": "full"
+  },
+  "head": "crf",
+  "attention": "bidirectional",
+  "params_total": 70073660,
+  "params_trainable": 70073660,
+  "trainable_pct": 100.0,
+  "train_minutes": 10.0,
+  "peak_train_mem_gb": 2.307767391204834,
+  "best_dev_macro_f1": 0.5572429485058817,
+  "best_epoch": 5,
+  "bio_ceiling_macro_f1": 0.9936730244199379,
+  "dev": {
+    "macro_f1": 0.5572429485058817,
+    "macro_p": 0.6440018903206453,
+    "macro_r": 0.5313071624025224,
+    "micro_f1": 0.6510034263338228
+  },
+  "infer_tokens_per_sec": 36097,
+  "error_categories": {
+    "missed": 275,
+    "type": 60,
+    "boundary": 94,
+    "spurious": 99,
+    "both": 21
+  },
+  "submission": "/kaggle/working/runs/E6_C_full_crf/submission/submission.zip",
+  "test_entities": 3532
+}

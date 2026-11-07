@@ -1,0 +1,48 @@
+{
+  "run": "V3_A2_prefix_1k",
+  "arch": "A",
+  "backbone": "A_llama_decoder_v2",
+  "method": {
+    "name": "prefix",
+    "n_prefix": 16
+  },
+  "head": "linear",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 11,
+  "params_total": 95535885,
+  "params_trainable": 1736205,
+  "trainable_pct": 1.817,
+  "train_minutes": 10.3,
+  "peak_train_mem_gb": 2.7255077362060547,
+  "best_epoch": 9,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.4844015180492179,
+    "macro_p": 0.5321312610960239,
+    "macro_r": 0.4643193635491297,
+    "macro_f1_vocab": 0.40987820758010746,
+    "accuracy": 0.5536881419234361
+  },
+  "dev_CL_macro_f1": 0.4016987636104636,
+  "dev_IT_macro_f1": 0.47290082613096707,
+  "infer_sentences_per_sec": 644.8,
+  "top_confusions": [
+    "ArgumentPetitioner -> ArgumentRespondent: 104",
+    "ArgumentRespondent -> ArgumentPetitioner: 85",
+    "Fact -> RatioOfTheDecision: 80",
+    "ArgumentRespondent -> RatioOfTheDecision: 77",
+    "ArgumentPetitioner -> RatioOfTheDecision: 55",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 45",
+    "RatioOfTheDecision -> PrecedentReliedUpon: 40",
+    "PrecedentReliedUpon -> Fact: 37",
+    "RulingByLowerCourt -> Fact: 35",
+    "RulingByLowerCourt -> RatioOfTheDecision: 27",
+    "ArgumentPetitioner -> Fact: 27",
+    "Statute -> RatioOfTheDecision: 22"
+  ],
+  "submission": "/kaggle/working/runs/V3_A2_prefix_1k/submission/submission.zip",
+  "submission_refit": "/kaggle/working/runs/V3_A2_prefix_1k/submission_refit/submission.zip",
+  "refit_minutes": 8.2
+}

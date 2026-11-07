@@ -1,0 +1,6 @@
+{
+  "teacher_run": "/kaggle/working/runs/V1_A2_lora_crf_1k",
+  "teacher_backbone": "A_llama_decoder_v2",
+  "teacher_dev_macro_f1": 0.5688187561336371,
+  "teacher_params": 96459728
+}

@@ -1,0 +1,7 @@
+{
+  "teacher_run": "/kaggle/working/runs/T1_A2_full_hier",
+  "teacher_backbone": "A_llama_decoder_v2",
+  "teacher_dev_macro_f1": 0.39951690430086173,
+  "teacher_params": 93983590,
+  "teacher_train_macro_f1_on_student_docs": 0.4465
+}

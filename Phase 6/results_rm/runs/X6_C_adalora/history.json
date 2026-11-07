@@ -1,0 +1,49 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 3.2024,
+    "dev_ppl": 24.59
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.5088,
+    "minutes": 20.48,
+    "train_ce": 2.4352,
+    "train_orth": 0.0736,
+    "dev_loss": 2.2722,
+    "dev_ppl": 9.7,
+    "adalora_budget": 255,
+    "quick_rouge1": 0.3084,
+    "quick_rougeL": 0.1794,
+    "sample": "The assessee, a dealer, was assessed to sales tax under section 8 A of the Act, on the basis of some discrepancies found during the four surveys carried out at his shop and made a best judgment assessment under section 7(3) of the Act. The assessee, however, filed a statement of the case before the ",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.2047,
+    "minutes": 41.37,
+    "train_ce": 2.2017,
+    "train_orth": 0.003,
+    "dev_loss": 2.245,
+    "dev_ppl": 9.44,
+    "adalora_budget": 162,
+    "quick_rouge1": 0.3103,
+    "quick_rougeL": 0.1869,
+    "sample": "The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. The assessee, a firm, was registered as a dealer under section 8A of the Act, and was registered as dealer under section 7A of the U.P. Sales Tax Act, 1948. The assess",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.1763,
+    "minutes": 55.01,
+    "train_ce": 2.1739,
+    "train_orth": 0.0023,
+    "dev_loss": 2.2341,
+    "dev_ppl": 9.34,
+    "adalora_budget": 160,
+    "quick_rouge1": 0.3005,
+    "quick_rougeL": 0.177,
+    "sample": "The assessee, a dealer, carries on business in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery. foodgrains etc. at Shahpur in the district of Muzaffarnagar, and is registered as a dealer under section 8A of the Act. The assessee, a firm, was registered as a deale",
+    "saved": true
+  }
+]

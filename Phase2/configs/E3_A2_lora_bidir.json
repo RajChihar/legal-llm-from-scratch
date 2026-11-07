@@ -1,0 +1,29 @@
+{
+  "run_name": "E3_A2_lora_bidir",
+  "backbone": {
+    "ckpt": "@A2",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "lora",
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 8,
+    "lr_new": 0.001
+  }
+}

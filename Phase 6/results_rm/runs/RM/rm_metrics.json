@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "epoch": 0,
+      "val_pair_acc": 0.0
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.6931471824645996,
+      "train_pair_acc": 0.0,
+      "val_pair_acc": 0.5833333333333334,
+      "minutes": 43.1
+    }
+  ],
+  "best_val_pair_acc": 0.5833333333333334,
+  "params": {
+    "total": 71122561,
+    "trainable": 1065601,
+    "trainable_pct": 1.498,
+    "nf4_weights": 0
+  },
+  "pairs_train": 3240,
+  "pairs_val": 360,
+  "docs": 300,
+  "minutes": 43.1,
+  "policy_runs": [
+    "X5_A2_lorma_salient",
+    "X2_A2_qlora"
+  ]
+}

@@ -1,0 +1,7 @@
+[data] train 827 queries / 4320 candidates | dev 118 / 1023 | test 237 / 1727
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method frozen | chunks 4x512 uniform (train 2) | rep mean/mean/cos proj 0
+[model] params total 93.80M | trainable 0.000M (0.0%)
+[train] 5308 (query, relevant) instances from 827 queries | pool 4320 | 0 epochs x 5308 | 664 steps/epoch | batch 8 queries + 3 hard negatives each (bm25) | in-batch True | loss infonce | amp torch.float16
+[epoch] epoch 0 (before fine-tuning) | dev micro-F1@7 0.2613 | recall@100 0.6650
+[dev] micro-F1@7 0.2613 | P@7 0.2845 | R@7 0.2415 | recall@100 0.6650 | MRR 0.6088
+[submit] /kaggle/working/runs/X0_A2_frozen/submission/submission.zip | 237 queries x 7 candidates

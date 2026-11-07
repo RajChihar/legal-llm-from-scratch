@@ -1,0 +1,47 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1536 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[kd] teacher T1_A2_full (A, 93.8M) | alpha 0.5 | T 2.0
+[model] arch D (EfficientLM) | layers 6/12 | method full | positions {'positions': 8192, 'rope_scale': 1.0} | train sequence 2182
+[model] params total 45.80M | trainable 45.802M (100.0%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 6.0449 | dev_ppl 421.96
+[progress] epoch 1  10% | loss 4.2473 | ce 5.0165 kd 3.4781 | 4775 summary tok/s | 1.3 min | ETA all epochs 37.5 min
+[progress] epoch 1  20% | loss 3.7115 | ce 4.4956 kd 2.9275 | 4855 summary tok/s | 2.6 min | ETA all epochs 36.5 min
+[progress] epoch 1  30% | loss 3.4357 | ce 4.2341 kd 2.6373 | 4882 summary tok/s | 3.9 min | ETA all epochs 35.2 min
+[progress] epoch 1  40% | loss 3.2662 | ce 4.0753 kd 2.4570 | 4869 summary tok/s | 5.2 min | ETA all epochs 33.8 min
+[progress] epoch 1  50% | loss 3.1446 | ce 3.9600 kd 2.3292 | 4870 summary tok/s | 6.5 min | ETA all epochs 32.4 min
+[progress] epoch 1  60% | loss 3.0511 | ce 3.8697 kd 2.2324 | 4870 summary tok/s | 7.8 min | ETA all epochs 31.1 min
+[progress] epoch 1  70% | loss 2.9816 | ce 3.8035 kd 2.1598 | 4868 summary tok/s | 9.0 min | ETA all epochs 29.7 min
+[progress] epoch 1  80% | loss 2.9245 | ce 3.7505 kd 2.0985 | 4869 summary tok/s | 10.3 min | ETA all epochs 28.4 min
+[progress] epoch 1  90% | loss 2.8766 | ce 3.7048 kd 2.0484 | 4868 summary tok/s | 11.6 min | ETA all epochs 27.1 min
+[progress] epoch 1 100% | loss 2.8345 | ce 3.6653 kd 2.0037 | 4867 summary tok/s | 12.9 min | ETA all epochs 25.8 min
+[epoch] epoch 1 | train_loss 2.8338 | minutes 12.9 | train_ce 3.6648 | train_kd 2.0029 | dev_loss 3.306 | dev_ppl 27.28 | quick_rouge1 0.2783 | quick_rougeL 0.1684 | saved True
+[epoch] sample: The assessee was a dealer in the assessee 's business. The assessee was a registered dealer in the State of Bihar. The assessee filed a return of the assessee 'in respect of the assessment year 1961 62. The assessee claimed that the assessee had not been assessed to tax under section 10(1) of the Ac
+[progress] epoch 2  10% | loss 2.3444 | ce 3.1402 kd 1.5485 | 444 summary tok/s | 14.4 min | ETA all epochs 24.8 min
+[progress] epoch 2  20% | loss 2.3431 | ce 3.1446 kd 1.5416 | 812 summary tok/s | 15.7 min | ETA all epochs 23.5 min
+[progress] epoch 2  30% | loss 2.3384 | ce 3.1377 kd 1.5390 | 1120 summary tok/s | 17.0 min | ETA all epochs 22.2 min
+[progress] epoch 2  40% | loss 2.3350 | ce 3.1366 kd 1.5334 | 1385 summary tok/s | 18.2 min | ETA all epochs 20.9 min
+[progress] epoch 2  50% | loss 2.3288 | ce 3.1316 kd 1.5261 | 1612 summary tok/s | 19.5 min | ETA all epochs 19.5 min
+[progress] epoch 2  60% | loss 2.3231 | ce 3.1264 kd 1.5199 | 1812 summary tok/s | 20.8 min | ETA all epochs 18.2 min
+[progress] epoch 2  70% | loss 2.3156 | ce 3.1190 kd 1.5122 | 1987 summary tok/s | 22.1 min | ETA all epochs 16.9 min
+[progress] epoch 2  80% | loss 2.3098 | ce 3.1124 kd 1.5073 | 2145 summary tok/s | 23.4 min | ETA all epochs 15.6 min
+[progress] epoch 2  90% | loss 2.3057 | ce 3.1109 kd 1.5005 | 2286 summary tok/s | 24.6 min | ETA all epochs 14.3 min
+[progress] epoch 2 100% | loss 2.3011 | ce 3.1068 kd 1.4955 | 2416 summary tok/s | 25.9 min | ETA all epochs 13.0 min
+[epoch] epoch 2 | train_loss 2.3009 | minutes 25.96 | train_ce 3.1065 | train_kd 1.4952 | dev_loss 3.1764 | dev_ppl 23.96 | quick_rouge1 0.2899 | quick_rougeL 0.1727 | saved True
+[epoch] sample: The assessee was assessed to sales tax under section 3(1) of the Income Tax Act, 1922, under section 10(1) (a) of the Act. The assessee filed a return of the assessee 's returns for the assessment year 1957 58 and 1961 62 and the assessment year 1961 62. The assessee claimed that the assessee had no
+[progress] epoch 3  10% | loss 2.1797 | ce 2.9387 kd 1.4207 | 224 summary tok/s | 27.4 min | ETA all epochs 11.7 min
+[progress] epoch 3  20% | loss 2.1797 | ce 2.9472 kd 1.4122 | 433 summary tok/s | 28.7 min | ETA all epochs 10.4 min
+[progress] epoch 3  30% | loss 2.1780 | ce 2.9424 kd 1.4136 | 619 summary tok/s | 30.0 min | ETA all epochs 9.1 min
+[progress] epoch 3  40% | loss 2.1765 | ce 2.9451 kd 1.4079 | 796 summary tok/s | 31.3 min | ETA all epochs 7.8 min
+[progress] epoch 3  50% | loss 2.1768 | ce 2.9482 kd 1.4053 | 957 summary tok/s | 32.6 min | ETA all epochs 6.5 min
+[progress] epoch 3  60% | loss 2.1763 | ce 2.9489 kd 1.4037 | 1110 summary tok/s | 33.8 min | ETA all epochs 5.2 min
+[progress] epoch 3  70% | loss 2.1743 | ce 2.9457 kd 1.4029 | 1246 summary tok/s | 35.1 min | ETA all epochs 3.9 min
+[progress] epoch 3  80% | loss 2.1719 | ce 2.9429 kd 1.4010 | 1377 summary tok/s | 36.4 min | ETA all epochs 2.6 min
+[progress] epoch 3  90% | loss 2.1716 | ce 2.9432 kd 1.4001 | 1495 summary tok/s | 37.7 min | ETA all epochs 1.3 min
+[progress] epoch 3 100% | loss 2.1712 | ce 2.9438 kd 1.3986 | 1608 summary tok/s | 39.0 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 2.1713 | minutes 39.0 | train_ce 2.9439 | train_kd 1.3986 | dev_loss 3.1406 | dev_ppl 23.12 | quick_rouge1 0.2802 | quick_rougeL 0.1678 | saved True
+[epoch] sample: The assessee was a dealer in the State of Uttar Pradesh. The assessee was assessed to sales tax under section 3(1) of the Act. The Sales Tax Officer assessed the assessee 's turnover of the turnover of the assessee. The assessee filed a return of the turnover for the assessment year 1964 65, but the
+[gen] 16/200 documents | 6s
+[gen] 176/200 documents | 69s
+[dev] 200 documents | ROUGE-1 0.3637 | ROUGE-2 0.1270 | ROUGE-L 0.2036 | words 386 (ref 898) | rep-3gram 0.191 | fact precision 0.191 | 2.444 docs/s
+[gen] 16/100 documents | 6s
+[submit] /kaggle/working/runs/R4_KD_D6_from_T1/submission/submission.zip | 100 documents | mean 386.4 words | empty generations replaced: 0

@@ -1,0 +1,31 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt"
+ },
+ "method": {
+  "name": "lora",
+  "r": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "targets": [
+   "attn",
+   "ffn"
+  ]
+ },
+ "head": {
+  "type": "crf"
+ },
+ "window": {
+  "max_len": 1024
+ },
+ "train": {
+  "epochs": 10,
+  "lr_new": 0.001
+ },
+ "run_name": "V4_C_lora_crf_1k",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": true
+}

@@ -1,0 +1,21 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "full"
+ },
+ "train": {
+  "epochs": 3,
+  "docs_per_epoch": 8000,
+  "lr_backbone": 3e-05,
+  "lr_new": 0.001,
+  "max_minutes": 80
+ },
+ "run_name": "R1_A2_full_hier",
+ "data_dir": "/kaggle/working/p4data/Phase_4_CJPE",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p4cache",
+ "max_docs": null
+}

@@ -1,0 +1,7 @@
+run,arch,method,head,attention,params_M,trainable_M,trainable_%,train_min,best_epoch,peak_mem_GB,tok_per_s,dev_macroF1,dev_microF1,bio_ceiling,refit
+E1_C_full_linear,C,full,linear,bidirectional,70.1,70.073,100.0,3.0,4,2.31,35183,0.5543,0.6316,0.9937,False
+E2_B_lorma,B,lorma,linear,bidirectional,42.9,0.586,1.365,3.5,14,1.03,42584,0.2246,0.4374,0.9937,False
+E3_A2_lora_bidir,A,lora,linear,bidirectional,94.9,1.078,1.136,8.4,11,2.29,24559,0.5787,0.6371,0.9937,False
+E4_D_adapter,D,adapter,linear,bidirectional,73.1,1.999,2.734,5.8,9,1.63,28472,0.4744,0.5543,0.9937,False
+E5_KD_student_C4L,C,full,linear,bidirectional,40.3,40.328,100.0,2.2,9,1.11,56634,0.4593,0.5535,0.9937,False
+E6_C_full_crf,C,full,crf,bidirectional,70.1,70.074,100.0,10.0,5,2.31,36097,0.5572,0.651,0.9937,False

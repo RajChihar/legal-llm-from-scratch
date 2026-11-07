@@ -1,0 +1,28 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt",
+  "keep_layers": 4
+ },
+ "method": {
+  "name": "full"
+ },
+ "kd": {
+  "teacher_run": "/kaggle/working/runs/V1_A2_lora_crf_1k",
+  "kd_alpha": 0.5,
+  "kd_T": 2.0
+ },
+ "window": {
+  "max_len": 1024
+ },
+ "train": {
+  "epochs": 10,
+  "lr_backbone": 0.0001,
+  "lr_new": 0.001
+ },
+ "run_name": "V5_KD_A2L4_from_V1",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": true
+}

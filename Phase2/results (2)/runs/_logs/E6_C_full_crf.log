@@ -1,0 +1,35 @@
+[data] gold `end` is exclusive: 4120/4120 entity texts match text[s:e]
+[data] gold `end` is exclusive: 4273/4273 entity texts match text[s:e]
+[data] train docs 60 | dev docs 10 | test docs 35
+[data] BIO round-trip ceiling on train: macro-F1 0.9937 (overlaps dropped: 0)
+[data] tokenised in 0s | train tokens 416,781
+[model] arch C (HybridLM) | layers 10/10 | attention bidirectional | method full | head crf
+[model] params total 70.07M | trainable 70.074M (100.0%)
+[train] 1094 windows/epoch | 137 steps/epoch | 1370 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 0.5090 | minutes 1.2400 | dev_macro_f1 0.4023 | dev_macro_p 0.4836 | dev_macro_r 0.3955 | dev_micro_f1 0.5313 | saved True
+[epoch] epoch 2 | train_loss 0.0318 | minutes 2.5100 | dev_macro_f1 0.4923 | dev_macro_p 0.5770 | dev_macro_r 0.4865 | dev_micro_f1 0.6172 | saved True
+[epoch] epoch 3 | train_loss 0.0135 | minutes 3.7700 | dev_macro_f1 0.5119 | dev_macro_p 0.6541 | dev_macro_r 0.4891 | dev_micro_f1 0.6100 | saved True
+[epoch] epoch 4 | train_loss 0.0065 | minutes 5.0200 | dev_macro_f1 0.5009 | dev_macro_p 0.6247 | dev_macro_r 0.4711 | dev_micro_f1 0.6259
+[epoch] epoch 5 | train_loss 0.0035 | minutes 6.2600 | dev_macro_f1 0.5572 | dev_macro_p 0.6440 | dev_macro_r 0.5313 | dev_micro_f1 0.6510 | saved True
+[epoch] epoch 6 | train_loss 0.0025 | minutes 7.5000 | dev_macro_f1 0.5280 | dev_macro_p 0.6384 | dev_macro_r 0.4942 | dev_micro_f1 0.6402
+[epoch] epoch 7 | train_loss 0.0016 | minutes 8.7300 | dev_macro_f1 0.5483 | dev_macro_p 0.6738 | dev_macro_r 0.5223 | dev_micro_f1 0.6550
+[epoch] epoch 8 | train_loss 0.0015 | minutes 9.9600 | dev_macro_f1 0.5163 | dev_macro_p 0.6254 | dev_macro_r 0.4781 | dev_micro_f1 0.6327
+[train] early stop: no dev improvement for 3 epochs
+
+label           P      R     F1  support
+APP         0.263  0.126  0.170      119
+RESP        0.400  0.238  0.299       42
+A.COUNSEL   0.611  0.688  0.647       32
+R.COUNSEL   0.696  0.457  0.552       35
+JUDGE       0.719  0.697  0.708       33
+WIT         0.667  0.056  0.103       36
+AUTH        0.566  0.326  0.414      144
+COURT       0.741  0.727  0.734      110
+STAT        0.836  0.898  0.866      176
+PREC        0.530  0.488  0.508      127
+DATE        0.967  0.932  0.949      191
+CASENO      0.732  0.743  0.738       70
+MACRO       0.644  0.531  0.557
+micro       0.717  0.596  0.651
+[errors] {'missed': 275, 'type': 60, 'boundary': 94, 'spurious': 99, 'both': 21}
+[submit] /kaggle/working/runs/E6_C_full_crf/submission/submission.zip | 3532 entities over 35 docs

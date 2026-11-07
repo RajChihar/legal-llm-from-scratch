@@ -1,0 +1,72 @@
+{
+  "run": "X5_B_adapter_hier",
+  "arch": "B",
+  "backbone": "B_encoder_decoder",
+  "method": {
+    "name": "adapter",
+    "bottleneck": 64
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "loss": {
+    "name": "bce",
+    "pos_weight": "none",
+    "pos_weight_max": 30.0,
+    "gamma_pos": 0.0,
+    "gamma_neg": 4.0,
+    "asl_clip": 0.05
+  },
+  "sampler": "uniform",
+  "attention": "bidirectional",
+  "layers": 6,
+  "params_total": 43357798,
+  "params_trainable": 1030438,
+  "trainable_pct": 2.377,
+  "nf4_weights": 0,
+  "train_minutes": 14.4,
+  "peak_train_mem_gb": 2.468996047973633,
+  "best_epoch": 3,
+  "epochs_run": 4,
+  "kd_teacher": null,
+  "n_labels": 100,
+  "threshold_strategy": "per_label",
+  "crossfit_macro_f1": {
+    "fixed": 0.08006255210026915,
+    "global": 0.20301006984671283,
+    "per_label": 0.23880390337576518
+  },
+  "dev_at_0.5": {
+    "macro_f1": 0.08027026365210149,
+    "macro_p": 0.2365512613911309,
+    "macro_r": 0.062316143433302315,
+    "macro_f1_present": 0.08027026365210149,
+    "micro_f1": 0.25277628858083784,
+    "subset_acc": 0.041842648069934193,
+    "pred_per_doc": 1.2142225714566348
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.25267394515737407,
+    "macro_p": 0.21906812706679077,
+    "macro_r": 0.35749881776606196,
+    "macro_f1_present": 0.25267394515737407,
+    "micro_f1": 0.33906501880709294,
+    "subset_acc": 0.0037324427855809843,
+    "pred_per_doc": 7.7829289853648955
+  },
+  "infer_docs_per_sec": 133.17,
+  "submission": "/kaggle/working/runs/X5_B_adapter_hier/submission/submission.zip",
+  "test_pred_per_doc": 7.601
+}

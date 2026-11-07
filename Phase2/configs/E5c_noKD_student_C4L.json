@@ -1,0 +1,24 @@
+{
+  "run_name": "E5c_noKD_student_C4L",
+  "backbone": {
+    "ckpt": "@C",
+    "attention": "bidirectional",
+    "keep_layers": 4
+  },
+  "method": {
+    "name": "full"
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 12,
+    "batch_size": 8,
+    "lr_backbone": 0.0001,
+    "lr_new": 0.001
+  }
+}

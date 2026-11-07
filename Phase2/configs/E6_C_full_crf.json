@@ -1,0 +1,26 @@
+{
+  "run_name": "E6_C_full_crf",
+  "backbone": {
+    "ckpt": "@C",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "full"
+  },
+  "head": {
+    "type": "crf"
+  },
+  "loss": {
+    "class_weight": "none"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 10,
+    "batch_size": 8,
+    "lr_backbone": 5e-05,
+    "lr_new": 0.001
+  }
+}

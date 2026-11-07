@@ -1,0 +1,34 @@
+[data] gold `end` is exclusive: 4120/4120 entity texts match text[s:e]
+[data] gold `end` is exclusive: 4273/4273 entity texts match text[s:e]
+[data] train docs 60 | dev docs 10 | test docs 35
+[data] BIO round-trip ceiling on train: macro-F1 0.9937 (overlaps dropped: 0)
+[data] tokenised in 0s | train tokens 416,781
+[model] arch C (HybridLM) | layers 10/10 | attention bidirectional | method full | head linear
+[model] params total 70.07M | trainable 70.073M (100.0%)
+[train] 1094 windows/epoch | 137 steps/epoch | 1370 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 0.7047 | minutes 0.3900 | dev_macro_f1 0.3876 | dev_macro_p 0.4026 | dev_macro_r 0.4164 | dev_micro_f1 0.5460 | saved True
+[epoch] epoch 2 | train_loss 0.0769 | minutes 0.7900 | dev_macro_f1 0.4836 | dev_macro_p 0.5140 | dev_macro_r 0.5197 | dev_micro_f1 0.6228 | saved True
+[epoch] epoch 3 | train_loss 0.0395 | minutes 1.2100 | dev_macro_f1 0.5301 | dev_macro_p 0.6028 | dev_macro_r 0.5105 | dev_micro_f1 0.5988 | saved True
+[epoch] epoch 4 | train_loss 0.0174 | minutes 1.6300 | dev_macro_f1 0.5543 | dev_macro_p 0.6051 | dev_macro_r 0.5503 | dev_micro_f1 0.6316 | saved True
+[epoch] epoch 5 | train_loss 0.0088 | minutes 2.0700 | dev_macro_f1 0.5449 | dev_macro_p 0.5972 | dev_macro_r 0.5358 | dev_micro_f1 0.6202
+[epoch] epoch 6 | train_loss 0.0045 | minutes 2.5000 | dev_macro_f1 0.5510 | dev_macro_p 0.5899 | dev_macro_r 0.5460 | dev_micro_f1 0.6274
+[epoch] epoch 7 | train_loss 0.0025 | minutes 2.9200 | dev_macro_f1 0.5426 | dev_macro_p 0.5845 | dev_macro_r 0.5380 | dev_micro_f1 0.6146
+[train] early stop: no dev improvement for 3 epochs
+
+label           P      R     F1  support
+APP         0.367  0.151  0.214      119
+RESP        0.357  0.119  0.179       42
+A.COUNSEL   0.458  0.688  0.550       32
+R.COUNSEL   0.824  0.400  0.538       35
+JUDGE       0.537  0.667  0.595       33
+WIT         0.581  0.500  0.537       36
+AUTH        0.582  0.271  0.370      144
+COURT       0.729  0.709  0.719      110
+STAT        0.761  0.852  0.804      176
+PREC        0.429  0.543  0.479      127
+DATE        0.962  0.932  0.947      191
+CASENO      0.675  0.771  0.720       70
+MACRO       0.605  0.550  0.554
+micro       0.669  0.598  0.632
+[errors] {'missed': 248, 'boundary': 109, 'type': 68, 'both': 23, 'spurious': 129}
+[submit] /kaggle/working/runs/E1_C_full_linear/submission/submission.zip | 3898 entities over 35 docs

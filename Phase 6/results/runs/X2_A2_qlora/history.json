@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 2.919,
+    "dev_ppl": 18.52
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.1296,
+    "minutes": 22.61,
+    "train_ce": 2.1296,
+    "dev_loss": 2.0562,
+    "dev_ppl": 7.82,
+    "quick_rouge1": 0.3263,
+    "quick_rougeL": 0.1857,
+    "sample": "The assessee was a dealer in foodgrains. The assessee was a registered dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee, who was a registered dealers under section 8A of the Act, applied for a declaration that the assessee was not a dealer. The Assistant Commissioner rejected t",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.9527,
+    "minutes": 45.87,
+    "train_ce": 1.9527,
+    "dev_loss": 2.0267,
+    "dev_ppl": 7.59,
+    "quick_rouge1": 0.3242,
+    "quick_rougeL": 0.1903,
+    "sample": "The assessee, a dealer in foodgrains, was assessed to sales tax for the assessment year 1967 68 of which the Sales Tax Officer was the assessing authority. The assessee filed a return of his turnover for the assessment years 1967 68, 1967 68 and 1968 68. The Sales Tax Officer rejected the assessee '",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.8898,
+    "minutes": 55.01,
+    "train_ce": 1.8898,
+    "dev_loss": 2.0253,
+    "dev_ppl": 7.58,
+    "quick_rouge1": 0.3409,
+    "quick_rougeL": 0.1966,
+    "sample": "The appellant assessee was a dealer in the State of U.P. and was assessed to sales tax under the U.P., Sales Tax Act, 1948. The Sales Tax Officer rejected the assessee 's claim for the first time in the assessment proceedings. The Commissioner of Sales Tax, however, reduced the taxable turnover of p",
+    "saved": true
+  }
+]

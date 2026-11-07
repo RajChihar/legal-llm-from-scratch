@@ -1,0 +1,37 @@
+[data] train 32305 | dev 2511 | test 1517 cases | train label-1 share 0.414
+[kd] teacher logits for 18000 cases in 510s
+[kd] teacher R1_A2_full_hier (A_llama_decoder_v2) | dev macro-F1 0.7088624540245317 | train accuracy on the student's 18000 cases 0.751
+[model] arch D (EfficientLM) | layers 6/12 | attention bidirectional | method full | chunks 4x1024 headtail | pool attn/attn
+[model] params total 45.89M | trainable 45.892M (100.0%) | class weights [0.854, 1.207]
+[train] 3 epochs x 6000 cases | ~2.75 chunks/case | 750 steps/epoch | 2250 steps | amp torch.float16 | time limit 80 min
+[progress] epoch 1  20% | loss 0.5757 | 1.9 min | ETA all epochs 27.2 min
+[progress] epoch 1  40% | loss 0.5363 | 3.8 min | ETA all epochs 24.9 min
+[progress] epoch 1  60% | loss 0.5099 | 5.7 min | ETA all epochs 23.0 min
+[progress] epoch 1  80% | loss 0.4910 | 7.7 min | ETA all epochs 21.1 min
+[progress] epoch 1 100% | loss 0.4751 | 9.6 min | ETA all epochs 19.3 min
+[epoch] epoch 1 | train_loss 0.4751 | minutes 9.6400 | dev_macro_f1 0.6377 | dev_macro_p 0.6443 | dev_macro_r 0.6401 | dev_acc 0.6404 | dev_pred1_share 0.5846 | saved True
+[progress] epoch 2  20% | loss 0.4241 | 12.7 min | ETA all epochs 19.1 min
+[progress] epoch 2  40% | loss 0.4061 | 14.7 min | ETA all epochs 16.8 min
+[progress] epoch 2  60% | loss 0.3965 | 16.6 min | ETA all epochs 14.5 min
+[progress] epoch 2  80% | loss 0.3888 | 18.5 min | ETA all epochs 12.4 min
+[progress] epoch 2 100% | loss 0.3834 | 20.4 min | ETA all epochs 10.2 min
+[epoch] epoch 2 | train_loss 0.3834 | minutes 20.4000 | dev_macro_f1 0.6122 | dev_macro_p 0.7051 | dev_macro_r 0.6423 | dev_acc 0.6416 | dev_pred1_share 0.2234
+[progress] epoch 3  20% | loss 0.3645 | 23.5 min | ETA all epochs 8.6 min
+[progress] epoch 3  40% | loss 0.3532 | 25.4 min | ETA all epochs 6.4 min
+[progress] epoch 3  60% | loss 0.3522 | 27.4 min | ETA all epochs 4.2 min
+[progress] epoch 3  80% | loss 0.3440 | 29.3 min | ETA all epochs 2.1 min
+[progress] epoch 3 100% | loss 0.3453 | 31.2 min | ETA all epochs 0.0 min
+[epoch] epoch 3 | train_loss 0.3453 | minutes 31.1500 | dev_macro_f1 0.6838 | dev_macro_p 0.7093 | dev_macro_r 0.6910 | dev_acc 0.6906 | dev_pred1_share 0.3521 | saved True
+
+dev, argmax (threshold 0.5)
+class         P      R     F1   gold   pred
+0         0.646  0.839  0.730   1252   1627
+1         0.773  0.542  0.637   1259    884
+MACRO     0.709  0.691  0.684   (accuracy 0.691, 2511 cases, confusion [[TN FP] [FN TP]] = [[1051, 201], [576, 683]])
+dev, calibrated threshold 0.39
+class         P      R     F1   gold   pred
+0         0.699  0.719  0.709   1252   1287
+1         0.712  0.693  0.702   1259   1224
+MACRO     0.706  0.706  0.706   (accuracy 0.706, 2511 cases, confusion [[TN FP] [FN TP]] = [[900, 352], [387, 872]])
+[dev] MACRO-F1 0.6838 (argmax) | 0.7057 (threshold 0.39) | P 0.7059 R 0.7057 | acc 0.7057
+[submit] /kaggle/working/runs/R4_KD_D6L_from_R1/submission/submission.zip | 1517 cases | predicted label-1 share 0.489 (threshold 0.39)

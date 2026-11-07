@@ -1,0 +1,29 @@
+{
+  "run_name": "E3b_A2_lora_causal",
+  "backbone": {
+    "ckpt": "@A2",
+    "attention": "causal"
+  },
+  "method": {
+    "name": "lora",
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 256
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 8,
+    "lr_new": 0.001
+  }
+}

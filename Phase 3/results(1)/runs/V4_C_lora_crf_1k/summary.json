@@ -1,0 +1,54 @@
+{
+  "run": "V4_C_lora_crf_1k",
+  "arch": "C",
+  "backbone": "C_hybrid_prefix_mlm",
+  "method": {
+    "name": "lora",
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "head": "crf",
+  "context": "gru",
+  "window_mode": "context",
+  "attention": "bidirectional",
+  "layers": 10,
+  "params_total": 72282832,
+  "params_trainable": 2225872,
+  "trainable_pct": 3.079,
+  "train_minutes": 8.4,
+  "peak_train_mem_gb": 3.122621536254883,
+  "best_epoch": 6,
+  "kd_teacher": null,
+  "dev": {
+    "macro_f1": 0.5663978239024133,
+    "macro_p": 0.640522991884196,
+    "macro_r": 0.5341177281741313,
+    "macro_f1_vocab": 0.4792596971481959,
+    "accuracy": 0.6246498599439776
+  },
+  "dev_CL_macro_f1": 0.42552136211497893,
+  "dev_IT_macro_f1": 0.5833569393787522,
+  "infer_sentences_per_sec": 635.7,
+  "top_confusions": [
+    "ArgumentRespondent -> ArgumentPetitioner: 75",
+    "ArgumentPetitioner -> ArgumentRespondent: 68",
+    "Fact -> RatioOfTheDecision: 56",
+    "ArgumentPetitioner -> RatioOfTheDecision: 48",
+    "PrecedentReliedUpon -> Fact: 45",
+    "ArgumentPetitioner -> Fact: 39",
+    "RatioOfTheDecision -> PrecedentReliedUpon: 38",
+    "PrecedentReliedUpon -> RatioOfTheDecision: 38",
+    "ArgumentPetitioner -> PrecedentReliedUpon: 29",
+    "RulingByLowerCourt -> Fact: 28",
+    "Fact -> ArgumentPetitioner: 27",
+    "RulingByPresentCourt -> RatioOfTheDecision: 25"
+  ],
+  "submission": "/kaggle/working/runs/V4_C_lora_crf_1k/submission/submission.zip",
+  "submission_refit": "/kaggle/working/runs/V4_C_lora_crf_1k/submission_refit/submission.zip",
+  "refit_minutes": 5.9
+}

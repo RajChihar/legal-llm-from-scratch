@@ -1,0 +1,10 @@
+run,arch,backbone,layers,method,doc_repr,pool,params_M,trainable_M,trainable_%,train_min,epochs,best_epoch,peak_mem_GB,docs_per_s,dev_F1@0.5,thr,dev_macroF1,dev_macroP,dev_macroR,dev_acc,test_pred1
+R1_A2_full_hier,A,A_llama_decoder_v2,11,full,4x512 headtail,attn/attn,93.9,93.908,100.0,42.8,3,2,8.12,28.17,0.7089,0.51,0.7105,0.7105,0.7105,0.7105,0.514
+R2_B_adapter_hier,B,B_encoder_decoder,6,adapter,4x512 headtail,attn/attn,43.3,0.974,2.249,13.8,3,1,2.47,72.85,0.5774,0.5,0.5774,0.5775,0.5775,0.5775,0.498
+R3_C_lorma_hier,C,C_hybrid_prefix_mlm,10,lorma,4x512 headtail,attn/attn,71.2,1.155,1.623,31.8,3,3,6.16,31.99,0.5036,0.5,0.5036,0.5092,0.5088,0.5086,0.397
+R4_KD_D6L_from_R1,D,D_efficient_swa_mqa,6,full+KD,4x1024 headtail,attn/attn,45.9,45.892,100.0,32.4,3,3,1.62,35.01,0.6838,0.39,0.7057,0.7059,0.7057,0.7057,0.489
+X1_A2_lorma_hier,A,A_llama_decoder_v2,11,lorma,4x512 headtail,attn/attn,95.1,1.325,1.393,43.8,3,3,7.23,22.71,0.6792,0.38,0.7072,0.7074,0.7072,0.7073,0.519
+X2_D_partial_long,D,D_efficient_swa_mqa,12,partial,4x1024 headtail,attn/attn,71.2,16.972,23.832,35.4,3,3,1.31,17.7,0.6207,0.42,0.6384,0.6384,0.6384,0.6384,0.512
+X3_A2_full_tail512,A,A_llama_decoder_v2,11,full,1x512 tail,attn/attn,93.9,93.908,100.0,12.3,3,3,4.66,114.37,0.6717,0.43,0.6766,0.6766,0.6766,0.6766,0.513
+X4_D6L_noKD,D,D_efficient_swa_mqa,6,full,4x1024 headtail,attn/attn,45.9,45.892,100.0,33.5,3,3,1.62,34.0,0.651,0.37,0.6789,0.6792,0.679,0.679,0.525
+X5_B_full_hier,B,B_encoder_decoder,6,full,4x512 headtail,attn/attn,42.4,42.409,100.0,16.9,3,3,3.57,71.38,0.6367,0.41,0.6432,0.644,0.6435,0.6436,0.545

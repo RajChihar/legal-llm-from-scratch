@@ -1,0 +1,43 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch A (LlamaLM) | layers 11/11 | method prefix | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 94.07M | trainable 0.270M (0.287%)
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 5.7940 | dev_ppl 328.31
+[progress] epoch 1  10% | loss 4.4737 | ce 4.4737 | 3058 summary tok/s | 2.0 min | ETA all epochs 58.5 min
+[progress] epoch 1  20% | loss 3.6607 | ce 3.6607 | 3105 summary tok/s | 4.1 min | ETA all epochs 57.0 min
+[progress] epoch 1  30% | loss 3.2540 | ce 3.2540 | 3120 summary tok/s | 6.1 min | ETA all epochs 55.1 min
+[progress] epoch 1  40% | loss 3.0293 | ce 3.0293 | 3113 summary tok/s | 8.1 min | ETA all epochs 52.9 min
+[progress] epoch 1  50% | loss 2.8916 | ce 2.8916 | 3113 summary tok/s | 10.1 min | ETA all epochs 50.7 min
+[progress] epoch 1  60% | loss 2.7935 | ce 2.7935 | 3113 summary tok/s | 12.1 min | ETA all epochs 48.6 min
+[progress] epoch 1  70% | loss 2.7214 | ce 2.7214 | 3112 summary tok/s | 14.1 min | ETA all epochs 46.5 min
+[progress] epoch 1  80% | loss 2.6697 | ce 2.6697 | 3112 summary tok/s | 16.1 min | ETA all epochs 44.4 min
+[progress] epoch 1  90% | loss 2.6248 | ce 2.6248 | 3112 summary tok/s | 18.1 min | ETA all epochs 42.4 min
+[progress] epoch 1 100% | loss 2.5887 | ce 2.5887 | 3113 summary tok/s | 20.1 min | ETA all epochs 40.4 min
+[epoch] epoch 1 | train_loss 2.5884 | minutes 20.17 | train_ce 2.5884 | dev_loss 2.301 | dev_ppl 9.98 | quick_rouge1 0.3099 | quick_rougeL 0.1791 | saved True
+[epoch] sample: The assessee was a dealer in the State of U.P. and was registered as a dealer under section 8 A of the U.P., Sales Tax Act, 1948. The assessee was a registered dealer under section 10 of the U P.P. Sales Tax Act. The assessee had been registered as a dealers under section 8A of the U Pradesh Sales T
+[progress] epoch 2  10% | loss 2.2866 | ce 2.2866 | 282 summary tok/s | 22.7 min | ETA all epochs 39.2 min
+[progress] epoch 2  20% | loss 2.2693 | ce 2.2693 | 517 summary tok/s | 24.7 min | ETA all epochs 37.1 min
+[progress] epoch 2  30% | loss 2.2630 | ce 2.2630 | 711 summary tok/s | 26.7 min | ETA all epochs 35.0 min
+[progress] epoch 2  40% | loss 2.2599 | ce 2.2599 | 879 summary tok/s | 28.8 min | ETA all epochs 32.9 min
+[progress] epoch 2  50% | loss 2.2559 | ce 2.2559 | 1024 summary tok/s | 30.7 min | ETA all epochs 30.8 min
+[progress] epoch 2  60% | loss 2.2529 | ce 2.2529 | 1151 summary tok/s | 32.8 min | ETA all epochs 28.7 min
+[progress] epoch 2  70% | loss 2.2511 | ce 2.2511 | 1263 summary tok/s | 34.8 min | ETA all epochs 26.6 min
+[progress] epoch 2  80% | loss 2.2490 | ce 2.2490 | 1362 summary tok/s | 36.8 min | ETA all epochs 24.6 min
+[progress] epoch 2  90% | loss 2.2495 | ce 2.2495 | 1452 summary tok/s | 38.8 min | ETA all epochs 22.5 min
+[progress] epoch 2 100% | loss 2.2457 | ce 2.2457 | 1535 summary tok/s | 40.8 min | ETA all epochs 20.5 min
+[epoch] epoch 2 | train_loss 2.2457 | minutes 40.85 | train_ce 2.2457 | dev_loss 2.2663 | dev_ppl 9.64 | quick_rouge1 0.3149 | quick_rougeL 0.1834 | saved True
+[epoch] sample: The assessee was a dealer in rice branya. He was a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee was a registered dealer under section 7(3) of the U P. Sales Tax, 1948, and was registered as a dealer under the U. P. Sales of Sales Tax Act. The assessee had been assessed to p
+[progress] epoch 3  10% | loss 2.2203 | ce 2.2203 | 142 summary tok/s | 43.3 min | ETA all epochs 18.6 min
+[progress] epoch 3  20% | loss 2.2307 | ce 2.2307 | 274 summary tok/s | 45.3 min | ETA all epochs 16.5 min
+[progress] epoch 3  30% | loss 2.2252 | ce 2.2252 | 392 summary tok/s | 47.3 min | ETA all epochs 14.4 min
+[progress] epoch 3  40% | loss 2.2242 | ce 2.2242 | 505 summary tok/s | 49.4 min | ETA all epochs 12.4 min
+[progress] epoch 3  50% | loss 2.2293 | ce 2.2293 | 607 summary tok/s | 51.4 min | ETA all epochs 10.3 min
+[progress] epoch 3  60% | loss 2.2251 | ce 2.2251 | 704 summary tok/s | 53.4 min | ETA all epochs 8.2 min
+[train] time limit 55 min reached in epoch 3 (68%): evaluating and stopping
+[epoch] epoch 3 | train_loss 2.2232 | minutes 55.0 | train_ce 2.2232 | dev_loss 2.257 | dev_ppl 9.55 | quick_rouge1 0.3135 | quick_rougeL 0.1789 | saved True
+[epoch] sample: The assessee was a dealer in rice branya in the district of Muzaffarnagar. The assessee was a registered dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee had purchased rice bran from the shop of the assessee for a sum of Rs. 3,80,000 and the tax payable thereon at Rs. 3.80,000.
+[gen] 16/200 documents | 29s
+[gen] 176/200 documents | 315s
+[dev] 200 documents | ROUGE-1 0.4362 | ROUGE-2 0.1834 | ROUGE-L 0.2270 | words 512 (ref 898) | rep-3gram 0.204 | fact precision 0.548 | 0.556 docs/s
+[gen] 16/100 documents | 29s
+[submit] /kaggle/working/runs/X3_A2_prefix/submission/submission.zip | 100 documents | mean 505.9 words | empty generations replaced: 0

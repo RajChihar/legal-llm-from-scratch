@@ -1,0 +1,46 @@
+{
+  "arch": "D",
+  "class": "EfficientLM",
+  "model_kw": {
+    "block_size": 2048,
+    "window": 256,
+    "n_layer": 12,
+    "n_head": 10,
+    "n_kv_head": 1,
+    "d_model": 640,
+    "ffn_mult": 2.6666666666666665,
+    "dropout": 0.0,
+    "rope_theta": 10000.0,
+    "rope_max_len": 8192,
+    "tie_weights": true,
+    "bias": false,
+    "vocab_size": 32000,
+    "pad_id": 31996
+  },
+  "phase1_layers": 12,
+  "layers_used": 12,
+  "d_model": 640,
+  "max_len": 8192,
+  "window": 256,
+  "attention": "bidirectional",
+  "params": {
+    "total": 72546189,
+    "trainable": 1423629,
+    "trainable_pct": 1.962
+  },
+  "class_weights": [
+    0.658,
+    4.07,
+    1.048,
+    1.147,
+    1.27,
+    2.498,
+    0.955,
+    1.765,
+    14.241,
+    1.424,
+    0.642,
+    2.403,
+    2.443
+  ]
+}

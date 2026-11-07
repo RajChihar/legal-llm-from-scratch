@@ -1,0 +1,34 @@
+{
+  "run": "ENS",
+  "members": [
+    "T1_A2_full_hier",
+    "X2_A2_full_lwan",
+    "R4_KD_D6L_from_T1"
+  ],
+  "threshold_strategy": "per_label",
+  "crossfit_macro_f1": {
+    "fixed": 0.2478919821067191,
+    "global": 0.36742874281216553,
+    "per_label": 0.3887305684924951
+  },
+  "dev_at_0.5": {
+    "macro_f1": 0.24863424139687024,
+    "macro_p": 0.5393119488923684,
+    "macro_r": 0.187314352062275,
+    "macro_f1_present": 0.24863424139687024,
+    "micro_f1": 0.4266062913793695,
+    "subset_acc": 0.08456929574697966,
+    "pred_per_doc": 1.8108240840781848
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.4053193599018838,
+    "macro_p": 0.40278089649830223,
+    "macro_r": 0.4352858010975042,
+    "macro_f1_present": 0.4053193599018838,
+    "micro_f1": 0.4976004265908283,
+    "subset_acc": 0.044199980355564286,
+    "pred_per_doc": 4.9258422551812195
+  },
+  "test_pred_per_doc": 4.807,
+  "submission": "/kaggle/working/runs/ENS/submission/submission.zip"
+}

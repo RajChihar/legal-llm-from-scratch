@@ -1,0 +1,122 @@
+{
+  "run": "ENS",
+  "members": [
+    "X7_A2_maxsim",
+    "R3_C_partial",
+    "X8_A2_ance"
+  ],
+  "bm25_weight": 0.3,
+  "year_filter": false,
+  "grid": [
+    {
+      "bm25_weight": 0.0,
+      "year_filter": false,
+      "micro_f1@7": 0.3391,
+      "recall@100": 0.7061
+    },
+    {
+      "bm25_weight": 0.0,
+      "year_filter": true,
+      "micro_f1@7": 0.3246,
+      "recall@100": 0.6095
+    },
+    {
+      "bm25_weight": 0.1,
+      "year_filter": false,
+      "micro_f1@7": 0.3669,
+      "recall@100": 0.7215
+    },
+    {
+      "bm25_weight": 0.1,
+      "year_filter": true,
+      "micro_f1@7": 0.3502,
+      "recall@100": 0.6156
+    },
+    {
+      "bm25_weight": 0.2,
+      "year_filter": false,
+      "micro_f1@7": 0.3791,
+      "recall@100": 0.7338
+    },
+    {
+      "bm25_weight": 0.2,
+      "year_filter": true,
+      "micro_f1@7": 0.368,
+      "recall@100": 0.6249
+    },
+    {
+      "bm25_weight": 0.3,
+      "year_filter": false,
+      "micro_f1@7": 0.388,
+      "recall@100": 0.7441
+    },
+    {
+      "bm25_weight": 0.3,
+      "year_filter": true,
+      "micro_f1@7": 0.3735,
+      "recall@100": 0.6341
+    },
+    {
+      "bm25_weight": 0.4,
+      "year_filter": false,
+      "micro_f1@7": 0.388,
+      "recall@100": 0.7503
+    },
+    {
+      "bm25_weight": 0.4,
+      "year_filter": true,
+      "micro_f1@7": 0.3791,
+      "recall@100": 0.6444
+    },
+    {
+      "bm25_weight": 0.5,
+      "year_filter": false,
+      "micro_f1@7": 0.378,
+      "recall@100": 0.7461
+    },
+    {
+      "bm25_weight": 0.5,
+      "year_filter": true,
+      "micro_f1@7": 0.368,
+      "recall@100": 0.6393
+    },
+    {
+      "bm25_weight": 0.6,
+      "year_filter": false,
+      "micro_f1@7": 0.3635,
+      "recall@100": 0.7359
+    },
+    {
+      "bm25_weight": 0.6,
+      "year_filter": true,
+      "micro_f1@7": 0.3635,
+      "recall@100": 0.6372
+    },
+    {
+      "bm25_weight": 0.7,
+      "year_filter": false,
+      "micro_f1@7": 0.3569,
+      "recall@100": 0.7174
+    },
+    {
+      "bm25_weight": 0.7,
+      "year_filter": true,
+      "micro_f1@7": 0.3569,
+      "recall@100": 0.6269
+    }
+  ],
+  "dev": {
+    "micro_p@7": 0.4225181598062954,
+    "micro_r@7": 0.35868448098663924,
+    "micro_f1@7": 0.3879933296275709,
+    "n_queries": 118,
+    "recall@7": 0.35868448098663924,
+    "recall@20": 0.5313463514902363,
+    "recall@50": 0.6618705035971223,
+    "recall@100": 0.7440904419321686,
+    "recall@200": 0.829393627954779,
+    "mrr": 0.7899897071802636,
+    "map@100": 0.5217712874495424
+  },
+  "submission": "/kaggle/working/runs/ENS/submission/submission.zip"
+}

@@ -1,0 +1,29 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "lorma",
+  "variant": "plus",
+  "r": 16,
+  "alpha": 32,
+  "targets": [
+   "attn",
+   "ffn"
+  ]
+ },
+ "context": {
+  "strategy": "salient",
+  "lead": 256
+ },
+ "train": {
+  "lr_new": 0.0005,
+  "max_minutes": 55
+ },
+ "run_name": "X5_A2_lorma_salient",
+ "data_dir": "/kaggle/working/p6data/Phase_6_Summ",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p6cache",
+ "max_docs": null
+}

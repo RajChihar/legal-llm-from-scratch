@@ -1,0 +1,78 @@
+{
+  "run": "R1_A2_full_hier",
+  "views": [
+    {
+      "view": "first 512 (head)",
+      "chunks": "1 x 512 head",
+      "macro_f1": 0.5077,
+      "accuracy": 0.5467,
+      "pred_1_share": 0.775
+    },
+    {
+      "view": "middle 512",
+      "chunks": "1 x 512 middle",
+      "macro_f1": 0.5758,
+      "accuracy": 0.578,
+      "pred_1_share": 0.421
+    },
+    {
+      "view": "last 512 (tail)",
+      "chunks": "1 x 512 tail",
+      "macro_f1": 0.6712,
+      "accuracy": 0.6713,
+      "pred_1_share": 0.471
+    },
+    {
+      "view": "head 2 chunks",
+      "chunks": "2 x 512 head",
+      "macro_f1": 0.5746,
+      "accuracy": 0.5827,
+      "pred_1_share": 0.631
+    },
+    {
+      "view": "tail 2 chunks",
+      "chunks": "2 x 512 tail",
+      "macro_f1": 0.6813,
+      "accuracy": 0.6813,
+      "pred_1_share": 0.486
+    },
+    {
+      "view": "trained view",
+      "chunks": "4 x 512 headtail",
+      "macro_f1": 0.702,
+      "accuracy": 0.702,
+      "pred_1_share": 0.5
+    },
+    {
+      "view": "tail 4 chunks",
+      "chunks": "4 x 512 tail",
+      "macro_f1": 0.6933,
+      "accuracy": 0.6933,
+      "pred_1_share": 0.479
+    },
+    {
+      "view": "uniform 4 chunks",
+      "chunks": "4 x 512 uniform",
+      "macro_f1": 0.6947,
+      "accuracy": 0.6947,
+      "pred_1_share": 0.499
+    },
+    {
+      "view": "uniform 8 chunks",
+      "chunks": "8 x 512 uniform",
+      "macro_f1": 0.7139,
+      "accuracy": 0.714,
+      "pred_1_share": 0.515
+    }
+  ],
+  "chunk_attention_by_position(uniform 8 chunks)": {
+    "0.00-0.12": 0.397,
+    "0.12-0.25": 0.631,
+    "0.25-0.38": 0.751,
+    "0.38-0.50": 0.817,
+    "0.50-0.62": 0.892,
+    "0.62-0.75": 0.911,
+    "0.75-0.88": 1.082,
+    "0.88-1.00": 2.141
+  }
+}

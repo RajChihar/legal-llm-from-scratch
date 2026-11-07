@@ -1,0 +1,43 @@
+[
+  {
+    "epoch": 0,
+    "dev_loss": 5.794,
+    "dev_ppl": 328.31
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.5884,
+    "minutes": 20.17,
+    "train_ce": 2.5884,
+    "dev_loss": 2.301,
+    "dev_ppl": 9.98,
+    "quick_rouge1": 0.3099,
+    "quick_rougeL": 0.1791,
+    "sample": "The assessee was a dealer in the State of U.P. and was registered as a dealer under section 8 A of the U.P., Sales Tax Act, 1948. The assessee was a registered dealer under section 10 of the U P.P. Sales Tax Act. The assessee had been registered as a dealers under section 8A of the U Pradesh Sales T",
+    "saved": true
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.2457,
+    "minutes": 40.85,
+    "train_ce": 2.2457,
+    "dev_loss": 2.2663,
+    "dev_ppl": 9.64,
+    "quick_rouge1": 0.3149,
+    "quick_rougeL": 0.1834,
+    "sample": "The assessee was a dealer in rice branya. He was a dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee was a registered dealer under section 7(3) of the U P. Sales Tax, 1948, and was registered as a dealer under the U. P. Sales of Sales Tax Act. The assessee had been assessed to p",
+    "saved": true
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.2232,
+    "minutes": 55.0,
+    "train_ce": 2.2232,
+    "dev_loss": 2.257,
+    "dev_ppl": 9.55,
+    "quick_rouge1": 0.3135,
+    "quick_rougeL": 0.1789,
+    "sample": "The assessee was a dealer in rice branya in the district of Muzaffarnagar. The assessee was a registered dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee had purchased rice bran from the shop of the assessee for a sum of Rs. 3,80,000 and the tax payable thereon at Rs. 3.80,000.",
+    "saved": true
+  }
+]

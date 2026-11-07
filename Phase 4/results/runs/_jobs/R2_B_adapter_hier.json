@@ -1,0 +1,21 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/B_encoder_decoder/model_final.pt"
+ },
+ "method": {
+  "name": "adapter",
+  "bottleneck": 64
+ },
+ "train": {
+  "epochs": 3,
+  "docs_per_epoch": 8000,
+  "lr_new": 0.001,
+  "max_minutes": 80
+ },
+ "run_name": "R2_B_adapter_hier",
+ "data_dir": "/kaggle/working/p4data/Phase_4_CJPE",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p4cache",
+ "max_docs": null
+}

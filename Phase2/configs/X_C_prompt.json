@@ -1,0 +1,23 @@
+{
+  "run_name": "X_C_prompt",
+  "backbone": {
+    "ckpt": "@C",
+    "attention": "bidirectional"
+  },
+  "method": {
+    "name": "prompt",
+    "n_prompt": 20
+  },
+  "head": {
+    "type": "linear"
+  },
+  "window": {
+    "max_len": 512,
+    "stride": 384
+  },
+  "train": {
+    "epochs": 15,
+    "batch_size": 8,
+    "lr_new": 0.003
+  }
+}

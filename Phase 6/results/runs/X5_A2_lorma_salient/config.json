@@ -1,0 +1,120 @@
+{
+  "run_name": "X5_A2_lorma_salient",
+  "out_dir": "/kaggle/working/runs",
+  "data_dir": "/kaggle/working/p6data/Phase_6_Summ",
+  "cache_dir": "/kaggle/working/p6cache",
+  "ckpt_root": "",
+  "data": {
+    "dev_size": 300,
+    "dev_frac": 0.05,
+    "split_seed": 0
+  },
+  "backbone": {
+    "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt",
+    "keep_layers": null,
+    "grad_ckpt": true,
+    "random_init": false,
+    "rope_scale": "auto"
+  },
+  "method": {
+    "name": "lorma",
+    "variant": "plus",
+    "r": 16,
+    "alpha": 32,
+    "targets": [
+      "attn",
+      "ffn"
+    ]
+  },
+  "context": {
+    "src_len": 1400,
+    "strategy": "salient",
+    "head_frac": 0.5,
+    "k": 4,
+    "lead": 256,
+    "gap": true
+  },
+  "target": {
+    "tgt_len": "auto",
+    "tgt_quantile": 0.9,
+    "tgt_cap": 640
+  },
+  "sep_text": "\n\nSUMMARY:\n",
+  "kd": {
+    "teacher_run": "",
+    "kd_alpha": 0.5,
+    "kd_T": 2.0
+  },
+  "dapt": {
+    "steps": 0,
+    "len": 1024,
+    "batch_size": 4,
+    "grad_accum": 2
+  },
+  "adalora": {
+    "target_r": 4,
+    "init_warmup": 0.1,
+    "final_warmup": 0.2,
+    "delta_t": 10,
+    "orth_reg": 0.1
+  },
+  "train": {
+    "epochs": 3,
+    "docs_per_epoch": null,
+    "batch_size": 4,
+    "grad_accum": 4,
+    "lr_backbone": 5e-05,
+    "lr_new": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.05,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "seed": 1337,
+    "max_minutes": 55,
+    "eval_batch_size": 8,
+    "log_every": 0.1,
+    "gen_eval_docs": 16
+  },
+  "gen": {
+    "method": "greedy",
+    "beams": 4,
+    "max_new": "auto",
+    "min_new": "auto",
+    "no_repeat_ngram": 4,
+    "rep_penalty": 1.0,
+    "rep_window": 512,
+    "length_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.9,
+    "batch_size": 16,
+    "seed": 0
+  },
+  "post": {
+    "dedup_sentences": true,
+    "max_words": null
+  },
+  "eval": {
+    "gen_docs": 200
+  },
+  "predict_test": true,
+  "max_docs": null,
+  "n_proc": 4,
+  "resolved": {
+    "tgt_len": 640,
+    "src_len": 1400,
+    "sep_ids": [
+      314,
+      83,
+      7550,
+      77,
+      11980,
+      3212
+    ],
+    "max_new": 640,
+    "min_new": 320,
+    "gap_ids": [
+      1978
+    ]
+  }
+}

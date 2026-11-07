@@ -1,0 +1,24 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt"
+ },
+ "method": {
+  "name": "qlora",
+  "r": 16,
+  "alpha": 32,
+  "targets": [
+   "attn",
+   "ffn"
+  ]
+ },
+ "train": {
+  "lr_new": 0.0005,
+  "max_minutes": 70
+ },
+ "run_name": "X3_A2_qlora_hier",
+ "data_dir": "/kaggle/working/p5data/Phase_5_LSI",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p5cache",
+ "max_docs": null
+}

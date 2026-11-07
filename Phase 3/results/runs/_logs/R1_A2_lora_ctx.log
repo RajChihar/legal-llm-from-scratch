@@ -1,0 +1,33 @@
+[data] train docs 80 | dev docs 10 | test docs 10 | labels 13
+[data] tokenised in 1s | train sentences 16,845 | train tokens 665,165
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method lora | head linear/gru | window context
+[model] params total 96.46M | trainable 2.660M (2.757%)
+[train] ~1911 windows/epoch | 239 steps/epoch | 2390 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 1.7308 | minutes 0.9200 | dev_macro_f1 0.3860 | dev_macro_p 0.4421 | dev_macro_r 0.4349 | dev_acc 0.4328 | dev_CL 0.3211 | dev_IT 0.4365 | saved True
+[epoch] epoch 2 | train_loss 0.9848 | minutes 1.9300 | dev_macro_f1 0.4320 | dev_macro_p 0.4534 | dev_macro_r 0.4760 | dev_acc 0.5112 | dev_CL 0.3660 | dev_IT 0.4467 | saved True
+[epoch] epoch 3 | train_loss 0.5682 | minutes 2.9300 | dev_macro_f1 0.5069 | dev_macro_p 0.5218 | dev_macro_r 0.5239 | dev_acc 0.5602 | dev_CL 0.4427 | dev_IT 0.5188 | saved True
+[epoch] epoch 4 | train_loss 0.3244 | minutes 3.9200 | dev_macro_f1 0.5130 | dev_macro_p 0.5493 | dev_macro_r 0.5201 | dev_acc 0.5514 | dev_CL 0.4425 | dev_IT 0.5183 | saved True
+[epoch] epoch 5 | train_loss 0.1972 | minutes 4.9200 | dev_macro_f1 0.5231 | dev_macro_p 0.5809 | dev_macro_r 0.5171 | dev_acc 0.5635 | dev_CL 0.4058 | dev_IT 0.5678 | saved True
+[epoch] epoch 6 | train_loss 0.1296 | minutes 5.9200 | dev_macro_f1 0.4834 | dev_macro_p 0.5313 | dev_macro_r 0.4679 | dev_acc 0.5593 | dev_CL 0.4025 | dev_IT 0.5611
+[epoch] epoch 7 | train_loss 0.0747 | minutes 6.9100 | dev_macro_f1 0.4813 | dev_macro_p 0.5336 | dev_macro_r 0.4634 | dev_acc 0.5598 | dev_CL 0.4099 | dev_IT 0.5416
+[epoch] epoch 8 | train_loss 0.0367 | minutes 7.9100 | dev_macro_f1 0.4848 | dev_macro_p 0.5299 | dev_macro_r 0.4684 | dev_acc 0.5612 | dev_CL 0.3945 | dev_IT 0.5590
+[train] early stop: no dev improvement for 3 epochs
+
+label                           P      R     F1   gold   pred
+Fact                        0.728  0.597  0.656    444    364
+Issue                       0.750  0.600  0.667     15     12
+ArgumentPetitioner          0.563  0.568  0.565    400    403
+ArgumentRespondent          0.633  0.184  0.285    272     79
+Statute                     0.869  0.775  0.819    120    107
+Dissent                     0.000  0.000  0.000      0      0
+PrecedentReliedUpon         0.453  0.630  0.527    254    353
+PrecedentNotReliedUpon      0.342  0.520  0.413     50     76
+PrecedentOverruled          0.000  0.000  0.000      0      0
+RulingByLowerCourt          0.696  0.314  0.432    102     46
+RatioOfTheDecision          0.496  0.779  0.606    403    633
+RulingByPresentCourt        0.500  0.449  0.473     49     44
+None                        0.360  0.273  0.310     33     25
+MACRO                       0.581  0.517  0.523   (vocab-macro-F1 0.443, accuracy 0.563, 2142 sentences)
+[dev] MACRO-F1 all 0.5231 | CL 0.40578143476891954 | IT 0.5678140118993278 | sklearn 0.5231
+[dev] top confusions: ['ArgumentRespondent -> ArgumentPetitioner: 119', 'Fact -> RatioOfTheDecision: 87', 'ArgumentPetitioner -> RatioOfTheDecision: 63', 'RatioOfTheDecision -> PrecedentReliedUpon: 59', 'ArgumentRespondent -> RatioOfTheDecision: 45', 'PrecedentReliedUpon -> Fact: 41']
+[submit] /kaggle/working/runs/R1_A2_lora_ctx/submission/submission.zip | 10 docs, 2197 sentences

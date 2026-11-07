@@ -1,0 +1,40 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch A (LlamaLM) | layers 11/11 | method qlora | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 95.92M | trainable 2.118M (2.208%) | 4-bit NF4 weights 69.21M
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 55 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 2.9190 | dev_ppl 18.52
+[progress] epoch 1  10% | loss 2.6584 | ce 2.6584 | 2713 summary tok/s | 2.3 min | ETA all epochs 65.9 min
+[progress] epoch 1  20% | loss 2.4348 | ce 2.4348 | 2774 summary tok/s | 4.5 min | ETA all epochs 63.8 min
+[progress] epoch 1  30% | loss 2.3288 | ce 2.3288 | 2796 summary tok/s | 6.8 min | ETA all epochs 61.4 min
+[progress] epoch 1  40% | loss 2.2662 | ce 2.2662 | 2782 summary tok/s | 9.1 min | ETA all epochs 59.2 min
+[progress] epoch 1  50% | loss 2.2295 | ce 2.2295 | 2777 summary tok/s | 11.3 min | ETA all epochs 56.9 min
+[progress] epoch 1  60% | loss 2.1989 | ce 2.1989 | 2777 summary tok/s | 13.6 min | ETA all epochs 54.5 min
+[progress] epoch 1  70% | loss 2.1748 | ce 2.1748 | 2775 summary tok/s | 15.8 min | ETA all epochs 52.2 min
+[progress] epoch 1  80% | loss 2.1593 | ce 2.1593 | 2775 summary tok/s | 18.1 min | ETA all epochs 49.8 min
+[progress] epoch 1  90% | loss 2.1429 | ce 2.1429 | 2776 summary tok/s | 20.3 min | ETA all epochs 47.5 min
+[progress] epoch 1 100% | loss 2.1295 | ce 2.1295 | 2776 summary tok/s | 22.6 min | ETA all epochs 45.3 min
+[epoch] epoch 1 | train_loss 2.1296 | minutes 22.61 | train_ce 2.1296 | dev_loss 2.0562 | dev_ppl 7.82 | quick_rouge1 0.3263 | quick_rougeL 0.1857 | saved True
+[epoch] sample: The assessee was a dealer in foodgrains. The assessee was a registered dealer under section 8 A of the U.P. Sales Tax Act, 1948. The assessee, who was a registered dealers under section 8A of the Act, applied for a declaration that the assessee was not a dealer. The Assistant Commissioner rejected t
+[progress] epoch 2  10% | loss 1.9868 | ce 1.9868 | 251 summary tok/s | 25.4 min | ETA all epochs 44.0 min
+[progress] epoch 2  20% | loss 1.9702 | ce 1.9702 | 460 summary tok/s | 27.7 min | ETA all epochs 41.6 min
+[progress] epoch 2  30% | loss 1.9676 | ce 1.9676 | 634 summary tok/s | 30.0 min | ETA all epochs 39.3 min
+[progress] epoch 2  40% | loss 1.9656 | ce 1.9656 | 783 summary tok/s | 32.3 min | ETA all epochs 36.9 min
+[progress] epoch 2  50% | loss 1.9622 | ce 1.9622 | 912 summary tok/s | 34.5 min | ETA all epochs 34.5 min
+[progress] epoch 2  60% | loss 1.9592 | ce 1.9592 | 1025 summary tok/s | 36.8 min | ETA all epochs 32.2 min
+[progress] epoch 2  70% | loss 1.9580 | ce 1.9580 | 1124 summary tok/s | 39.0 min | ETA all epochs 29.9 min
+[progress] epoch 2  80% | loss 1.9565 | ce 1.9565 | 1213 summary tok/s | 41.3 min | ETA all epochs 27.6 min
+[progress] epoch 2  90% | loss 1.9568 | ce 1.9568 | 1293 summary tok/s | 43.6 min | ETA all epochs 25.3 min
+[progress] epoch 2 100% | loss 1.9527 | ce 1.9527 | 1367 summary tok/s | 45.8 min | ETA all epochs 23.0 min
+[epoch] epoch 2 | train_loss 1.9527 | minutes 45.87 | train_ce 1.9527 | dev_loss 2.0267 | dev_ppl 7.59 | quick_rouge1 0.3242 | quick_rougeL 0.1903 | saved True
+[epoch] sample: The assessee, a dealer in foodgrains, was assessed to sales tax for the assessment year 1967 68 of which the Sales Tax Officer was the assessing authority. The assessee filed a return of his turnover for the assessment years 1967 68, 1967 68 and 1968 68. The Sales Tax Officer rejected the assessee '
+[progress] epoch 3  10% | loss 1.8789 | ce 1.8789 | 126 summary tok/s | 48.7 min | ETA all epochs 20.9 min
+[progress] epoch 3  20% | loss 1.8947 | ce 1.8947 | 244 summary tok/s | 50.9 min | ETA all epochs 18.5 min
+[progress] epoch 3  30% | loss 1.8894 | ce 1.8894 | 349 summary tok/s | 53.1 min | ETA all epochs 16.2 min
+[train] time limit 55 min reached in epoch 3 (38%): evaluating and stopping
+[epoch] epoch 3 | train_loss 1.8898 | minutes 55.01 | train_ce 1.8898 | dev_loss 2.0253 | dev_ppl 7.58 | quick_rouge1 0.3409 | quick_rougeL 0.1966 | saved True
+[epoch] sample: The appellant assessee was a dealer in the State of U.P. and was assessed to sales tax under the U.P., Sales Tax Act, 1948. The Sales Tax Officer rejected the assessee 's claim for the first time in the assessment proceedings. The Commissioner of Sales Tax, however, reduced the taxable turnover of p
+[gen] 16/200 documents | 36s
+[gen] 176/200 documents | 391s
+[dev] 200 documents | ROUGE-1 0.4448 | ROUGE-2 0.2071 | ROUGE-L 0.2381 | words 417 (ref 898) | rep-3gram 0.158 | fact precision 0.663 | 0.438 docs/s
+[gen] 16/100 documents | 36s
+[submit] /kaggle/working/runs/X2_A2_qlora/submission/submission.zip | 100 documents | mean 423.1 words | empty generations replaced: 0

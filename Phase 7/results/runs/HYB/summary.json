@@ -1,0 +1,120 @@
+{
+  "run": "HYB",
+  "members": [
+    "X7_A2_maxsim"
+  ],
+  "bm25_weight": 0.4,
+  "year_filter": false,
+  "grid": [
+    {
+      "bm25_weight": 0.0,
+      "year_filter": false,
+      "micro_f1@7": 0.3257,
+      "recall@100": 0.6629
+    },
+    {
+      "bm25_weight": 0.0,
+      "year_filter": true,
+      "micro_f1@7": 0.3202,
+      "recall@100": 0.592
+    },
+    {
+      "bm25_weight": 0.1,
+      "year_filter": false,
+      "micro_f1@7": 0.3569,
+      "recall@100": 0.6896
+    },
+    {
+      "bm25_weight": 0.1,
+      "year_filter": true,
+      "micro_f1@7": 0.3457,
+      "recall@100": 0.6053
+    },
+    {
+      "bm25_weight": 0.2,
+      "year_filter": false,
+      "micro_f1@7": 0.3691,
+      "recall@100": 0.7061
+    },
+    {
+      "bm25_weight": 0.2,
+      "year_filter": true,
+      "micro_f1@7": 0.3569,
+      "recall@100": 0.6105
+    },
+    {
+      "bm25_weight": 0.3,
+      "year_filter": false,
+      "micro_f1@7": 0.3758,
+      "recall@100": 0.7184
+    },
+    {
+      "bm25_weight": 0.3,
+      "year_filter": true,
+      "micro_f1@7": 0.3646,
+      "recall@100": 0.6228
+    },
+    {
+      "bm25_weight": 0.4,
+      "year_filter": false,
+      "micro_f1@7": 0.3813,
+      "recall@100": 0.7297
+    },
+    {
+      "bm25_weight": 0.4,
+      "year_filter": true,
+      "micro_f1@7": 0.3669,
+      "recall@100": 0.6331
+    },
+    {
+      "bm25_weight": 0.5,
+      "year_filter": false,
+      "micro_f1@7": 0.3735,
+      "recall@100": 0.7307
+    },
+    {
+      "bm25_weight": 0.5,
+      "year_filter": true,
+      "micro_f1@7": 0.3635,
+      "recall@100": 0.631
+    },
+    {
+      "bm25_weight": 0.6,
+      "year_filter": false,
+      "micro_f1@7": 0.3658,
+      "recall@100": 0.7215
+    },
+    {
+      "bm25_weight": 0.6,
+      "year_filter": true,
+      "micro_f1@7": 0.3591,
+      "recall@100": 0.63
+    },
+    {
+      "bm25_weight": 0.7,
+      "year_filter": false,
+      "micro_f1@7": 0.3513,
+      "recall@100": 0.7061
+    },
+    {
+      "bm25_weight": 0.7,
+      "year_filter": true,
+      "micro_f1@7": 0.358,
+      "recall@100": 0.6269
+    }
+  ],
+  "dev": {
+    "micro_p@7": 0.4152542372881356,
+    "micro_r@7": 0.35251798561151076,
+    "micro_f1@7": 0.38132295719844356,
+    "n_queries": 118,
+    "recall@7": 0.35251798561151076,
+    "recall@20": 0.526207605344296,
+    "recall@50": 0.6515930113052415,
+    "recall@100": 0.7297019527235354,
+    "recall@200": 0.8098663926002055,
+    "mrr": 0.7690252211801566,
+    "map@100": 0.5006002278279036
+  },
+  "submission": "/kaggle/working/runs/HYB/submission/submission.zip"
+}

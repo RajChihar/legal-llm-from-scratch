@@ -1,0 +1,25 @@
+{
+ "backbone": {
+  "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/C_hybrid_prefix_mlm/model_final.pt",
+  "keep_layers": 4
+ },
+ "method": {
+  "name": "full"
+ },
+ "kd": {
+  "teacher_run": "/kaggle/working/runs/R1_A2_lora_ctx",
+  "kd_alpha": 0.5,
+  "kd_T": 2.0
+ },
+ "train": {
+  "epochs": 10,
+  "lr_backbone": 0.0001,
+  "lr_new": 0.001
+ },
+ "run_name": "R5_KD_C4L_from_R1",
+ "data_dir": "/kaggle/working/p3data/Phase_3_RR",
+ "out_dir": "/kaggle/working/runs",
+ "ckpt_root": "",
+ "cache_dir": "/kaggle/working/p3cache",
+ "refit_full": false
+}

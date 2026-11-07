@@ -1,0 +1,23 @@
+{
+  "run": "ENS",
+  "members": [
+    "R1_A2_full_hier",
+    "X1_A2_lorma_hier",
+    "R4_KD_D6L_from_R1"
+  ],
+  "threshold": 0.44,
+  "dev": {
+    "macro_f1": 0.7176398428265662,
+    "macro_p": 0.7264825815052246,
+    "macro_r": 0.719873460604415,
+    "accuracy": 0.7196336121067304
+  },
+  "dev_calibrated": {
+    "macro_f1": 0.7251933459798628,
+    "macro_p": 0.7253064208446135,
+    "macro_r": 0.7252358101541109,
+    "accuracy": 0.7252090800477897
+  },
+  "test_share_pred_1": 0.5,
+  "submission": "/kaggle/working/runs/ENS/submission/submission.zip"
+}

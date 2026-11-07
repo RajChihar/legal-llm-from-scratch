@@ -1,0 +1,12 @@
+run,arch,backbone,layers,method,doc_repr,head,loss,params_M,trainable_M,trainable_%,train_min,epochs,best_epoch,peak_mem_GB,docs_per_s,dev_F1@0.5,thr,dev_macroF1_cf,dev_macroF1,dev_macroP,dev_macroR,dev_microF1,dev_subset_acc,dev_pred/doc,test_pred/doc
+R1_A2_lorma_hier,A,A_llama_decoder_v2,11,lorma,4x512 headtail,attn/attn,bce,95.2,1.4,1.471,44.7,4,4,7.23,42.91,0.225,per_label,0.3634,0.3806,0.3747,0.4177,0.4745,0.0359,5.14,5.033
+R2_B_full_hier,B,B_encoder_decoder,6,full,4x512 headtail,attn/attn,bce,42.5,42.465,100.0,17.3,4,4,3.57,138.48,0.1701,per_label,0.3158,0.3317,0.3211,0.3921,0.4174,0.0216,5.89,5.732
+R3_C_partial_hier,C,C_hybrid_prefix_mlm,10,partial,4x512 headtail,attn/attn,bce,70.2,19.984,28.463,19.6,4,4,2.76,74.89,0.2243,per_label,0.3607,0.3805,0.3905,0.4039,0.4802,0.0384,4.91,4.804
+R4_KD_D6L_from_T1,D,D_efficient_swa_mqa,6,full+KD,4x1024 headtail,attn/attn,bce,46.0,45.955,100.0,31.6,4,4,1.61,77.37,0.2399,per_label,0.3774,0.3936,0.3965,0.4177,0.4921,0.0413,4.81,4.72
+T1_A2_full_hier,A,A_llama_decoder_v2,11,full,4x512 headtail,attn/attn,bce,94.0,93.984,100.0,42.1,4,4,8.12,55.57,0.2552,per_label,0.3826,0.3995,0.3989,0.4287,0.4939,0.0451,4.88,4.765
+X1_D6L_noKD,D,D_efficient_swa_mqa,6,full,4x1024 headtail,attn/attn,bce,46.0,45.955,100.0,32.2,4,4,1.62,76.03,0.2336,per_label,0.364,0.3826,0.383,0.4171,0.4724,0.0334,5.04,4.912
+X2_A2_full_lwan,A,A_llama_decoder_v2,11,full,4x512 headtail,attn/label_attn,bce,94.0,93.955,100.0,43.2,4,4,8.13,53.97,0.2534,per_label,0.3821,0.3991,0.3984,0.4277,0.4941,0.041,4.84,4.742
+X3_A2_qlora_hier,A,A_llama_decoder_v2,11,qlora,4x512 headtail,attn/attn,bce,96.1,2.302,2.395,48.6,4,4,7.27,40.58,0.2354,per_label,0.3723,0.3904,0.3938,0.413,0.4888,0.0417,4.81,4.704
+X4_A2_full_asl,A,A_llama_decoder_v2,11,full,4x512 headtail,attn/attn,asl,94.0,93.984,100.0,42.9,4,4,8.12,54.46,0.3541,per_label,0.3722,0.3917,0.3938,0.4226,0.4889,0.0396,5.04,4.914
+X5_B_adapter_hier,B,B_encoder_decoder,6,adapter,4x512 headtail,attn/attn,bce,43.4,1.03,2.377,14.4,4,3,2.47,133.17,0.0803,per_label,0.2388,0.2527,0.2191,0.3575,0.3391,0.0037,7.78,7.601
+X6_C_lorma_hier,C,C_hybrid_prefix_mlm,10,lorma,4x512 headtail,attn/attn,bce,71.3,1.218,1.709,24.7,3,1,6.16,56.68,0.0096,per_label,0.0802,0.0806,0.0501,0.3439,0.1593,0.0,25.23,24.811

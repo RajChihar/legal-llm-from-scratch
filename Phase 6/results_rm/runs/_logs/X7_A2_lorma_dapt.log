@@ -1,0 +1,52 @@
+[data] train 6730 | dev 300 (held out) | test 100 documents | src 1400 tokens (headtail) | summary <= 640 tokens | generation 320..640 tokens
+[model] arch A (LlamaLM) | layers 11/11 | method lorma | positions {'positions': 2048, 'rope_scale': 1.998} | train sequence 2046
+[model] params total 96.23M | trainable 2.433M (2.528%)
+[dapt] step 30/300 | LM loss 2.8022 | 0.4 min
+[dapt] step 60/300 | LM loss 2.6700 | 0.8 min
+[dapt] step 90/300 | LM loss 2.7002 | 1.1 min
+[dapt] step 120/300 | LM loss 2.6131 | 1.5 min
+[dapt] step 150/300 | LM loss 2.6712 | 1.9 min
+[dapt] step 180/300 | LM loss 2.6379 | 2.3 min
+[dapt] step 210/300 | LM loss 2.6926 | 2.6 min
+[dapt] step 240/300 | LM loss 2.6380 | 3.0 min
+[dapt] step 270/300 | LM loss 2.6166 | 3.4 min
+[dapt] step 300/300 | LM loss 2.6491 | 3.7 min
+[train] 3 epochs x 6730 documents | 421 steps/epoch | 1263 steps | batch 4 x accum 4 | amp torch.float16 | time limit 51.3 min
+[epoch] epoch 0 (before fine-tuning) | dev_loss 2.3351 | dev_ppl 10.33
+[progress] epoch 1  10% | loss 2.1771 | ce 2.1771 | 3148 summary tok/s | 2.0 min | ETA all epochs 56.8 min
+[progress] epoch 1  20% | loss 2.1467 | ce 2.1467 | 3198 summary tok/s | 3.9 min | ETA all epochs 55.3 min
+[progress] epoch 1  30% | loss 2.1209 | ce 2.1209 | 3217 summary tok/s | 5.9 min | ETA all epochs 53.4 min
+[progress] epoch 1  40% | loss 2.1016 | ce 2.1016 | 3208 summary tok/s | 7.9 min | ETA all epochs 51.3 min
+[progress] epoch 1  50% | loss 2.0924 | ce 2.0924 | 3207 summary tok/s | 9.8 min | ETA all epochs 49.3 min
+[progress] epoch 1  60% | loss 2.0810 | ce 2.0810 | 3207 summary tok/s | 11.8 min | ETA all epochs 47.2 min
+[progress] epoch 1  70% | loss 2.0705 | ce 2.0705 | 3205 summary tok/s | 13.7 min | ETA all epochs 45.2 min
+[progress] epoch 1  80% | loss 2.0658 | ce 2.0658 | 3204 summary tok/s | 15.7 min | ETA all epochs 43.2 min
+[progress] epoch 1  90% | loss 2.0579 | ce 2.0579 | 3203 summary tok/s | 17.6 min | ETA all epochs 41.2 min
+[progress] epoch 1 100% | loss 2.0514 | ce 2.0514 | 3204 summary tok/s | 19.6 min | ETA all epochs 39.2 min
+[epoch] epoch 1 | train_loss 2.0516 | minutes 19.59 | train_ce 2.0516 | dev_loss 2.0442 | dev_ppl 7.72 | quick_rouge1 0.3267 | quick_rougeL 0.1908 | saved True
+[epoch] sample: The assessee was a dealer in jaggery, amchur, khandsari etc. on its own account and as kutcha arhatiya in jaggery was found in stock. The assessee filed a return of his turnover for the assessment year 1967 68 of which he claimed that he was not a dealer. The Income Tax Officer rejected the claim of
+[progress] epoch 2  10% | loss 1.9586 | ce 1.9586 | 291 summary tok/s | 22.0 min | ETA all epochs 38.0 min
+[progress] epoch 2  20% | loss 1.9431 | ce 1.9431 | 533 summary tok/s | 24.0 min | ETA all epochs 36.0 min
+[progress] epoch 2  30% | loss 1.9413 | ce 1.9413 | 733 summary tok/s | 25.9 min | ETA all epochs 33.9 min
+[progress] epoch 2  40% | loss 1.9403 | ce 1.9403 | 907 summary tok/s | 27.9 min | ETA all epochs 31.9 min
+[progress] epoch 2  50% | loss 1.9379 | ce 1.9379 | 1057 summary tok/s | 29.8 min | ETA all epochs 29.8 min
+[progress] epoch 2  60% | loss 1.9357 | ce 1.9357 | 1188 summary tok/s | 31.7 min | ETA all epochs 27.8 min
+[progress] epoch 2  70% | loss 1.9353 | ce 1.9353 | 1304 summary tok/s | 33.7 min | ETA all epochs 25.8 min
+[progress] epoch 2  80% | loss 1.9346 | ce 1.9346 | 1407 summary tok/s | 35.6 min | ETA all epochs 23.8 min
+[progress] epoch 2  90% | loss 1.9354 | ce 1.9354 | 1500 summary tok/s | 37.5 min | ETA all epochs 21.8 min
+[progress] epoch 2 100% | loss 1.9318 | ce 1.9318 | 1586 summary tok/s | 39.5 min | ETA all epochs 19.8 min
+[epoch] epoch 2 | train_loss 1.9318 | minutes 39.54 | train_ce 1.9318 | dev_loss 2.0208 | dev_ppl 7.54 | quick_rouge1 0.3283 | quick_rougeL 0.1919 | saved True
+[epoch] sample: The appellant assessee was a dealer in foodgrains and foodgrains. The Sales Tax Officer rejected the assessee 's claim for the first time in reference. The Commissioner of Sales Tax, however, reduced the taxable turnover of purchases by Rs. 1,50,000 and the tax payable thereon at Rs. 25,450. On appe
+[progress] epoch 3  10% | loss 1.8454 | ce 1.8454 | 147 summary tok/s | 41.9 min | ETA all epochs 18.0 min
+[progress] epoch 3  20% | loss 1.8615 | ce 1.8615 | 283 summary tok/s | 43.8 min | ETA all epochs 16.0 min
+[progress] epoch 3  30% | loss 1.8568 | ce 1.8568 | 405 summary tok/s | 45.8 min | ETA all epochs 13.9 min
+[progress] epoch 3  40% | loss 1.8585 | ce 1.8585 | 522 summary tok/s | 47.8 min | ETA all epochs 12.0 min
+[progress] epoch 3  50% | loss 1.8654 | ce 1.8654 | 627 summary tok/s | 49.7 min | ETA all epochs 10.0 min
+[train] time limit 51.3 min reached in epoch 3 (58%): evaluating and stopping
+[epoch] epoch 3 | train_loss 1.8618 | minutes 51.3 | train_ce 1.8618 | dev_loss 2.0221 | dev_ppl 7.55 | quick_rouge1 0.3256 | quick_rougeL 0.1852
+[epoch] sample: The assessee, a dealer in foodgrains, was assessed to sales tax under section 8 A of the U.P. Sales Tax Act, 1948, on the basis of the returns filed by him on the basis that certain discrepancies found during the four surveys carried out at his shop and made a best judgment assessment under section 
+[gen] 16/200 documents | 19s
+[gen] 176/200 documents | 214s
+[dev] 200 documents | ROUGE-1 0.4518 | ROUGE-2 0.2089 | ROUGE-L 0.2418 | words 450 (ref 898) | rep-3gram 0.168 | fact precision 0.635 | 0.805 docs/s
+[gen] 16/100 documents | 19s
+[submit] /kaggle/working/runs/X7_A2_lorma_dapt/submission/submission.zip | 100 documents | mean 448.5 words | empty generations replaced: 0

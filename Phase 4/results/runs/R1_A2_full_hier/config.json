@@ -1,0 +1,63 @@
+{
+  "run_name": "R1_A2_full_hier",
+  "out_dir": "/kaggle/working/runs",
+  "data_dir": "/kaggle/working/p4data/Phase_4_CJPE",
+  "cache_dir": "/kaggle/working/p4cache",
+  "ckpt_root": "",
+  "backbone": {
+    "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt",
+    "attention": "bidirectional",
+    "keep_layers": null,
+    "c_segment": 0,
+    "grad_ckpt": false
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "headtail",
+    "overlap": 0.0
+  },
+  "method": {
+    "name": "full"
+  },
+  "head": {
+    "chunk_pool": "attn",
+    "agg": "attn",
+    "use_pos": true,
+    "pos_buckets": 8,
+    "dropout": 0.1,
+    "hidden": 256,
+    "att_hidden": 128
+  },
+  "loss": {
+    "class_weight": "balanced",
+    "label_smoothing": 0.0
+  },
+  "kd": {
+    "teacher_run": "",
+    "kd_alpha": 0.5,
+    "kd_T": 2.0
+  },
+  "train": {
+    "epochs": 3,
+    "docs_per_epoch": 8000,
+    "batch_size": 8,
+    "grad_accum": 1,
+    "lr_backbone": 3e-05,
+    "lr_new": 0.001,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.06,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "seed": 1337,
+    "llrd": 1.0,
+    "max_minutes": 80,
+    "eval_batch_size": 16,
+    "chunk_bs": 32,
+    "log_every": 0.2
+  },
+  "calibrate": true,
+  "predict_test": true,
+  "max_docs": null,
+  "n_proc": 4
+}

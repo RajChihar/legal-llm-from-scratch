@@ -1,0 +1,79 @@
+{
+  "run_name": "X5_A2_inbatch",
+  "out_dir": "/kaggle/working/runs",
+  "data_dir": "/kaggle/working/p7data/Phase_7_PCR",
+  "cache_dir": "/kaggle/working/p7cache",
+  "ckpt_root": "",
+  "backbone": {
+    "ckpt": "/kaggle/input/datasets/punnuparashar/cs781-phase1-ckpts/A_llama_decoder_v2/model_final.pt",
+    "attention": "bidirectional",
+    "keep_layers": null,
+    "c_segment": 0,
+    "grad_ckpt": true
+  },
+  "method": {
+    "name": "full"
+  },
+  "chunks": {
+    "len": 512,
+    "k": 4,
+    "strategy": "uniform",
+    "overlap": 0.0,
+    "train_k": 2
+  },
+  "rep": {
+    "pool": "mean",
+    "agg": "mean",
+    "proj": 256,
+    "sim": "cos",
+    "tau": 0.05,
+    "learn_tau": false
+  },
+  "loss": {
+    "name": "infonce"
+  },
+  "neg": {
+    "miner": "none",
+    "n_hard": 0,
+    "top": 100,
+    "skip_top": 0,
+    "in_batch": true,
+    "refresh_every": 1
+  },
+  "kd": {
+    "teacher_run": "",
+    "kd_alpha": 0.7,
+    "tau_t": 0.05
+  },
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "ngrams": [
+      1,
+      2
+    ],
+    "query_tf": "sat"
+  },
+  "train": {
+    "epochs": 4,
+    "inst_per_epoch": null,
+    "batch_queries": 8,
+    "grad_accum": 1,
+    "lr_backbone": 2e-05,
+    "lr_new": 0.001,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.06,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "seed": 1337,
+    "llrd": 1.0,
+    "max_minutes": 40,
+    "eval_docs_bs": 16,
+    "chunk_bs": 32,
+    "log_every": 0.1
+  },
+  "predict_test": true,
+  "max_queries": null,
+  "max_cands": null,
+  "n_proc": 4
+}

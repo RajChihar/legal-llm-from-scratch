@@ -1,0 +1,39 @@
+[data] gold `end` is exclusive: 4120/4120 entity texts match text[s:e]
+[data] gold `end` is exclusive: 4273/4273 entity texts match text[s:e]
+[data] train docs 60 | dev docs 10 | test docs 35
+[data] BIO round-trip ceiling on train: macro-F1 0.9937 (overlaps dropped: 0)
+[data] tokenised in 0s | train tokens 416,781
+[model] arch D (EfficientLM) | layers 12/12 | attention bidirectional | method adapter | head linear
+[model] params total 73.12M | trainable 1.999M (2.734%)
+[train] 553 windows/epoch | 139 steps/epoch | 2085 steps | amp torch.float16
+[epoch] epoch 1 | train_loss 1.0118 | minutes 0.4700 | dev_macro_f1 0.1688 | dev_macro_p 0.1589 | dev_macro_r 0.1877 | dev_micro_f1 0.3153 | saved True
+[epoch] epoch 2 | train_loss 0.1654 | minutes 0.9500 | dev_macro_f1 0.3011 | dev_macro_p 0.2964 | dev_macro_r 0.3151 | dev_micro_f1 0.3985 | saved True
+[epoch] epoch 3 | train_loss 0.1096 | minutes 1.4400 | dev_macro_f1 0.3817 | dev_macro_p 0.3782 | dev_macro_r 0.3997 | dev_micro_f1 0.4767 | saved True
+[epoch] epoch 4 | train_loss 0.0805 | minutes 1.9200 | dev_macro_f1 0.4107 | dev_macro_p 0.4240 | dev_macro_r 0.4408 | dev_micro_f1 0.5103 | saved True
+[epoch] epoch 5 | train_loss 0.0634 | minutes 2.4100 | dev_macro_f1 0.3882 | dev_macro_p 0.3892 | dev_macro_r 0.4050 | dev_micro_f1 0.4893
+[epoch] epoch 6 | train_loss 0.0485 | minutes 2.8900 | dev_macro_f1 0.3947 | dev_macro_p 0.4184 | dev_macro_r 0.4009 | dev_micro_f1 0.4906
+[epoch] epoch 7 | train_loss 0.0343 | minutes 3.3700 | dev_macro_f1 0.4434 | dev_macro_p 0.4591 | dev_macro_r 0.4531 | dev_micro_f1 0.5199 | saved True
+[epoch] epoch 8 | train_loss 0.0233 | minutes 3.8600 | dev_macro_f1 0.4211 | dev_macro_p 0.4315 | dev_macro_r 0.4293 | dev_micro_f1 0.5140
+[epoch] epoch 9 | train_loss 0.0167 | minutes 4.3400 | dev_macro_f1 0.4744 | dev_macro_p 0.5109 | dev_macro_r 0.4741 | dev_micro_f1 0.5543 | saved True
+[epoch] epoch 10 | train_loss 0.0118 | minutes 4.8300 | dev_macro_f1 0.4428 | dev_macro_p 0.4676 | dev_macro_r 0.4504 | dev_micro_f1 0.5202
+[epoch] epoch 11 | train_loss 0.0081 | minutes 5.3200 | dev_macro_f1 0.4738 | dev_macro_p 0.4781 | dev_macro_r 0.4875 | dev_micro_f1 0.5363
+[epoch] epoch 12 | train_loss 0.0054 | minutes 5.8000 | dev_macro_f1 0.4620 | dev_macro_p 0.4797 | dev_macro_r 0.4727 | dev_micro_f1 0.5331
+[train] early stop: no dev improvement for 3 epochs
+
+label           P      R     F1  support
+APP         0.476  0.084  0.143      119
+RESP        0.103  0.095  0.099       42
+A.COUNSEL   0.783  0.562  0.655       32
+R.COUNSEL   0.500  0.629  0.557       35
+JUDGE       0.372  0.485  0.421       33
+WIT         0.302  0.361  0.329       36
+AUTH        0.486  0.250  0.330      144
+COURT       0.736  0.709  0.722      110
+STAT        0.695  0.801  0.744      176
+PREC        0.254  0.268  0.261      127
+DATE        0.956  0.916  0.936      191
+CASENO      0.468  0.529  0.497       70
+MACRO       0.511  0.474  0.474
+micro       0.589  0.524  0.554
+[errors] {'boundary': 160, 'missed': 299, 'both': 44, 'type': 28, 'spurious': 151}
+[submit] /kaggle/working/runs/E4_D_adapter/submission/submission.zip | 3871 entities over 35 docs

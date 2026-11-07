@@ -1,0 +1,21 @@
+[data] train 827 queries / 4320 candidates | dev 118 / 1023 | test 237 / 1727
+[model] arch A (LlamaLM) | layers 11/11 | attention bidirectional | method qlora | chunks 4x512 uniform (train 2) | rep mean/mean/cos proj 256
+[model] params total 96.11M | trainable 2.314M (2.408%) | 4-bit NF4 weights 69.21M
+[train] 5308 (query, relevant) instances from 827 queries | pool 4320 | 4 epochs x 5308 | 664 steps/epoch | batch 8 queries + 3 hard negatives each (bm25) | in-batch True | loss infonce | amp torch.float16
+[epoch] epoch 0 (before fine-tuning) | dev micro-F1@7 0.2490 | recall@100 0.6547
+[progress] epoch 1  10% | loss 2.3699 | task 2.3699 | 3.5 min | ETA all epochs 137.1 min
+[progress] epoch 1  20% | loss 2.1955 | task 2.1955 | 7.0 min | ETA all epochs 133.1 min
+[progress] epoch 1  30% | loss 2.1273 | task 2.1273 | 10.4 min | ETA all epochs 129.7 min
+[progress] epoch 1  40% | loss 2.1324 | task 2.1324 | 13.9 min | ETA all epochs 126.1 min
+[progress] epoch 1  50% | loss 2.1178 | task 2.1178 | 17.4 min | ETA all epochs 122.5 min
+[progress] epoch 1  60% | loss 2.0971 | task 2.0971 | 20.9 min | ETA all epochs 119.1 min
+[progress] epoch 1  70% | loss 2.0889 | task 2.0889 | 24.3 min | ETA all epochs 115.6 min
+[progress] epoch 1  80% | loss 2.0762 | task 2.0762 | 27.8 min | ETA all epochs 112.1 min
+[progress] epoch 1  89% | loss 2.0663 | task 2.0663 | 31.3 min | ETA all epochs 108.6 min
+[progress] epoch 1  99% | loss 2.0589 | task 2.0589 | 34.8 min | ETA all epochs 105.1 min
+[epoch] epoch 1 | train_loss 2.0555 | minutes 35.71 | train_task 2.0555 | micro_p@7 0.3257 | micro_r@7 0.2765 | micro_f1@7 0.2991 | recall@7 0.2765 | recall@20 0.4625 | recall@50 0.592 | recall@100 0.6793 | recall@200 0.7739 | mrr 0.6598 | map@100 0.3819 | saved True
+[progress] epoch 2  10% | loss 1.6858 | task 1.6858 | 39.2 min | ETA all epochs 103.4 min
+[train] time limit 40 min reached in epoch 2: evaluating and stopping
+[epoch] epoch 2 | train_loss 1.6603 | minutes 40.79 | train_task 1.6603 | micro_p@7 0.339 | micro_r@7 0.2878 | micro_f1@7 0.3113 | recall@7 0.2878 | recall@20 0.4769 | recall@50 0.5982 | recall@100 0.6814 | recall@200 0.7945 | mrr 0.6575 | map@100 0.3984 | saved True
+[dev] micro-F1@7 0.3113 | P@7 0.3390 | R@7 0.2878 | recall@100 0.6814 | MRR 0.6575
+[submit] /kaggle/working/runs/X2_A2_qlora/submission/submission.zip | 237 queries x 7 candidates
