@@ -1,0 +1,23 @@
+# Python 3.10+
+# Install: pip install -r requirements.txt
+# On Kaggle most of these are preinstalled; kaggle_secrets / google.colab are provided by the platform.
+
+# Core
+torch>=2.0
+numpy>=1.24
+regex>=2023.0          # Unicode-aware BPE pre-tokenisation (all phases)
+
+# Data
+huggingface_hub>=0.20  # downloads the gated Exploration-Lab/CS-781-Capstone data
+ijson>=3.2             # streaming the Phase-1 corpus while tokenising
+pandas>=2.0
+
+# Evaluation and analysis
+rouge_score>=0.1.2     # Phase 1 / Phase 6 local ROUGE
+bert_score>=0.3.13     # Phase 6 local BERTScore
+scikit-learn>=1.3
+scipy>=1.10
+matplotlib>=3.7
+
+# Tests
+pytest>=7.0

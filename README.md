@@ -141,4 +141,6 @@ The unit tests build tiny random models, so they run on a CPU in seconds. The ch
 ---
 
 ## Requirements
+Install everything with `pip install -r requirements.txt`.
+
 Python 3.10+, PyTorch 2.x, NumPy, `regex` and `huggingface_hub`; Phase 6 also uses `rouge_score` and `bert_score` for local evaluation. Everything else (tokenizer, models, PEFT methods, BM25, metrics) is implemented in this repository.
