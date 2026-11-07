@@ -14,7 +14,6 @@ A compact legal language model trained **from scratch** on Indian legal text (Ph
 | 6 | Abstractive summarization | BERTScore-F1 | 57 | BERTScore-F1 0.844 |
 | 7 | Prior case retrieval | micro-F1@7 | 42 | micro-F1@7 0.388 |
 
-The full write-up is in [`Report/`](Report/).
 
 ---
 
@@ -28,7 +27,6 @@ Phase 4/   Judgment prediction  — CS781_Phase4_CJPE.ipynb,    package p4cjpe/,
 Phase 5/   Statute ID           — CS781_Phase5_LSI.ipynb,     package p5lsi/,  tests/
 Phase 6/   Summarization        — CS781_Phase6_Summ_RM.ipynb, package p6summ/, tests/
 Phase 7/   Prior case retrieval — CS781_Phase7_PCR.ipynb,     package p7pcr/,  tests/
-Report/    final report
 ```
 
 In every phase folder:
