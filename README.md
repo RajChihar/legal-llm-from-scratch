@@ -6,7 +6,7 @@ A compact legal language model trained **from scratch** on Indian legal text (Ph
 
 | Phase | Task | Primary metric | Codabench rank | Best local dev score |
 |---|---|---|---|---|
-| 1 | Legal LM pre-training (128-word continuation) | ROUGE-L | 51 | ROUGE-L 0.308, BLEU-4 19.8 |
+| 1 | Legal LM pre-training (128-word continuation) | Codabench score 0.8334 (ROUGE-L and BLEU-4 tracked locally) | 51 | ROUGE-L 0.308, BLEU-4 19.8 |
 | 2 | Legal Named Entity Recognition (12 types) | strict span macro-F1 | 67 | macro-F1 0.579 |
 | 3 | Rhetorical role prediction (CL + IT) | macro-F1 | 49 | macro-F1 0.569 |
 | 4 | Court judgment prediction | macro-F1 | 59 | macro-F1 0.711 |
